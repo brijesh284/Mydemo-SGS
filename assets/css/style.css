@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  background-image: url("../images/landing-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.wheel {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#head-title {
+  width: 55%;
+  text-align: center;
+  font-family: fantasy;
+  transition: 0.5s;
+  position: absolute;
+  top: 10%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#head-title h2 {
+  color: #444;
+}
+#head-title p {
+  color: #777;
+}
+
+.wheel-cont {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 345px;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+  #head-title {
+    width: 100%;
+  }
+  .wheel-cont {
+    margin-top: 50px;
+    transform: scale(1);
+  }
+}
+.col {
+  width: 95px;
+  height: 100%;
+}
+.hexa {
+  width: 130px;
+  height: 125px;
+  position: relative;
+}
+.hexa:not(.hexa:first-child) {
+  margin-top: -14px;
+}
+.hexa-image {
+  width: 130px;
+  height: 125px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+#hexa-main {
+  opacity: 1;
+}
+
+.hexa-text {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+}
+
+.icon {
+  width: 40%;
+  z-index: 10;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.col1,
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pos {
+  transform: scale(1.4);
+  transition: 0.5s;
+  z-index: 10;
+}
+.pos0 {
+  margin: -15px 20px 0px -25px;
+}
+.pos1 {
+  margin: 15px 20px 0px -25px;
+}
+.pos2 {
+  margin-top: -25px;
+}
+.pos3 {
+  transform: scale(1.02) !important;
+}
+.pos4 {
+  margin-top: 25px;
+}
+.pos5 {
+  margin: -15px 0px 0px 25px;
+}
+.pos6 {
+  margin: 15px 0px 0px 25px;
+}
+.z100 {
+  z-index: 100;
+}
+.z1 {
+  z-index: 1;
+}
+
+/* Shubham */
+.wheel {
+  display: none;
+}
+
+.hex-surround {
+  transition: 0.5s all;
+  top: 30%;
+}
+
+.hex-surround.scale-125:hover {
+  --tw-scale-x: 1.4;
+  --tw-scale-y: 1.4;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.main-hex-img {
+  transition: 0.5s all;
+  /* display: none !important; */
+  z-index: 1000000;
+  top: 30%;
+}
+
+.side-nav a.nav-link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+}
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
+.scale1 {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.body-wrap-dec {
+  padding: 0px 15px;
+}
+@media screen and (max-width: 1100px) {
+  .footer-container ul li a {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav a.nav-link {
+    padding: 0.5rem;
+  }
+  .footer-container ul li a {
+    font-size: 14px !important;
+  }
+  .footer-container ul li {
+    margin: 0px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-container ul li a {
+    line-height: 26px !important;
+  }
+  .footer-container ul.social-detail li a img {
+    width: 22px !important;
+  }
+}
+/* footer */
+.footer-bottom {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background: linear-gradient(
+    360deg,
+    #d9d9d9 0%,
+    rgba(217, 217, 217, 0) 106.56%
+  );
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.footer-container ul li {
+  display: inline-flex;
+  margin: 7px 0;
+}
+.footer-container ul li a {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
+  color: #292929;
+  padding: 0 4px;
+  opacity: 0.18;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+}
+.footer-container ul li a:hover {
+  opacity: 1;
+}
+.footer-container ul li a img {
+  width: 15px;
+}
+.footer-container ul.social-detail li a img {
+  width: 28px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  ul.contact-detail li:not(:last-child) a {
+    display: inline-flex;
+  }
+}

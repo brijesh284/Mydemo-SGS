@@ -1,0 +1,403 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="assets/css/officeStyle.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="assets/js/officeScript.js"></script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/dass-landing.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fleet-manage.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- Typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main>
+      <!-- <section id="landing" class="mt-4">
+        <div class="hexa_container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="hex_imgs">
+                <img
+                  class="img-first max-w-xl absolute"
+                  src="./assets/images/fleet/img1.png"
+                  alt=""
+                  data-aos="fade-right"
+                />
+                <img
+                  class="img-second max-w-xl absolute second_scroll"
+                  src="./assets/images/fleet/img2.png"
+                  alt=""
+                  data-aos="fade-left"
+                />
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex h-100 align-items-center justify-content-center my-auto"
+            >
+              <div class="">
+                <h1 data-aos="fade-up" class="landing_title">
+                  Fleet <br />
+                  Management <br />
+                  <span>&</span> Team Building <br />
+                  Events
+                </h1>
+
+                <p class="text-xl leading-tight mt-5" data-aos="fade-up" data-aos-delay="1000">
+                  Streamline your fleet operations and strengthen your team dynamics with our
+                  comprehensive <span class="font-semibold">management solutions.</span>
+                </p>
+
+                <div class="d-flex justify-content-between mt-8">
+                  <button data-aos="fade-up" class="book_btn" data-aos-delay="1200">
+                    Book Now
+                  </button>
+                  <button
+                    id="read-more-btn"
+                    class="border_btn"
+                    data-aos="fade-left"
+                    data-aos-delay="1200"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section>
+        <div id="cars_contnt">
+          <div class="cars_container">
+            <div class="row frist_row">
+              <div class="col-12 col-md-6 col-lg-5 cars_imgs mx-auto">
+                <div class="hex_imgs">
+                  <img
+                    class="img-first max-w-xl absolute"
+                    src="./assets/images/fleet/img1.png"
+                    alt=""
+                    data-aos="fade-right"
+                  />
+                  <img
+                    class="img-second max-w-xl absolute second_scroll"
+                    src="./assets/images/fleet/img2.png"
+                    alt=""
+                    data-aos="fade-left"
+                  />
+                </div>
+                <div class="fleet_img_one">
+                  <div id="img-1" class="img_div">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img4.png"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                      alt=""
+                    />
+                  </div>
+                  <div id="img-2" class="img_div">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img5.png"
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                  <div id="img-3" class="img_div">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img6.png"
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                </div>
+                <!-- <div style="height: 30vh"></div> -->
+              </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="cars_content">
+                  <h1 class="cars_title fleet_title" id="dynamic">
+                    Fleet <br />
+                    Management
+                  </h1>
+                  <h1 class="cars_title fleet_title_2">
+                    <span style="font-weight: 100; display: inline-block"
+                      >&</span
+                    >
+                    Team Building
+                    <br />
+                    Events
+                  </h1>
+
+                  <div class="landing_desc_section">
+                    <div class="move_down">
+                      <p class="landing_desc mt-2">
+                        Streamline your fleet operations and strengthen your
+                        team dynamics with our comprehensive
+                        <span class="font-semibold">management solutions.</span>
+                      </p>
+
+                      <div
+                        class="d-flex justify-content-between mt-8 scroll-btns"
+                      >
+                        <button class="book_btn book_now_btn">Book Now</button>
+                        <button id="read-more-btn" class="border_btn">
+                          Read More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="car_text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row second_row">
+              <div class="col-12 col-md-6 col-lg-5 cars_imgs mx-auto">
+                <div class="fleet_img_two">
+                  <div id="img-4" class="img_div_two">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img7.png"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                      alt=""
+                    />
+                  </div>
+                  <div id="img-5" class="img_div_two">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img8.png"
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                  <div id="img-6" class="img_div_two">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img9.png"
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                  <div class="img_div_two" id="img-7">
+                    <img
+                      class=""
+                      src="./assets/images/fleet/img10.png"
+                      alt=""
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="cars_content team_content">
+                  <div class="team_info">
+                    <h1
+                      class="cars_title"
+                      data-aos="fade-left"
+                      data-aos-delay="500"
+                      data-aos-duration="1000"
+                    >
+                      Team Building <br />
+                      Events
+                    </h1>
+
+                    <p class="car_text_two"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section data-aos="zoom-in" class="">
+      <main
+        class="main-container h-screen flex gap-32 xl:mx-52 items-center justify-center text-center"
+      >
+        <div class="right-container max-w-6xl">
+          <p
+            class="text-3xl font-light leading-tight mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Whether it's outdoor adventure activities or indoor problem-solving
+            challenges, our team-building activities will help your team build
+            <span class="font-bold">stronger relationships</span>, enhance their
+            <span class="font-bold">decision-making skills</span>, and
+            <span class="font-bold">boost overall teamwork.</span>
+          </p>
+
+          <div class="flex justify-center mt-32">
+            <button
+              class="bg-slate-600 font-bold text-white text-xl px-16 py-3"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+      });
+    </script>
+
+    <script>
+      var mypages = [];
+      const largeScreen = $(window).width() > 1440 ? true : false;
+      const subValue = largeScreen ? 500 : 350;
+
+      const paraOneText = {
+        "img-1":
+          "We offer our clients a convenient way to <b>rent a car </b> <span>for their travel or personal needs</span>",
+        "img-2":
+          'Our fleet has a wide selection of cars, ranging from  <span class="font-bold d-inline-block"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">economy cars</span>',
+        "img-3":
+          'Our fleet has a wide selection of cars, ranging from  <span class="font-bold d-inline-block" >economy cars</span> to <span class="font-bold d-inline-block"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">luxury sedan</span>',
+      };
+
+      $(".fleet_img_one > div").each(function (el) {
+        mypages.push({
+          pagename: $(this).attr("id"),
+          pagetop: $(this).offset().top - subValue,
+          pageContent: paraOneText?.[$(this).attr("id")],
+        });
+      });
+
+      $(window).scroll(function () {
+        $.each(mypages, function (i, page) {
+          if ($(window).scrollTop() >= page.pagetop) {
+            $(".car_text").text("").append(page.pageContent);
+          }
+        });
+      });
+
+      // second images section
+      const paraTwoText = {
+        "img-4":
+          "Our team-building services are part of our program and are designed to improve ",
+        "img-5":
+          'Our team-building services are part of our program and are designed to improve <span class="font-bold d-inline-block"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">communication,</span>',
+        "img-6":
+          'Our team-building services are part of our program and are designed to improve <span class="font-bold d-inline-block">communication,</span> <span class="font-bold d-inline-block" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">collaboration</span>',
+        "img-7":
+          'Our team-building services are part of our program and are designed to improve <span class="font-bold d-inline-block">communication, collaboration</span> <span class="d-inline-block" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000"> and <span class="font-bold d-inline-block"> problem-solving skills</span></span>',
+      };
+      const myImages = [];
+
+      $(".fleet_img_two > div").each(function (el) {
+        myImages.push({
+          pagename: $(this).attr("id"),
+          pagetop: $(this).offset().top - subValue,
+          pageContent: paraTwoText?.[$(this).attr("id")],
+        });
+      });
+
+      $(window).scroll(function () {
+        $.each(myImages, function (i, page) {
+          if ($(window).scrollTop() >= page.pagetop) {
+            $(".car_text_two").text("").append(page.pageContent);
+          }
+        });
+      });
+    </script>
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 2950) {
+          $("#dynamic").addClass("scroll-btm");
+        } else {
+          $("#dynamic").removeClass("scroll-btm");
+        }
+      });
+    </script>
+    <script src="./assets/js/fleet.js"></script>
+  </body>
+</html>

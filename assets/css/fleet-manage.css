@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
+  font-style: normal;
+}
+
+body {
+  background-color: gainsboro;
+  background-image: url('../images/fleet/bg.png');
+  box-sizing: border-box;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#landing {
+  min-height: 100vh;
+}
+
+.hexa_container {
+  width: 80%;
+  margin: auto;
+}
+
+.hex_imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: center;
+  position: relative;
+  /* background-color: red; */
+}
+
+.hex_imgs img {
+  width: 30rem;
+}
+
+.second_scroll {
+  transform: translateY(31%) !important;
+}
+
+/* .hex_imgs img:last-child {
+  width: 28.5rem;
+  transform: translateY(31%);
+} */
+
+.landing_title {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.landing_title span {
+  font-weight: 100 !important;
+  font-size: 4vw;
+  display: inline-block;
+}
+
+.book_btn {
+  background: rgba(16, 19, 39, 0.7);
+  padding: 0.5rem 2rem;
+  color: #fff;
+}
+
+.border_btn {
+  background: transparent;
+  padding: 0.5rem 2rem;
+  color: #000;
+  border: 1px solid rgba(16, 19, 39, 0.7);
+}
+
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* cars */
+
+.cars_container {
+  width: 90%;
+  margin: auto;
+}
+
+.landing_desc {
+}
+
+.cars_content {
+  /* position: sticky;
+  top: 20vh; */
+  margin-left: 10%;
+  margin-top: 20%;
+  height: 100%;
+}
+
+.fleet_title {
+  position: sticky;
+  top: 20vh;
+}
+.scroll-btm {
+  position: unset;
+}
+.fleet_title_2 {
+  position: sticky;
+  top: 38vh;
+  /* top: 40vh; */
+}
+
+.landing_desc_section {
+  max-height: 100vh;
+  overflow: hidden;
+  min-height: 50vh;
+  /* margin-top: 5%; */
+  margin-top: 8vw;
+}
+
+.cars_imgs img {
+  margin: 10vh auto;
+  width: 37.5vw;
+}
+
+.cars_title {
+  font-size: 3.5vw;
+}
+
+.cars_content .car_text,
+.cars_content .car_text_two {
+  font-size: 1.8vw;
+  margin: 10% auto;
+  /* font-weight: 100 !important; */
+}
+
+.car_text {
+  position: sticky;
+  top: 50vh;
+}
+
+.team_content {
+  height: 100%;
+}
+
+.team_info {
+  position: sticky;
+  top: 30vh;
+}
+
+/* .frist_row {
+  margin-top: 20%;
+} */
+
+.second_row {
+  margin: 20% auto;
+}
+
+.img_div {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.img_div_two {
+  width: 100%;
+  height: 700px;
+  margin-bottom: 2rem;
+}
+
+.btn_side {
+  position: fixed;
+  transition: 1s;
+  top: 78.5vh;
+  left: 83vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .cars_imgs img {
+    margin: 10vh auto;
+    width: 33.5vw;
+  }
+
+  .btn_side {
+    top: 78.5vh;
+    left: 83vw;
+  }
+
+  .hex_imgs img:last-child {
+    /* width: 32vw; */
+    transform: translateY(31%);
+    -webkit-transform: translateY(31%);
+    -moz-transform: translateY(31%);
+    -ms-transform: translateY(31%);
+    -o-transform: translateY(31%);
+}
+}
+
+@media screen and (min-width: 1450px) {
+  .hex_imgs img {
+    width: 40vw;
+  }
+
+  .img_div {
+    height: 800px;
+  }
+
+  .img_div_two {
+    height: 1000px;
+  }
+
+  .border_btn,
+  .book_btn {
+    padding: 1rem 3rem;
+    font-size: 1vw;
+  }
+
+  .landing_desc {
+    font-size: 2vw;
+  }
+
+  .hex_imgs img:last-child {
+    /*width: 21.5vw !important;*/
+    /* width: calc(100vw - 100px); */
+    transform: translateY(31%);
+    /*display: none;
+     */
+}
+
+  .landing_title {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+}
+
+#final_desc {
+  background: blue;
+  height: 100vh;
+}
+
+/* .book_now_btn {
+  transform: translateY(-10vh);
+} */
+.side-nav a.nav-link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav a.nav-link {
+    padding: .5rem;
+  }
+}

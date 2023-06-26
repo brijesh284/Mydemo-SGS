@@ -1,0 +1,474 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="assets/css/careers.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/hiring.js"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main class="">
+      <section id="landing">
+        <img src="./assets/images/careers/table.jpg" class="gif_pre" alt="" />
+        <div class="top-0 right-0 absolute">
+          <img
+            class="w-[44vw] mt-[12vw] mr-[5vw]"
+            src="./assets/images/careers/HIRING PROCESS HEADER.png"
+          />
+        </div>
+      </section>
+
+      <div class="content relative">
+        <div class="w-full my-20 mb-36">
+          <img
+            class="m-auto w-72"
+            src="assets/images/careers/HIRING PROCESS.png"
+          />
+        </div>
+
+        <div id="jobSearching" class="job-searching items-center flex flex-col">
+          <div class="job-img relative w-max">
+            <img src="./assets/images/careers/one.png" class="w-82 m-auto" />
+          </div>
+          <div class="job-text">
+            <div class="text-left">
+              <img
+                class="w-64 my-5"
+                src="assets/images/careers/JOB SEARCHING.png"
+              />
+              <ul class="hidden m-auto text-left text-slate-600 list-disc pl-6">
+                <li class="opacity-0">
+                  Research SGS to find the right job match
+                </li>
+                <li class="opacity-0">
+                  Visit company sites, YouTube, location, and blog
+                </li>
+                <li class="opacity-0">
+                  Find the intersection of your interests and SGS values
+                </li>
+                <li class="opacity-0">Determine the best role for you</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dots-circles flex flex-col w-full items-center my-7">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+        <div id="yourResume" class="your-resume flex flex-col items-center">
+          <div class="resume-img">
+            <img src="./assets/images/careers/two.png" class="w-72 m-auto" />
+          </div>
+          <div class="resume-text max-w-[44vw]">
+            <div class="text-left">
+              <img
+                class="w-64 my-5"
+                src="assets/images/careers/YOUR RESUME.png"
+              />
+              <ul class="hidden m-auto text-left text-slate-600 list-disc pl-6">
+                <li class="opacity-0 mb-2">
+                  Create a job-specific resume by aligning skills with the job
+                  description, highlighting projects and leadership roles, and
+                  being concise
+                </li>
+                <li class="opacity-0">
+                  Tailor cover letters to the job, demonstrating how you've made
+                  a difference and connecting your passion to the position
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots-circles flex flex-col w-full items-center my-7">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+        <div id="applyNow" class="apply-online flex flex-col items-center">
+          <div class="apply-text">
+            <div class="text-left">
+              <img
+                class="w-64 my-5"
+                src="assets/images/careers/APPLY ONLINE.png"
+              />
+              <ul class="hidden m-auto text-left text-slate-600 list-disc pl-6">
+                <li class="opacity-0">
+                  Research SGS to find the right job match
+                </li>
+                <li class="opacity-0">
+                  Visit company sites, YouTube, location, and blog
+                </li>
+                <li class="opacity-0">
+                  Find the intersection of your interests and SGS values
+                </li>
+                <li class="opacity-0">Determine the best role for you</li>
+              </ul>
+            </div>
+          </div>
+          <div class="apply-img">
+            <img src="./assets/images/careers/three.png" class="w-72 m-auto" />
+          </div>
+        </div>
+
+        <div class="dots-circles flex flex-col w-full items-center -mt-7 mb-7">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+        <div id="interviews" class="interviews flex flex-col items-center">
+          <div class="interviews-img">
+            <img src="./assets/images/careers/four.png" class="w-72 m-auto" />
+          </div>
+          <div class="interviews-text">
+            <div class="text-left">
+              <img
+                class="w-64 my-5"
+                src="assets/images/careers/INTERVIEWS.png"
+              />
+              <ul class="hidden m-auto text-left text-slate-600 list-disc pl-6">
+                <li class="opacity-0">
+                  Research SGS to find the right job match
+                </li>
+                <li class="opacity-0">
+                  Visit company sites, YouTube, location, and blog
+                </li>
+                <li class="opacity-0">
+                  Find the intersection of your interests and SGS values
+                </li>
+                <li class="opacity-0">Determine the best role for you</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots-circles flex flex-col w-full items-center mb-7">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+
+        <div id="decision" class="decision-offer flex flex-col items-center">
+          <div class="decision-img">
+            <img src="./assets/images/careers/five.png" class="w-64 m-auto" />
+          </div>
+          <div class="decision-text max-w-[46vw]">
+            <div class="text-left">
+              <img
+                class="w-64 my-5"
+                src="assets/images/careers/DECISION & OFFER.png"
+              />
+              <ul class="hidden m-auto text-left text-slate-600 list-disc pl-6">
+                <li class="opacity-0">
+                  After your interviews are done, we’ll bring everything
+                  together<br />
+                  from your application and interviews and review it.
+                </li>
+                <li class="opacity-0">
+                  We say “we” because we take into account a number of<br />
+                  perspectives to come to a decision. If we decide that you’re
+                  the<br />
+                  best candidate for the role, our team will reach out to you
+                  with<br />
+                  an offer.
+                </li>
+                <li class="opacity-0">
+                  Once you’ve accepted the offer, the SGS team will start the<br />
+                  onboarding process with you, so you become our new SGS team<br />
+                  member. 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/sidebar.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+      });
+    </script>
+  </body>
+</html>

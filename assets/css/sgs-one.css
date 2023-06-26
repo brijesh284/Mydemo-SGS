@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-image: url("../images/sgs-one-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
+.main_container {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.first_page_section {
+  width: 100%;
+  float: left;
+  height: 100%;
+  opacity: 1;
+  transition: 1s;
+}
+.first_page_section_logo {
+  width: 100%;
+  float: left;
+}
+.first_page_section_contant_main {
+  width: 100%;
+  float: left;
+  margin-top: 4vw;
+  text-align: center;
+  opacity: 0;
+  transition: 2s;
+}
+.first_page_section_logo {
+  margin-top: 35vw;
+  transition: 2s;
+}
+.first_page_section_logo img {
+  width: 50%;
+  margin: auto;
+  transition: 2s;
+}
+p.first_page_section_contant {
+  width: 50%;
+  margin: auto;
+  text-align: start;
+}
+.main_card_contant h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 5px 0px;
+}
+.secound_page_section {
+  width: 100%;
+  float: left;
+  display: none;
+  opacity: 0;
+  transition: 2s;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.four_card_container {
+  padding-top: 40px;
+  height: 50%;
+  width: 80%;
+  display: flex;
+  /*    text-align: center;*/
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.card_contant span {
+  margin-top: 10px;
+  display: inline-block;
+}
+.main_card {
+  flex-basis: 22%;
+}
+
+.card_contant {
+  width: 290%;
+  margin: 0;
+  float: left;
+  height: 0px;
+  opacity: 0;
+  text-align: left;
+  transition: 0.5s;
+}
+.card_3_contant_c {
+  width: 200%;
+}
+.card_4_contant_c {
+  width: 145%;
+}
+
+.four_card_container_h {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 36px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.third_page_section {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: none;
+  opacity: 0;
+  transition: 1s;
+  justify-content: center;
+}
+.img_slider.row {
+  align-items: center;
+  width: 100%;
+}
+
+.slider_preview img {
+  margin: auto;
+  width: 20px;
+  cursor: pointer;
+}
+.slider_next img {
+  margin: auto;
+  width: 20px;
+  cursor: pointer;
+}
+.slider_imgs {
+  display: flex;
+  position: relative;
+  height: 100%;
+  margin-top: 5%;
+}
+.slider_imgs img {
+  position: absolute;
+  /*    right: 0;*/
+  margin: auto;
+  transition: 1s;
+}
+.slider_img_header {
+  position: absolute;
+  transition: 0.3s;
+  margin-left: 100px;
+}
+.slider_img_header {
+  border-left: 6px solid #cc1521;
+  padding-left: 10px;
+}
+
+/*-- scroll display none*/
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+@media only screen and (max-width: 1145px) {
+  .main_card_contant h2 {
+    font-size: 16px;
+  }
+  .card_contant {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main_card_contant h2 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  p.first_page_section_contant {
+    width: 80%;
+  }
+  .four_card_container_h {
+    font-size: 30px;
+  }
+  .four_card_container {
+    width: 90%;
+  }
+  .card_contant {
+    font-size: 14px;
+  }
+  .card_4_contant_c {
+    width: 125%;
+  }
+  .slider_img_header {
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  .slider_next img,
+  .slider_preview img {
+    width: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .secound_page_section {
+    align-items: unset;
+    position: relative;
+    overflow: scroll;
+    transition: 1s;
+    height: 89%;
+    top: 90px !important;
+  }
+  .four_card_container {
+    padding-top: 4em;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  .main_card {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .first_page_section_logo img {
+    width: 75%;
+    margin: auto;
+    transition: 2s;
+  }
+  p.first_page_section_contant {
+    font-size: 14px;
+  }
+  .card_contant {
+    width: 100%;
+  }
+  .card_4_contant_c {
+    width: 100%;
+  }
+  .four_card_container_h {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .four_card_container {
+    width: 80%;
+  }
+  .four_card_container_h {
+    font-size: 18px;
+  }
+  .slider_preview,
+  .slider_next {
+    position: relative;
+  }
+  .slider_next img,
+  .slider_preview img {
+    width: 11px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/dass-landing.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main>
+      <section>
+        <div class="dass-land" data-aos="zoom-in" data-aos-duration="3000">
+          <!-- <img src="assets/images/dass/one.png" alt="" class="building-img" /> -->
+          <div
+            class="dass-main-heading"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+          >
+            <h1>Office and Facility Management</h1>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="dass-range-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1000"
+      >
+        <div class="dass-range">
+          <div class="dass-official-range">
+            <h1>THE DaaS OFFICE RANGE</h1>
+          </div>
+          <div class="dass-window"></div>
+        </div>
+      </section>
+
+      <section
+        class="office-range-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1000"
+      >
+        <div class="office-heading">
+          <h1>THE DaaS OFFICE RANGE</h1>
+        </div>
+
+        <div class="office-window" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="office-content"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <p>
+              Our beautifully-designed office spaces suit any size of team and come fully serviced,
+              so You can focus on growing your business without distractions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <h1>hi</h1>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        document.querySelector('.preloader').style.display = 'none';
+      });
+      AOS.init();
+    </script>
+    <script>
+      const backButton = document.getElementById('back');
+
+      backButton.onclick = () => {
+        history.back();
+      };
+    </script>
+  </body>
+</html>

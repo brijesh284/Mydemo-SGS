@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "name": "sgs-main-test",
+  "description": "",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/mohammedgharreb/sgs-main-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammedgharreb/sgs-main-test/issues"
+  },
+  "homepage": "https://github.com/mohammedgharreb/sgs-main-test#readme",
+  "dependencies": {
+    "basicscroll": "^3.0.4"
+  }
+}

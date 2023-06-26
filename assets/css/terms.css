@@ -1,0 +1,119 @@
+.text-color {
+  color: #cc1521;
+}
+.terms-section {
+  padding-top: 150px;
+  width: 100%;
+  background: url(../images/partnership/partnership.png) no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.terms-content-wrap {
+  min-height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  scroll-margin-top: 100px;
+}
+.default-height {
+  min-height: 250px;
+}
+.highlight {
+  width: 75%;
+  margin: auto;
+  transition: all ease-in-out 0.5s;
+}
+
+.terms-content {
+  position: relative;
+  overflow: hidden;
+}
+.terms-content::before {
+  content: "";
+  background-image: url(..//images/terms-line.png);
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 0px;
+  top: 110px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.terms-container {
+  width: 90%;
+  margin: auto;
+}
+.terms-content .terms-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.terms-content .terms-title #termsHead {
+  width: 1px;
+  height: 42px;
+  background-color: #cc1521;
+  margin-top: 9px;
+  transition: all ease-in-out 0.5s;
+}
+.terms-content .terms-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.terms-content .terms-subtitle h3 {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.terms-content .terms-content-wrap {
+  margin-bottom: 50px;
+}
+.terms-content .terms-content-wrap h4 {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.terms-content .terms-content-wrap p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .terms-content .terms-title h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .terms-content .terms-subtitle h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .terms-content .terms-content-wrap h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .terms-content .terms-content-wrap p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .terms-section {
+    padding-top: 100px;
+  }
+  .terms-content::before {
+    content: "";
+    width: 3px;
+    top: 60px;
+  }
+  .terms-content .terms-title h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .terms-content .terms-subtitle h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .terms-content .terms-content-wrap h4 {
+    font-size: 24px;
+  }
+}

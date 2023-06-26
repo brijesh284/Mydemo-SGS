@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+.contact-section {
+  background-color: #f1f1f1;
+  padding-top: 80px;
+}
+.contact-form h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: "Inter";
+}
+.contact-form p {
+  color: #696969;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.form-control:focus {box-shadow: none;}
+.contact-detail .form-control {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  border-bottom: 1px solid #292929;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background-color: transparent;
+  padding-left: 0;
+  padding-bottom: 6px;
+  color: #292929;
+}
+.contact-detail .form-control::placeholder {
+  color: #292929;
+}
+.contact-detail .form-group {
+  margin-bottom: 40px;
+}
+.contact-detail .form-check-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #292929;
+}
+.contact-detail .form-check-label span,
+.contact-detail .form-check-label.text-red {
+  color: #cc1521;
+}
+.contact-detail .text-control {
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+.btn-apply {
+  background: #cc1521;
+  border-radius: 12px;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.general-form-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.contact-footer {
+  background-image: url("../images/about/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 40px 30px;
+}
+
+.footer-container ul.social-detail li a img {
+  width: 28px;
+}
+.footer-container ul li {
+  display: inline-flex;
+  margin: 7px 0;
+}
+.contact-name {
+  margin-bottom: 15px;
+}
+.contact-name h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: "Inter";
+}
+.contact-name p,
+.contact-name a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: #696969;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  .btn-position,
+  .btn-apply {
+    padding: 10px 40px;
+    height: 55px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .contact-detail .form-group {
+    margin-bottom: 35px;
+  }
+  .contact-name h5,.contact-name p,
+  .contact-name a {font-size: 15px;}
+}
+
+@media screen and (max-width: 480px) {
+  .btn-position,
+  .btn-apply,
+  .contact-detail .form-control,
+  .general-form-title,
+  .contact-detail .form-check-label,
+  label.title {
+    font-size: 14px;
+  }
+  .btn-position,
+  .btn-apply {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-detail form.row {
+    margin: 0;
+  }
+}
+.side-nav a.nav-link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav a.nav-link {
+    padding: .5rem;
+  }
+}

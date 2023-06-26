@@ -1,0 +1,479 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="assets/css/officeStyle.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/officeScript.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/dass-landing.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- Typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typeit"></script> -->
+
+    <script src="assets/js/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main>
+      <section class="building-section">
+        <!-- <div class="dass-land" data-aos="zoom-in" data-aos-duration="3000"> -->
+        <img src="assets/images/dass/one.png" alt="" class="building-img" />
+        <div class="dass-main-heading">
+          <h1>Office and Facility Management</h1>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <!-- <section
+        class="dass-range-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1000"
+      >
+        <div class="dass-range">
+          <div class="dass-official-range">
+            <h1>THE DaaS OFFICE RANGE</h1>
+          </div>
+          <div class="dass-window"></div>
+        </div>
+      </section>
+
+      <section
+        class="office-range-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="1000"
+      >
+        <div class="office-heading">
+          <h1>THE DaaS OFFICE RANGE</h1>
+        </div>
+
+        <div class="office-window" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="office-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p>
+              Our beautifully-designed office spaces suit any size of team and
+              come fully serviced, so You can focus on growing your business
+              without distractions.
+            </p>
+          </div>
+        </div>
+      </section> -->
+      <section>
+        <div class="dassImg top_header">
+          <div class="header_title">
+            <h1>The DaaS OFFICE RANGE</h1>
+          </div>
+          <div
+            class="office_range_content"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          >
+            <p>
+              Our beautifully-designed office spaces suit any size of team and
+              come fully <br />
+              serviced, so You can focus on growing your business without
+              distractions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="office" class="relative">
+      <img id="bg" src="assets/images/bg1-1.png" class="duration-300" />
+      <div class="content w-full h-full absolute flex top-0 pt-28">
+        <div class="textur w-1/2 relative">
+          <h2
+            class="text-4xl font-semibold leading-5 office-title"
+            id="title-office"
+          >
+            THE DaaS OFFICE RANGE
+          </h2>
+          <div class="flex flex-wrap prags">
+            <h2 class="w-full font-semibold main-h"></h2>
+            <div class="w-full Ps">
+              <p class="ml-1 mt-8 main-p">
+                <!-- Our beautifully-designed office spaces suit any size of team and come fully
+                serviced, so You can focus on growing your business without distractions.<br /><br />
+                They even come with access to meeting rooms, break-out areas, and our worldwide
+                network of business lounges. -->
+              </p>
+
+              <p
+                class="-mt-10 text-white ml-1 hidden hidden-item light-desc"
+                id="private"
+              >
+                Everything included in our solution:<br /><br />
+                Access to our business complex Call handling services Parking
+              </p>
+              <p
+                class="-mt-10 text-white ml-1 hidden hidden-item light-desc"
+                id="virtual"
+              >
+                Our fully serviced private offices offer teams of all sizes an
+                inspiring environment to focus, collaborate, and do their best
+                work.<br /><br />
+                A range of ready-to-use, fully equipped offices with everything
+                you need to get started.
+              </p>
+              <p
+                class="-mt-10 text-white ml-1 hidden hidden-item light-desc"
+                id="custome"
+              >
+                When a ready-to-use office simply isn't enough.<br /><br />
+                Customize all aspects of your space, including furniture and
+                branding.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hovered w-1/2">
+          <div class="hovered-collection font-semibold text-gray-700 text-4xl">
+            <div class="w-full flex justify-end items-start">
+              <p class="hovered-item cursor-pointer light-title">
+                PRIVATE<br />
+                OFFICES
+              </p>
+            </div>
+            <div class="w-full flex justify-center items-center">
+              <p
+                class="hovered-item cursor-pointer light-title"
+                style="transform: translateX(4vw)"
+              >
+                VIRTUAL<br />
+                OFFICES
+              </p>
+            </div>
+            <div class="w-full flex justify-start items-end">
+              <p
+                class="hovered-item cursor-pointer light-title"
+                style="transform: translateX(7vw)"
+              >
+                CUSTOM<br />
+                OFFICES
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="laptop-secton">
+      <div class="laptop-main" class="laptop-img">
+        <img src="./assets/images/dass/five.png" class="laptop-table-img" />
+        <h4 class="faculity-title">FACILITY MANAGEMENT</h4>
+        <div class="laptop-content">
+          <p>
+            General Services available <br />
+            in DaaS for all <br />
+
+            <b class="office-bold">"OFFICE SOLUTIONS"</b>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="facility">
+      <div class="facility-main">
+        <h4
+          class="faculity-managment-title"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        >
+          FACILITY MANAGE<span class="ment-color">MENT</span>
+        </h4>
+
+        <div
+          class="business-address-content"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="500"
+        >
+          <h2>BUSINESS ADDRESS</h2>
+          <br />
+          <p>
+            Give your business the professional address it needs in a premier
+            <br />
+            location.<br />
+            Use the address on your documents and have mail forwarded there.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="finance-management">
+      <div class="finance-manage-section">
+        <div class="finance-content">
+          <!-- <p
+            class="finance-manage-para"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            <b>We provide for clients</b> state of the art IT equipment such as laptops, docking
+            station, curved displays.
+          </p>
+          <p
+            class="finance-manage-para"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+          >
+            <b> IT infrastructure</b> such as LAN, WLAN, VLAN. HW & Operational system support for
+            Microsoft and MS 365.
+          </p>
+          <p
+            class="finance-manage-para"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="1500"
+          >
+            For our clients or <b>services and support</b> ranges for best efforts to 24/7 Monday to
+            Friday.
+          </p> -->
+
+          <p class="finance-manage-para" id="typing-effect1"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="laptop-table">
+      <div class="laptop-table-section">
+        <div
+          class="laptop-table-content"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+        >
+          <h4 class="training-heading">TRAINING ROOMS</h4>
+          <p>
+            Purpose-built training spaces with breakout areas: <br />
+            On-site support team included and optional catering available
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="meeting_total_sec">
+        <img
+          id="bg"
+          src="assets/images/dass/conference.png"
+          class="duration-300"
+        />
+        <div class="meeting_content">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            MEETING ROOMS
+          </h2>
+          <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+            Select from a wide range of meeting room sizes. <br />
+            Available with presentation facilities and optional <br />
+            catering as required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="front" class="relative project_totalsec">
+      <img
+        id="bg"
+        src="assets/images/dass/projector.png"
+        class="duration-300"
+      />
+      <div
+        class="projector_content"
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-delay="500"
+      >
+        <h2>CONFERENCE ROOMS</h2>
+        <p>
+          The perfect spaces to host pitches or board meetings: <br />
+          Equipped with presentation facilities, whiteboards, and optional
+          catering.
+        </p>
+      </div>
+    </section>
+    <!-- <div class="truck_sec">
+      <img
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="1000"
+        src="assets/images/dass/export_truck.png"
+        alt="export"
+      />
+      <div class="export_truck_Content">
+        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1500">
+          DaaS also <b>allows</b> us to run and operate a small storage <br />
+          <b>and logistic capacities for our clients.</b>
+        </p>
+      </div>
+    </div> -->
+
+    <section
+      class="building-section_two"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
+    >
+      <!-- <div class="dass-land" data-aos="zoom-in" data-aos-duration="3000"> -->
+      <img src="assets/images/dass/export_truck.png" alt="" class="truck-img" />
+      <div
+        class="dass-main-heading_two"
+        data-aos="fade-out"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>
+          DaaS also <b>allows</b> us to run and operate a small storage <br />
+          <b>and logistic capacities for our clients.</b>
+        </h1>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section>
+      <div class="parking_sec">
+        <img
+          class="parking_text"
+          src="assets/images/dass/parking_text.png"
+          alt="parking_img"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        />
+        <div class="parking_shade_content">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
+            Our clients can have dedicated parking space indoors and outdoors
+            <br />
+            with access control system and security.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      new Typed("#typing-effect1", {
+        strings: [
+          "<b>We provide for clients</b> state of the art IT equipment such as laptops, docking station, curved displays. <br /> <br /> <b> IT infrastructure</b> such as LAN, WLAN, VLAN. HW and Operational system support for Microsoft and MS 365. <br /> <br /> For our clients or <b>services and support</b> ranges for best efforts to 24/7 Monday to Friday.",
+        ],
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: false,
+        cursorChar: "|",
+        autoInsertCss: true,
+        backDelay: 2000,
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".building-img").classList.add("zoom-effect");
+        document.querySelector(".dass-main-heading").classList.add("text-zoom");
+        document.querySelector(".truck-img").classList.add("zoom-effect_two");
+        document
+          .querySelector(".dass-main-heading_two")
+          .classList.add("text-zoom-two");
+      });
+      AOS.init();
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          $(".dassImg").css({
+            backgroundSize: 100 + scroll / 15 + "%",
+            top: -(scroll / 10) + "%",
+          });
+
+          // $('#facility').mouseenter(function () {
+          //   $('.finance-manage-section').removeClass('d-none');
+          // });
+        });
+        $(".light-title").mouseover(function () {
+          $(this).css("color", "#252525");
+        });
+        $(".light-title").mouseout(function () {
+          $(this).css("color", "#fff");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>  
+      Scroll
+    </h1>
+    <div class="div">
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+      <h2>Text</h2>
+    </div>
+    <script>
+      $(window).scroll(function() {
+          if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+            alert("Near bottom!");
+          }
+        });
+    </script>
+  </body>
+</html>

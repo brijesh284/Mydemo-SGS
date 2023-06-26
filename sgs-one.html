@@ -1,0 +1,443 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/sgs-one.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+    <script src="assets/js/ScrollHandler.js"></script>
+    <script src="assets/js/sgs-one.js"></script>
+
+    <title>SGS</title>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
+          >Career</a
+        >
+        <!-- <div class="dropdown mr-2">
+          <button
+            class="btn border-0 dropdown-toggle d-flex align-items-center"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"SSSSS
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="./assets/images/en.png" class="img-fluid" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/en.png" class="img-fluid"
+            /></a>
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/de.png" class="img-fluid"
+            /></a>
+          </div>
+        </div> -->
+        <div class="button mr-4">
+          <a href="login.html" id="login" class="nav-link">Login</a>
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+
+    <div class="main_container">
+      <div class="first_page_section">
+        <div class="first_page_section_logo">
+          <img src="assets/images/home_logo.png" />
+        </div>
+        <div class="first_page_section_contant_main">
+          <p class="first_page_section_contant">
+            SGS-One is the ideal CRM Solution for established businesses that
+            have yet to embrace automation. Our software is designed to be easy
+            to use customizable and modular.
+            <br /><br />
+            We focus only on the features that are most valuable to you making
+            the integration process faster and more cost-effective.
+          </p>
+        </div>
+      </div>
+
+      <div class="secound_page_section" id="secound_page_section_id">
+        <div class="four_card_container">
+          <div class="four_card_container_h">
+            <h2>SGS-One has several modules including:</h2>
+          </div>
+          <div class="main_card card_1">
+            <img
+              src="assets/images/hover_section/img1.png"
+              class="card_img_f card_1_img_first"
+            />
+            <div class="main_card_contant card_1_contant">
+              <h2 class="card_heading card_1_contant_h">Customer Care</h2>
+              <p class="card_contant card_1_contant_c">
+                Customer care is the cornerstone of building strong
+                relationships with customers, providing exceptional support and
+                personalized assistance to ensure their satisfaction and
+                loyalty.
+                <br />
+                <span>
+                  By actively listening, empathizing, and resolving issues
+                  promptly, customer care professionals create positive
+                  experiences, foster trust, and contribute to long-term
+                  customer retention and advocacy.
+                </span>
+              </p>
+            </div>
+            <img
+              src="assets/images/hover_section/img1.1.png"
+              class="card_img_l card_1_img_last"
+            />
+          </div>
+          <div class="main_card card_2">
+            <img
+              src="assets/images/hover_section/img2.png"
+              class="card_img_f card_2_img_first"
+            />
+            <div class="main_card_contant card_2_contant">
+              <h2 class="card_heading card_2_contant_h">Product Management</h2>
+              <p class="card_contant card_2_contant_c">
+                Product management is the intersection of customer needs,
+                business goals, and technological innovation, guiding the
+                development and successful launch of products that meet market
+                demand and drive company growth.
+                <br />
+                <span>
+                  Effective product management involves a combination of market
+                  research, strategic planning, cross-functional collaboration,
+                  and continuous iteration to deliver valuable and competitive
+                  solutions that delight customers and achieve business
+                  objectives.</span
+                >
+              </p>
+            </div>
+            <img
+              src="assets/images/hover_section/img2.2.png"
+              class="card_img_l card_2_img_last"
+            />
+          </div>
+          <div class="main_card card_3">
+            <img
+              src="assets/images/hover_section/img3.png"
+              class="card_img_f card_3_img_first"
+            />
+            <div class="main_card_contant card_3_contant">
+              <h2 class="card_heading card_3_contant_h">Human Recruitment</h2>
+              <p class="card_contant card_3_contant_c">
+                Our HR module streamlines recruitment with a vast candidate
+                database, advanced search options, and predefined questions for
+                each stage and role.
+                <br />
+                <span>
+                  The system also offers an advanced reporting system for
+                  unified data analysis.</span
+                >
+              </p>
+            </div>
+            <img
+              src="assets/images/hover_section/img3.3.png"
+              class="card_img_l card_3_img_last"
+            />
+          </div>
+          <div class="main_card card_4">
+            <img
+              src="assets/images/hover_section/img4.png"
+              class="card_img_f card_4_img_first"
+            />
+            <div class="main_card_contant card_4_contant">
+              <h2 class="card_heading card_4_contant_h">Sales</h2>
+              <p class="card_contant card_4_contant_c">
+                Advanced sales pipeline to generate and forecast opportunities.
+                <br />
+                <span>
+                  Track all leads and opportunities in one place, set goals, and
+                  forecast revenue.</span
+                >
+              </p>
+            </div>
+            <img
+              src="assets/images/hover_section/img4.4.png"
+              class="card_img_l card_4_img_last"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="third_page_section">
+        <div class="img_slider row">
+          <div class="col-lg-2 col-md-2 col-1 slider_preview">
+            <img
+              class="slider_preview_btn"
+              src="assets/images/arrow-left.png"
+            />
+          </div>
+          <div class="col-lg-8 col-md-8 col-10">
+            <div class="slider_imgs">
+              <h1 class="slider_img_header">
+                Gain a global perspective on investor and client engagement with
+                our pipeline analytics, revealing the countries involved in your
+                business success.
+              </h1>
+              <img class="img1" src="assets/images/slider/slide_img_1.png" />
+
+              <h1 class="slider_img_header">
+                Our pipeline analytics enables you to identify new
+                opportunities, tailor your strategies, and foster stronger
+                relationships across borders.
+              </h1>
+              <img class="img2" src="assets/images/slider/slide_img_2.png" />
+
+              <h1 class="slider_img_header">
+                Visualize investor and client involvement on a
+                country-by-country basis with our pipeline analytics, empowering
+                you to identify key areas of engagement and tailor your
+                strategies accordingly.
+              </h1>
+              <img class="img3" src="assets/images/slider/slide_img_3.png" />
+
+              <h1 class="slider_img_header">
+                Explore global candidate involvement across countries, unlocking
+                strategic insights for optimized decision-making and recruitment
+                success.
+              </h1>
+              <img class="img4" src="assets/images/slider/slide_img_4.png" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-1 slider_next">
+            <img class="slider_next_btn" src="assets/images/arrow-right.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

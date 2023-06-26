@@ -1,0 +1,1075 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.building-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.building-section_two {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-effect {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: imageZoom 2s linear forwards;
+  animation-delay: 0.5s;
+  /* animation-delay: 5s; */
+}
+
+@keyframes imageZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(3.7);
+  }
+}
+
+.aos-animate .zoom-effect_two {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: imageZoomtwo 2s linear forwards;
+  animation-delay: 0.5s;
+  /* animation-delay: 5s; */
+}
+
+@keyframes imageZoomtwo {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    filter: blur(2px);
+    transform: scale(2.5);
+  }
+}
+
+.dass-land {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* background        : url(../images/dass/building-crop.png); 
+  background-position  : center;
+  background-size      : cover;
+  background-attachment: fixed; */
+}
+
+.dass-main-heading {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  animation-delay: 1.5s;
+  text-shadow: 16px 14px 4px rgba(11, 12, 13, 0.33);
+  font-size: 0rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .text-zoom {
+    animation: textZoom 2s linear forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes textZoom {
+    0% {
+      font-size: 1;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.aos-animate .dass-main-heading_two {
+  background-image: url('../images/dass/parking_shade.png');
+  position: absolute;
+  top: 12%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: #444444e0;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  animation-delay: 1.5s;
+  text-shadow: 16px 14px 4px rgba(11, 12, 13, 0.33);
+  font-size: 0rem;
+}
+
+.dass-main-heading_two h1 {
+  font-size: 42px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .aos-animate .text-zoom-two {
+    animation: textZoomtwo 2s linear forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes textZoomtwo {
+    0% {
+      font-size: 1;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.dass-range {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/dass/bulding-crop1.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  position: fixed;
+  z-index: 10000;
+}
+
+.dass-official-range h1 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px 4px rgba(11, 12, 13, 0.233);
+}
+
+.dass-official-range {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 40.97%,
+    #ffffff 64.41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.dass-window {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: url(../images/dass/two.png) no-repeat;
+  background-size: 200%;
+  z-index: 0;
+}
+
+.office-heading {
+  /* background-image: url(../images/dass/cloud.png); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 40.97%,
+    #ffffff 64.41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 300px;
+  position: relative;
+  z-index: 100;
+}
+
+.office-heading h1 {
+  /* margin-top: 2rem; */
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  text-shadow: 5px 5px 4px rgba(11, 12, 13, 0.2);
+}
+
+.office-window {
+  background: url(../images/dass/two.png) no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  margin-top: -10%;
+  position: relative;
+  z-index: 0;
+}
+
+.window-img {
+  width: 100%;
+  /* transform: translateY(-30%); */
+  margin-top: -10%;
+  position: relative;
+  z-index: 0;
+}
+
+.office-content {
+  position: absolute;
+  bottom: 0%;
+  z-index: 1000;
+  background: #e7f0fb;
+  font-size: 1.8rem;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem 1rem;
+  /* transform: translateY(-216%); */
+}
+
+.office-content p {
+  width: 85%;
+  margin: auto;
+}
+
+.laptop-main {
+  position: relative;
+  /* background  : url(../images/dass/five.png) no-repeat;
+  background-size: cover; */
+  width: 100%;
+  height: 100vh;
+}
+
+.laptop-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.laptop-content {
+  width: 351px;
+  height: 217px;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.office-bold {
+  font-size: 1.5rem;
+}
+
+#facility {
+  background: url(../images/dass/six.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.facility-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.faculity-title {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faculity-managment-title {
+  position: absolute;
+  padding-top: 3rem;
+  font-size: 3.55vw;
+  left: 34.5%;
+}
+
+.business-address-content {
+  display: inline-block;
+  position: absolute;
+  top: 36%;
+  left: 22%;
+  /* transform: translate(56%, 203%) !important; */
+}
+
+.ment-color {
+  color: #fff;
+}
+
+.business-address-content h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.business-address-content p {
+  font-size: 20px;
+}
+
+.finance-manage-section {
+  width: 100%;
+  height: 93vh;
+  background: url(../images/dass/finance-bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.finance-manage-para {
+  color: #494949;
+  font-size: 1.2rem;
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 2rem;
+  width: 90%;
+  font-weight: 500;
+  /* width     : 70%; */
+  /* position  : absolute; */
+}
+
+.finance-content {
+  width: 70%;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  transform: rotate(4deg);
+  height: 80vh;
+}
+
+.operation-title {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  color: #c6c6c6;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.laptop-table-section {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/dass/desk-laptop.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.laptop-table-content {
+  position: absolute;
+  width: 30%;
+  top: 10%;
+  left: 7%;
+  /* background-color: red; */
+}
+
+.laptop-table-content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  transform: rotate(4deg);
+}
+
+.laptop-table-content p {
+  font-size: 18px;
+  margin-top: 1rem;
+  transform: rotate(4deg);
+}
+
+/* .finance-para-1 {
+  right: 0%;
+  top: 8%;
+} */
+
+.meeting_content {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.project_totalsec img {
+  height: 100vh;
+  width: 100%;
+}
+
+.meeting_content h2 {
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+.meeting_content p {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.projector_content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: radial-gradient(circle, #ffffff0f, #e2dce29e, #cbb9c0, #b49798c4, #99786d63);
+}
+
+.projector_content h2 {
+  font-size: 2.2rem;
+  color: #99786d;
+  margin-bottom: 120px;
+}
+
+.projector_content p {
+  font-size: 22px;
+  color: #99786d;
+  margin-top: 200px;
+}
+
+.truck_sec {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.truck_sec img {
+  width: 100%;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+}
+
+.export_truck_Content {
+  position: absolute;
+  padding: 50px 0px;
+  background-color: #ffffffa8;
+  width: 100%;
+  top: 80px;
+}
+
+.export_truck_Content p {
+  font-size: 32px;
+  margin-left: 100px;
+}
+
+.parking_sec {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking_text {
+  width: 100%;
+  height: 100vh;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.parking_shade_content {
+  position: absolute;
+  background-image: url('../images/dass/parking_shade.png');
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking_shade_content p {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* Dass section sec start */
+/* --- general --- */
+
+.top_header {
+  position: relative;
+}
+
+.top_header .header_title {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.office_range_content {
+  position: absolute;
+  width: 100%;
+  display: block;
+  top: 72%;
+  z-index: 1000;
+  text-align: center;
+  background-color: #ffffff94;
+  padding: 50px 0px;
+  bottom: 0%;
+  /* padding: 85px 0px; */
+}
+
+.office_range_content p {
+  font-size: 34px;
+}
+
+.header_title h1 {
+  font-size: 62px;
+  line-height: 1;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+
+.content_main {
+  padding: 1% 0;
+  position: relative;
+}
+
+.content_main .para_content {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- zoom --- */
+.dassImg {
+  overflow: hidden;
+  padding-bottom: 50%;
+  background-image: url('../images/dass/second_sec.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.laptop-table-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .zoom {
+    overflow: hidden;
+    padding-bottom: 50%;
+  }
+}
+
+/* Dass second sec end */
+
+@media only screen and (max-width: 768px) {
+  .laptop-table-content {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 3%;
+  }
+
+  .operation-title {
+    bottom: 10%;
+    font-size: 1rem;
+  }
+
+  .finance-content {
+    width: 90%;
+    left: 5%;
+    transform: rotate(0deg);
+  }
+
+  .building-section {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .building-section_two {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .finance-manage-para {
+    font-size: 0.95rem;
+    margin-bottom: 1.3rem;
+  }
+
+  /* .finance-para-1 {
+    left: 5%;
+    top: 8%;
+  } */
+
+  .dass-official-range h1 {
+    font-size: 1.54rem !important;
+  }
+
+  .office-heading {
+    height: 150px !important;
+  }
+
+  .faculity-title {
+    font-size: 1.4rem !important;
+    font-weight: 600;
+  }
+
+  .laptop-img {
+    object-fit: cover;
+  }
+
+  .faculity-managment-title {
+    font-size: 1.5rem !important;
+    left: 3% !important;
+  }
+
+  .business-address-content h2 {
+    font-size: 1rem !important;
+  }
+
+  .business-address-content {
+    left: 3%;
+  }
+
+  .office-content p {
+    font-size: 1rem;
+  }
+
+  .office-heading h1 {
+    font-size: 1.54rem !important;
+  }
+
+  .dass-main-heading {
+    font-size: 2rem !important;
+    opacity: 1;
+  }
+
+  @keyframes imageZoom {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .dass-main-heading_two {
+    font-size: 2rem !important;
+    opacity: 1;
+  }
+
+  .header_title h1 {
+    font-size: 26px;
+  }
+
+  .office_range_content {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50%;
+    z-index: 1000;
+    text-align: center;
+    background-color: #ffffff94;
+    padding: 30px 0px;
+  }
+
+  .office_range_content p {
+    font-size: 10px;
+  }
+
+  .meeting_total_sec {
+    height: 55vh;
+  }
+
+  .meeting_total_sec img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .meeting_content {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .meeting_content p {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .project_totalsec img {
+    height: 55vh;
+    width: 100%;
+  }
+
+  .projector_content {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+  }
+
+  .projector_content h2 {
+    font-size: 24px;
+    color: #99786d;
+    margin-bottom: 0px;
+  }
+
+  .projector_content p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .truck_sec {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+  }
+
+  .export_truck_Content {
+    position: absolute;
+    padding: 5px 0px;
+    background-color: #ffffffa8;
+    width: 100%;
+    top: 0px;
+  }
+
+  .truck_sec img {
+    height: 55vh;
+  }
+
+  .export_truck_Content p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .parking_sec {
+    width: 100%;
+    height: 55vh;
+  }
+
+  .parking_text {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .parking_shade_content {
+    position: absolute;
+    background-image: url(../images/dass/parking_shade.png);
+    width: 100%;
+    height: 40vh;
+  }
+
+  .parking_shade_content p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #facility {
+    width: 100%;
+    height: 55vh;
+  }
+
+  .aos-animate .dass-main-heading_two {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+  }
+
+  .dass-main-heading_two h1 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .faculity-managment-title {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .faculity-managment-title {
+    font-size: 3.05vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .building-section {
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dass-main-heading {
+    font-size: 36px;
+  }
+
+  .laptop-main {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+  }
+
+  .laptop-main img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #facility {
+    background: url(../images/dass/six.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+  }
+
+  .finance-manage-section {
+    width: 100%;
+    height: 60vh;
+    background: url(../images/dass/finance-bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .laptop-table-section {
+    width: 100%;
+    height: 60vh;
+    background: url(../images/dass/desk-laptop.png) no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .meeting_total_sec {
+    height: 60vh;
+  }
+
+  .meeting_total_sec img {
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .meeting_content p {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 26px;
+  }
+
+  .meeting_content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .meeting_content {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .projector_content {
+    height: 60vh;
+  }
+
+  .project_totalsec img {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .building-section_two {
+    height: 60vh;
+  }
+
+  .aos-animate .dass-main-heading_two {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+  }
+
+  .dass-main-heading_two h1 {
+    font-size: 24px;
+  }
+
+  .parking_sec {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .parking_text {
+    width: 100%;
+    height: 60vh;
+    object-fit: initial;
+    object-position: center;
+  }
+
+  .parking_shade_content {
+    position: absolute;
+    background-image: url(../images/dass/parking_shade.png);
+    width: 100%;
+    height: 35vh;
+  }
+
+  .parking_shade_content p {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @keyframes textZoom {
+    0% {
+      font-size: 1;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      font-size: 4vw;
+      font-weight: 500;
+    }
+  }
+}
+
+.office_range_content p {
+  font-size: 2vw;
+}
+
+.hovered-collection P {
+  font-size: 1.4vw;
+  line-height: 2vw;
+}
+
+.faculity-title {
+  font-size: 2.5vw;
+}
+
+.laptop-content {
+  font-size: 1.2vw;
+}
+
+.business-address-content h2 {
+  font-size: 2vw;
+}
+
+.business-address-content p {
+  font-size: 1.2vw;
+}
+
+.finance-manage-para {
+  font-size: 1.1vw;
+}
+
+.laptop-table-content h4 {
+  font-size: 1.3vw;
+}
+
+.laptop-table-content p {
+  font-size: 1.3vw;
+}
+
+.meeting_content h2 {
+  font-size: 2vw;
+}
+
+.meeting_content p {
+  font-size: 1.5vw;
+}
+
+.projector_content h2 {
+  font-size: 2vw;
+}
+
+.projector_content p {
+  font-size: 1.5vw;
+}
+
+.dass-main-heading_two h1 {
+  font-size: 2vw;
+}
+
+#heading h2 {
+  font-size: 2.2vw !important;
+}
+
+#heading p {
+  font-size: 1.2vw !important;
+}

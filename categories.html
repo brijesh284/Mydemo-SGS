@@ -1,0 +1,670 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="assets/css/category.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/officeStyle.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/js/sidebar.js" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src=".assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <div class="nav-right visible-xs">
+      <div class="button" id="btn">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+    </div>
+    <div id="categories">
+      <div class="cat cat1">
+        <img
+          src="assets/images/category/Group19.png"
+          alt=""
+          class="cat-img hexa-19"
+        />
+      </div>
+      <div class="cat cat2">
+        <img
+          src="assets/images/category/Group17.png"
+          alt=""
+          class="cat-img hexa-17"
+        />
+      </div>
+
+      <div class="cat cat3">
+        <img
+          src="assets/images/category/Group20.png"
+          alt=""
+          class="cat-img hexa-20"
+        />
+      </div>
+      <div class="cat cat4">
+        <img
+          src="assets/images/category/Group14.png"
+          alt=""
+          class="cat-img hexa-14"
+        />
+      </div>
+
+      <div class="cat cat5">
+        <img
+          src="assets/images/category/Group21.png"
+          alt=""
+          class="cat-img hexa-21"
+        />
+      </div>
+
+      <div class="cat cat6">
+        <img
+          src="assets/images/category/Group15.png"
+          alt=""
+          class="cat-img hexa-15"
+        />
+      </div>
+      <div class="cat cat7">
+        <img
+          src="assets/images/category/Group22.png"
+          alt=""
+          class="cat-img hexa-22"
+        />
+      </div>
+      <div class="cat cat8">
+        <img
+          src="assets/images/category/Group23.png"
+          alt=""
+          class="cat-img hexa-23"
+        />
+      </div>
+    </div>
+
+    <div
+      id="hovered"
+      class="w-full h-screen absolute hidden justify-center items-center z-50"
+    >
+      <div id="investment" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-0 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[20vw] m-auto"
+            src="assets/images/Hexa Hovered/INVESTMENT.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/We improve.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/Our solutions.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/investment.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="sales" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-1 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[12vw] m-auto"
+            src="assets/images/Hexa Hovered/Sales.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/DaaS boosts.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/Manage your customers.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/sales.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="it" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-2 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img class="w-[6vw] m-auto" src="assets/images/Hexa Hovered/IT.png" />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/SGS provides global IT.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/It Our highly  .png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/it.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="HR" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-3 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[30vw] m-auto"
+            src="assets/images/Hexa Hovered/HUMAN RESOURCES.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/We improve.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/Our solutions.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/human-resources.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="finance" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-4 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[18vw] m-auto"
+            src="assets/images/Hexa Hovered/FINANCE.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/SGS is your.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/With DaaS.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/finance.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="back_office" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-5 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[20vw] m-auto"
+            src="assets/images/Hexa Hovered/BACK OFFICE.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/Outsource your back-office.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/Focus on your core.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/back_office.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="marketing" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-6 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[20vw] m-auto"
+            src="assets/images/Hexa Hovered/MARKETING.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/DaaS Marketing.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/You can customize.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/marketing.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div id="customer_support" class="section-hovered hidden">
+        <div class="head-title w-full">
+          <span
+            class="close-7 text-[2vw] block cursor-pointer hover:text-red-700 duration-300 absolute max-w-min"
+            >&#10008;</span
+          >
+          <img
+            class="w-[25vw] m-auto"
+            src="assets/images/Hexa Hovered/CUSTOMER CARE.png"
+          />
+        </div>
+        <div class="title w-full">
+          <img
+            class="w-[80vw] m-auto mt-[7vw]"
+            src="assets/images/Hexa Hovered/We are Customer Support.png"
+          />
+        </div>
+        <div class="text w-full">
+          <img
+            class="w-[80vw] m-auto mt-[3vw]"
+            src="assets/images/Hexa Hovered/We can help you.png"
+          />
+        </div>
+        <div class="button w-full">
+          <a href="categories/customer.html">
+            <img
+              class="w-[15vw] m-auto mt-[4vw] border-slate-800 border-[1px] px-3 py-2 rounded-sm bg-slate-200 cursor-pointer hover:scale-[1.02] duration-200"
+              src="assets/images/Hexa Hovered/See How It Works.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        let isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
+
+        if (isMobile) {
+          $(".side-bar").css("display", "none");
+          $(".side-toogleer").click(function () {
+            $(".side-bar").css("display", "block");
+          });
+          $(".bar-closer").click(function () {
+            $(".side-bar").css("display", "none");
+          });
+        } else {
+          $(".side-toogleer").click(function () {
+            $(".side-bar").css("right", "0%");
+          });
+          $(".bar-closer").click(function () {
+            $(".side-bar").css("right", "-50%");
+          });
+        }
+
+        // togglers
+        $(".nav-one").click(function () {
+          $(".nav-one-content").slideToggle();
+        });
+        $(".nav-two").click(function () {
+          $(".nav-two-content").slideToggle();
+        });
+        $(".nav-three").click(function () {
+          $(".nav-three-content").slideToggle();
+        });
+        $(".nav-four").click(function () {
+          $(".nav-four-content").slideToggle();
+        });
+
+        $("#language").click(() => {
+          if ($("#language").attr("title") == "Germany") {
+            $("#language").attr("src", "assets/images/united-kingdom.png");
+            $("#language").attr("title", "English");
+          } else {
+            $("#language").attr("src", "assets/images/germany.png");
+            $("#language").attr("title", "Germany");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      // jquery
+      $(document).ready(function () {
+        const images = ["19", "17", "20", "14", "21", "15", "22", "23"];
+        let target = Array.from(document.querySelectorAll(".section-hovered"));
+        let close = Array.from(document.querySelectorAll(".hovered-close"));
+
+        images.map((image, i) => {
+          $(`.hexa-${images[i]}`).mouseenter(function () {
+            $(this).attr(
+              "src",
+              `assets/images/category/Group${images[i]}-l.png`
+            );
+          });
+          $(`.hexa-${images[i]}`).mouseout(function () {
+            $(this).attr("src", `assets/images/category/Group${images[i]}.png`);
+          });
+          $(`.hexa-${images[i]}`).click(() => {
+            $("#categories").fadeOut();
+            $("#hovered").css("display", "flex");
+            target[i].classList.remove("hidden");
+          });
+          $(`.close-${i}`).click(() => {
+            target[i].classList.add("hidden");
+            $("#hovered").css("display", "none");
+            $("#categories").fadeIn();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,487 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/officeStyle.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/administration.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- Typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="assets/js/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <div class="dropdown mr-2">
+          <button
+            class="btn border-0 dropdown-toggle d-flex align-items-center"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="./assets/images/en.png" class="img-fluid" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/en.png" class="img-fluid"
+            /></a>
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/de.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main class="position-relative">
+      <section id="empty" class="d-none d-lg-block"></section>
+
+      <section id="landing">
+        <div class="landing-content">
+          <h1>Complete employee administration care</h1>
+
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            We help Croatian Companies hire quality employees from abroad.
+            <br />We offer <b>consultation</b> and <b>relocation</b> packages.
+          </p>
+          <button class="transparent-btn">SCHEDULE A CONSULTATION</button>
+        </div>
+      </section>
+
+      <section id="blue_card_1">
+        <div class="blue_card_content">
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            Visas & work permits
+          </h2>
+          <div class="blue_card">
+            <div
+              class="blue_card_header"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <h3>Blue Card</h3>
+            </div>
+            <div class="blue_card_body">
+              <div
+                class="card_body_content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
+                <p>
+                  An EU Blue Card is a type of work and stay permit for highly
+                  qualified workers who are also third-country nationals.
+                  <br />
+                  <br />
+                  Blue card is valid for <b>2 years</b> and has more
+                  requirements than work permit.
+                </p>
+              </div>
+              <div class="list_points ml-3 mt-3">
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="1500"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Specific of Blue Card</h5>
+                </div>
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="2000"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Time scale</h5>
+                </div>
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="2500"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Renewal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blue_card_2">
+        <div class="blue_card_content">
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            Visas & work permits
+          </h2>
+          <div class="blue_card">
+            <div
+              class="blue_card_header"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <h3>Work & Residence permit</h3>
+            </div>
+            <div class="blue_card_body">
+              <div
+                class="card_body_content"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+              >
+                <p>
+                  The work and residence permit is tied to a specific work
+                  contract.
+                  <br /><br />
+                  The term of your residence permit will match the term of your
+                  work contract, up to a <b>1 year maximum</b>.
+                </p>
+              </div>
+              <div class="list_points ml-3 mt-3">
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="1500"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Labour market test</h5>
+                </div>
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="2000"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Specific of Blue Card</h5>
+                </div>
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="2500"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Time scale</h5>
+                </div>
+                <div
+                  class="d-flex align-items-baseline mb-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-delay="3000"
+                >
+                  <img
+                    src="./assets/images/administration/arrow.png"
+                    class="mr-3 arrow_img"
+                  />
+                  <h5>Renewal</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets//js/sidebar.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+      });
+      AOS.init();
+    </script>
+
+    <script>
+      // jquery
+      $(document).ready(function () {
+        let isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
+
+        if (!isMobile) {
+          setTimeout(function () {
+            window.scrollTo(0, 600);
+            $("body").css("backdrop-filter", "blur(15px)");
+          }, 2000);
+
+          $(document).scroll(() => {
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+              $("body").css("backdrop-filter", "blur(15px)");
+            } else {
+              $("body").css("backdrop-filter", "blur(0px)");
+            }
+          });
+        } else {
+          $("body").css("backdrop-filter", "blur(15px)");
+        }
+      });
+    </script>
+  </body>
+</html>

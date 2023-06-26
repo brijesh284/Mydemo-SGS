@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+
+    <script src="assets/js/app.js" type="module"></script>
+    <style>
+      .content {
+        background-image: url("/assets/images/bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div
+      class="content h-screen p-2 bg-[#eaeaea] flex justify-center items-center"
+    >
+      <div class="outer h-full rounded-lg overflow-hidden flex">
+        <span class="text-md text-red-600 absolute group left-0 bottom-2">
+          <img
+            title="download video "
+            onclick="downloadVideo()"
+            width="50"
+            fill="red"
+            class="group-hover:mb-3 left-10 relative cursor-pointer group-hover:drop-shadow-md duration-300"
+            src="assets/images/video-download.svg"
+          />
+          <span
+            class="relative left-6 bottom-8 opacity-0 group-hover:opacity-100 group-hover:bottom-5 duration-300 font-bold"
+            >downlaod</span
+          >
+        </span>
+        <video
+          id="myVideo"
+          class="max-h-full h-auto"
+          controls
+          disableRemotePlayback
+        >
+          <source
+            src="./assets/video/Marko SGS WORKFORCE_Trim.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video playing.
+        </video>
+      </div>
+    </div>
+
+    <script>
+      function downloadVideo() {
+        var video = document.getElementById("myVideo");
+        var source = video.getElementsByTagName("source")[0];
+        var url = source.src;
+
+        // Create a temporary anchor element
+        var downloadLink = document.createElement("a");
+        downloadLink.href = url;
+        downloadLink.download = "video.mp4";
+
+        // Trigger the download
+        downloadLink.click();
+      }
+    </script>
+  </body>
+</html>

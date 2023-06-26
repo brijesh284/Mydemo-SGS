@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+#landing.partner-section {
+  width: 100%;
+  background: url(../images/partnership/partnership.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.preloader {
+  z-index: 100000000;
+}
+
+#landing,
+#resume,
+#interview,
+#apply,
+#offer,
+#job {
+  transition: 0.5s all;
+}
+
+#job,
+#resume,
+#interview,
+#apply,
+#offer {
+  z-index: 100000000;
+}
+.partner-container {
+  width: 80%;
+  margin: auto;
+}
+.partner-title-section {
+  display: block;
+  position: relative;
+  padding-bottom: 70px;
+}
+.partner-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.partner-title-section h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 87px;
+  text-align: center;
+
+  color: #000000;
+}
+.btn-position,
+.btn-apply {
+  background: #cc1521;
+  border-radius: 16px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* gerenal section */
+.general-section {
+  width: 100%;
+  /* background-image: url("../images/career/general-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+  position: relative;
+  padding: 180px 0;
+}
+.general-form {
+  /* min-width: 300px; */
+  max-width: 912px;
+  margin: 0 auto;
+}
+.general-title h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+  color: #cc1521;
+  display: inline-flex;
+  z-index: 2;
+  background-color: #f1f1f1;
+  padding: 0 20px;
+  margin-bottom: 0;
+}
+.general-form-title,
+label.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+label.title {
+  font-weight: 600;
+}
+
+.general-form .form-control {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  border-bottom: 1px solid #292929;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background-color: transparent;
+  padding-left: 0;
+  padding-bottom: 6px;
+  color: #292929;
+}
+.general-form .form-control::placeholder {
+  color: #292929;
+}
+.general-form .form-group {
+  margin-bottom: 64px;
+}
+.general-form .form-check-label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.7px;
+  line-height: 23px;
+  color: #292929;
+}
+.general-form .form-check-label span,
+.general-form .form-check-label.text-red {
+  color: #cc1521;
+}
+
+/* benefits-section */
+.benefits-section {
+  padding: 136px 0;
+}
+.benefits-section .position-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 67px;
+  color: #292929;
+  margin-bottom: 60px;
+}
+.benefits-content .benefits-title,
+.benefits-list .benefits-item p,
+p.subtitle-title,
+.channel-profile .user-number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 164.52%;
+  color: #000000;
+  margin-bottom: 0;
+}
+.benefits-content .benefits-title strong {
+  font-weight: 600;
+}
+.benefit-container {
+  margin-top: 30px;
+}
+.benefit-container ul {
+  list-style: disc;
+}
+/* channel-section */
+.channel-section .channel-title h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #292929;
+  background-color: #f1f1f1;
+  padding: 0 40px;
+  display: inline-block;
+  z-index: 2;
+  margin-bottom: 0px;
+}
+.channel-section .channel-title,
+.general-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.channel-section .channel-title::after,
+.general-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 100%;
+  border: 2px solid rgba(41, 41, 41, 0.21);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.channel-profile .profile-img {
+  width: 294px;
+  height: 294px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  margin: 99px auto 45px;
+}
+.channel-profile .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.channel-profile .user-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+  color: #292929;
+}
+.social-link {
+  margin-top: 40px;
+}
+.general-form .text-control {
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+/* tabs */
+.partnership-tabs {
+  margin: 120px 0 50px;
+}
+.partnership-tabs .nav-tabs {
+  display: none;
+  border: none;
+  margin-bottom: 40px;
+}
+.default-load .nav-link {
+  filter: blur(0) !important;
+  -webkit-filter: blur(0) !important;
+}
+.partnership-tabs .nav-tabs .nav-link {
+  width: 150px;
+  height: 150px;
+  /*opacity: 0.5;
+  */
+  filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+}
+.partnership-tabs .nav-tabs .nav-link.active,
+.partnership-tabs .nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border: 0;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  opacity: 1;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+.partnership-tabs .card {
+  background-color: transparent;
+}
+.partnership-tabs .card .collapse {
+  visibility: visible;
+}
+.side-nav a.nav-link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+}
+.table {
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border: 1px solid #dee2e6 !important;
+  overflow: hidden;
+}
+.table .table-blue {
+  background-color: #2a3650;
+}
+.table .table-blue th {
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 600;
+}
+.table tbody {
+  background-color: #fff;
+}
+.table tbody tr td {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav a.nav-link {
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .partnership-tabs .nav-tabs {
+    display: flex;
+  }
+
+  .partnership-tabs .card {
+    border: none;
+  }
+
+  .partnership-tabs .card .card-header {
+    display: none;
+  }
+
+  .partnership-tabs .card .collapse {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .partnership-tabs .tab-content > .tab-pane {
+    display: block !important;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .general-title h2 {
+    font-size: 96px;
+    line-height: 120px;
+  }
+  .channel-profile .user-name {
+    font-size: 38px;
+  }
+  .general-section {
+    padding: 300px 0;
+  }
+  .benefits-section .position-title,
+  .channel-section .channel-title h2 {
+    font-size: 55px;
+    margin-bottom: 80px;
+  }
+  .benefits-content .benefits-title,
+  .benefits-list .benefits-item p,
+  p.subtitle-title,
+  .channel-profile .user-number {
+    font-size: 34px;
+  }
+  .channel-section .channel-title::after {
+    border: 6px solid rgba(41, 41, 41, 0.21);
+  }
+  .partner-subtitle {
+    font-size: 30px;
+    margin-bottom: 90px;
+  }
+  .partner-title-section h1 {
+    font-size: 72px;
+  }
+  .partnership-tabs .nav-tabs .nav-link {
+    width: 186px;
+    height: 186px;
+  }
+  .partnership-tabs {
+    margin: 200px 0 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .general-title h2 {
+    font-size: 56px;
+  }
+
+  .partner-container {
+    width: 90%;
+  }
+  .btn-position,
+  .btn-apply {
+    padding: 10px 40px;
+    height: 55px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+  }
+  .general-form .form-control,
+  .general-form-title,
+  label.title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .channel-profile .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  .partner-title-section h1 {
+    font-size: 47px;
+    line-height: 120%;
+  }
+  .partnership-tabs {
+    margin-top: 80px;
+  }
+  .benefits-section {
+    padding: 100px 0;
+  }
+  .benefits-section .position-title,
+  .channel-section .channel-title h2 {
+    line-height: 120%;
+    font-size: 40px;
+  }
+  .channel-section .channel-title,
+  .general-title {
+    margin-bottom: 40px;
+  }
+  .career-title-section h1,
+  .general-title h2,
+  .position-section .position-title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partner-title-section h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partnership-tabs .nav-tabs .nav-link {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 767.59px) {
+  .open-category .row {
+    justify-content: center;
+  }
+  .partnership-tabs .card-header {
+    background-color: transparent;
+    border: none;
+  }
+  .partnership-tabs .card {
+    border: none;
+  }
+  .partnership-tabs .card-header a {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 680px) {
+  .general-title h2,
+  .partner-title-section h1 {
+    font-size: 32px;
+  }
+  .partner-subtitle {
+    padding-top: 70px;
+  }
+  .partnership-tabs {
+    margin-top: 50px;
+  }
+  .category-location span,
+  .general-form .form-control,
+  .general-form-title,
+  .general-form .form-check-label,
+  label.title,
+  .benefits-content .benefits-title,
+  .benefits-list .benefits-item p,
+  p.subtitle-title,
+  .channel-profile .user-number {
+    font-size: 18px;
+  }
+  .general-form .form-group {
+    margin-bottom: 35px;
+  }
+  .btn-position,
+  .btn-apply {
+    font-size: 18px;
+  }
+  .benefits-section .position-title,
+  .channel-section .channel-title h2 {
+    font-size: 32px;
+  }
+  .general-section {
+    padding-top: 100px;
+  }
+  .benefits-section {
+    padding: 20px 0 70px;
+  }
+  .channel-section .channel-title h2 {
+    padding: 0 20px;
+  }
+  .general-title h2 {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .general-title h2,
+  .partner-title-section h1 {
+    font-size: 28px;
+  }
+  .btn-position,
+  .btn-apply,
+  .general-form .form-control,
+  .general-form-title,
+  .general-form .form-check-label,
+  label.title {
+    font-size: 16px;
+  }
+  .btn-position,
+  .btn-apply {
+    height: auto;
+  }
+  .general-section {
+    padding: 100px 0;
+  }
+  .position-section .position-title {
+    margin-bottom: 45px;
+  }
+  .position-section {
+    padding: 60px 0 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .general-title h2 {
+    margin-bottom: 40px;
+  }
+  .general-form form.row {
+    margin: 0;
+  }
+  .general-title h2 {
+    font-size: 30px;
+  }
+  .general-section {
+    padding-top: 90px;
+  }
+}

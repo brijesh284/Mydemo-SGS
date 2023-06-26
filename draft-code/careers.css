@@ -1,0 +1,479 @@
+#landing {
+  width: 100%;
+  background: url(../images/careers/table.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#landing,
+#resume,
+#interview,
+#apply,
+#offer,
+#job {
+  transition: 0.5s all;
+  height: 100vh;
+}
+
+.hiring-title-section {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.hiring-title-section h1 {
+  color: #45413f69;
+  font-size: 8vw;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+}
+
+#steps {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-steps {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.step {
+  width: 15vw;
+  height: 40vh;
+  position: relative;
+  /* opacity: 0; */
+  /* display: none; */
+}
+
+.steps-container {
+  width: 70vw;
+  margin: auto;
+}
+
+.step-two .step-content,
+.step-four .step-content {
+  position: absolute;
+  bottom: 0%;
+}
+
+.step-content img {
+  cursor: pointer;
+}
+
+.step-img-content {
+  width: 90px;
+}
+
+.step-img-content b {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #5b6e7f;
+}
+
+.step-img {
+  /* margin: auto; */
+  width: 100%;
+  /* height: 80px; */
+  object-fit: cover;
+  text-align: left;
+}
+
+.step-title,
+.step-img-content {
+  animation: fadeout 1s linear forwards;
+  opacity: 0;
+}
+
+.step-one .step-img-content {
+  animation-delay: 0s;
+}
+
+.step-two .step-title,
+.step-two .step-img-content {
+  animation-delay: 3s;
+}
+.step-three .step-title,
+.step-three .step-img-content {
+  animation-delay: 5s;
+}
+.step-four .step-title,
+.step-four .step-img-content {
+  animation-delay: 8s;
+}
+.step-five .step-title,
+.step-five .step-img-content {
+  animation-delay: 11s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar {
+  background-color: #fff;
+  height: 8px;
+  z-index: -1;
+  position: relative;
+}
+
+.bar::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180.01deg,
+    rgba(217, 217, 217, 0) -0.82%,
+    #d30a0a -0.81%,
+    #d10c0c 99.99%
+  );
+  content: '';
+}
+
+.bar-1 {
+  width: 0vw;
+  transform: rotate(29deg) translate(3.5vw, -7vh);
+}
+
+.bar-1::after {
+  animation: inWidth 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.bar-2 {
+  width: 0vw;
+  transform: rotate(-26deg) translate(5vw, 15vh);
+}
+
+.bar-2::after {
+  animation: inWidth 2s linear forwards;
+  animation-delay: 3s;
+}
+
+.bar-3 {
+  width: 0vw;
+  transform: rotate(27deg) translate(4vw, -16vh);
+}
+
+.bar-3::after {
+  animation: inWidth 2s linear forwards;
+  animation-delay: 5.5s;
+}
+
+.bar-4 {
+  width: 0vw;
+  transform: rotate(-26deg) translate(3vw, 16vh);
+}
+.bar-4::after {
+  animation: inWidth 2s linear forwards;
+  animation-delay: 8.5s;
+}
+
+@keyframes inWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 11vw;
+  }
+}
+
+.step-title {
+  font-family: Inter;
+  font-weight: 500;
+  color: #5b6e7f;
+  text-align: left;
+  font-size: 1vw;
+}
+
+#job {
+  width: 100%;
+  background: url(../images/careers/job.png), #fff;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.job-content,
+.apply-content,
+.resume-content {
+  width: 100%;
+  height: 100%;
+  background: url(../images/careers/Ellipse.png) no-repeat;
+  background-position: left;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.job-content div {
+  margin-left: 8vw;
+}
+
+.resume-content {
+  background: #fff;
+}
+
+#apply {
+  background: #fff;
+}
+
+.resume-content .resume-container,
+.apply-content .apply-container {
+  width: 50%;
+  margin: auto;
+}
+
+.resume-content h1,
+.apply-content h1,
+.interview-content h1,
+.offer-content h1,
+.job-content h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3vw;
+  color: #5b6e7f;
+  margin-bottom: 2vh;
+}
+
+.apply-content h1 {
+  font-weight: 400;
+}
+
+.resume-content ul,
+.apply-content ul,
+.offer-content ul,
+.interview-content ul,
+.job-content ul {
+  margin-left: 1vw;
+}
+
+.resume-content ul li,
+.interview-content ul li,
+.offer-content ul li,
+.apply-content ul li,
+.job-content ul li {
+  list-style: disc;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #5b6e7f;
+  font-family: Inter;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 2vh;
+}
+
+.resume-heading {
+  width: 100%;
+  text-align: center;
+  background-color: #616e7d;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 5vh;
+}
+
+.resume-heading h1 {
+  margin-bottom: 0vh;
+  color: #fff;
+}
+
+.steps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s all;
+}
+
+.apply-img {
+  position: absolute;
+  width: 70vh;
+  bottom: 0;
+  right: 20%;
+}
+
+#interview {
+  height: 100vh;
+  background: url(../images/careers/message.png) #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+#offer {
+  height: 100vh;
+  background: url(../images/careers/thumb.png) #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.offer-content {
+  width: 70%;
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+}
+
+.offer-container {
+  width: 90%;
+}
+
+.offer-content .offer-heading h1 {
+  text-align: right;
+  margin-bottom: 4vh;
+}
+
+.interview-content {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 25vh;
+  left: 40vw;
+  /* min-height: 50vh; */
+}
+
+.interview-content h1,
+.interview-content ul li {
+  color: #fff;
+}
+
+.offer-content h1 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  #landing {
+    height: 50vh;
+  }
+
+  .hiring-title-section {
+    top: 40%;
+    right: 5%;
+  }
+
+  .step-img {
+    width: 40px;
+    /* height: 80px; */
+  }
+
+  #landing,
+  #resume,
+  #interview,
+  #apply,
+  #offer,
+  #job {
+    height: 50vh;
+  }
+
+  .step {
+    height: auto;
+  }
+
+  .bar {
+    height: 5px;
+  }
+
+  .step-img-content b {
+    font-size: 0.8rem !important;
+    text-align: left;
+  }
+
+  .step-title {
+    font-size: 3vw;
+  }
+
+  .resume-content .resume-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .step-img-content b {
+    font-size: 2rem;
+  }
+
+  .step-one .step-title {
+    transform: scale(1.3) translate(-2vh, -2vh);
+  }
+
+  .step-two .step-title {
+    transform: scale(1.3) translate(-2vh, 5vh);
+  }
+
+  .step-three .step-title {
+    transform: scale(1.3) translate(0, -4vh);
+  }
+
+  .step-four .step-title {
+    transform: scale(1.3) translate(0, 5vh);
+  }
+
+  .step-five .step-title {
+    transform: scale(1.3) translate(-6vw, 6vh);
+  }
+
+  .step-one b {
+    transform: scale(1.3) translate(-0.5vw, 2vh);
+  }
+
+  .step-two b,
+  .step-four b {
+    transform: scale(1.3) translate(0vw, -4vh);
+  }
+
+  .step-three b {
+    transform: scale(1.3) translate(0.5vw, 2vh);
+  }
+
+  .step-five b {
+    transform: scale(1.3) translate(0.5vw, 4vh);
+  }
+
+  .step-content img {
+    transform: scale(2.5);
+  }
+  .bar {
+    height: 15px;
+  }
+  .bar-1 {
+    width: 0vw;
+    transform: rotate(36deg) translate(3vw, -1vh);
+  }
+
+  .bar-2 {
+    width: 0vw;
+    transform: rotate(330deg) translate(5vw, 12.5vh);
+  }
+
+  .bar-3 {
+    width: 0vw;
+    transform: rotate(32deg) translate(3vw, -12vh);
+  }
+
+  .bar-4 {
+    width: 0vw;
+    transform: rotate(330deg) translate(3vw, 9.5vh);
+  }
+}

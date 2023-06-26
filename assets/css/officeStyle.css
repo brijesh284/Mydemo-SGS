@@ -1,0 +1,392 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #525252;
+  font-family: "Inter";
+}
+#office {
+  width: 100%;
+}
+#bg {
+  width: 100%;
+}
+
+.prags,
+#title-office {
+  font-size: 2.5vw;
+  margin: 20% 0 0 5vw;
+}
+.Ps p {
+  font-size: 1.5vw !important;
+}
+section {
+  margin: auto;
+}
+.hovered {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.hovered-collection {
+  width: 23vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  margin: 7vw 33% 0 0;
+}
+.hovered-collection P {
+  font-size: 20pt;
+  margin-bottom: 2vw;
+}
+
+.prags p {
+  font-size: 14pt;
+}
+
+.light-title {
+  line-height: 1.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 9px 8px 8px rgba(0, 0, 0, 0.43);
+}
+
+.office-title {
+  transform: translate(30vw, -30vh);
+  color: #ffff;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  .hovered-collection {
+    width: 25vw;
+    min-width: 0;
+    margin: 14vw 40% 0 0;
+  }
+  .hovered-collection p {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    line-height: 30px;
+  }
+  #login {
+    font-size: 8pt;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
+  .menu span {
+    font-size: 15pt;
+  }
+  .logo {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hovered-collection {
+    width: 22vw;
+    min-width: 0;
+    margin: 9vw 40% 0 0;
+  }
+  .hovered-collection p {
+    font-size: 2vw;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  #login {
+    padding: 5px 10px;
+    margin-top: 3px;
+  }
+  .main-p {
+    margin-top: 5px;
+  }
+  .prags {
+    margin-top: 35px;
+  }
+  #login {
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  .menu span {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 530px) {
+  #title-office {
+    margin-top: -2vw;
+    line-height: 15px;
+  }
+  .hovered-collection {
+    margin: 3vw 40% 0 0;
+  }
+  .hovered-collection p {
+    margin-bottom: 10px;
+    line-height: 3vw;
+  }
+  .prags {
+    margin-top: 25px;
+  }
+  #login {
+    font-size: 6pt;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .logo {
+    width: 50px;
+  }
+  .menu span {
+    margin-top: -2px;
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hovered-collection {
+    margin: -3.5vw 40% 0 0;
+  }
+  .hovered-collection p {
+    margin-bottom: 5px;
+    line-height: 3vw;
+  }
+  .prags {
+    margin-top: 30px;
+  }
+  #login {
+    font-size: 6pt;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+}
+
+/*  =============== Facility Managment ============ */
+.lampshade {
+  width: 13vw;
+  height: 9.5vw;
+  position: absolute;
+  top: 35.5vw;
+  left: 13vw;
+  z-index: 10;
+  cursor: pointer;
+}
+#facility .content {
+  width: 100%;
+  margin: 22vw 0 0 0;
+  top: 0;
+  position: absolute;
+}
+#facility .title {
+  margin: 0 0 0 14vw;
+}
+#facility .title h2 {
+  font-size: 3vw;
+}
+#facility .title h3 {
+  font-size: 2vw;
+  margin: 4vw 0 0 0;
+}
+.text-hovered-fadeIn {
+  width: 44vw;
+  transition: 1s;
+  margin: 15vw auto;
+  opacity: 1;
+}
+#facility .text-hovered {
+  width: 44vw;
+  margin: 14vw auto;
+  transition: 1s;
+  opacity: 0;
+}
+#facility #text-hovered h2 {
+  font-size: 2.5vw;
+}
+#facility #text-hovered p {
+  font-size: 1.5vw;
+  margin: 2vw 0 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #facility #text-hovered {
+    width: 44vw;
+    margin: 11vw auto;
+  }
+  .lampshade {
+    top: 35vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  #facility .title h3 {
+    margin-top: 0.5vw;
+  }
+  .lampshade {
+    top: 34.5vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  #facility .title h3 {
+    margin-top: -4vw;
+  }
+}
+@media screen and (max-width: 350px) {
+  #facility .title h3 {
+    margin-top: -7vw;
+  }
+  .lampshade {
+    top: 34vw;
+  }
+}
+
+/* ================ Front Disk ======*/
+#front .content {
+  width: 100%;
+  margin: 8vw 0 0 0;
+  top: 0;
+  position: absolute;
+}
+#front .title {
+  margin-left: 31vw;
+  width: 40%;
+  transition: 1s;
+  opacity: 1;
+}
+#front .title-hide {
+  margin-top: -3vw;
+  opacity: 0;
+}
+#front .title h2 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+#front .title h3 {
+  font-size: 1.3vw;
+  margin-top: 2vw;
+}
+
+.light-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7vw !important;
+  transform: translateY(-20vh);
+}
+
+/* .typed-fade-out {
+  display: none !important;
+}
+
+.typed-cursor {
+  display: none !important;
+} */
+.side-nav a.nav-link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .side-nav a.nav-link {
+    padding: 0.5rem;
+  }
+}
+
+/* new css */
+.section-height {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section-height .hex_imgs {
+  height: 50vh;
+}
+h2.cars_title {
+  font-size: 40px;
+  color: #000;
+}
+
+p.landing_desc,
+.sub-title,
+.main-range ul li p {
+  font-size: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: #292929;
+  margin-bottom: 0;
+}
+
+.main-range ul {
+  list-style: disc;
+}
+.rang-list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rang-list ul li {
+  display: inline-flex;
+}
+.rang-list ul li p {
+  margin-bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #484848;
+}
+
+.facility-list ul li {
+  color: #484848;
+}
+
+.facility-list ul li a {
+  color: #484848;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  position: relative;
+  padding-left: 20px;
+}
+.facility-list ul li a::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #484848;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  left: 0;
+}
+
+.facility-list ul li a:hover {
+  text-decoration: none;
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  font-weight: 600;
+}

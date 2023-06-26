@@ -1,0 +1,632 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS</title>
+    <link rel="stylesheet" href="assets/css/officeStyle.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="assets/js/officeScript.js"></script> -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/dass-landing.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/careers.css" />
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- Typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="assets/js/app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
+        <a class="nav-link">Language</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main class="">
+      <section id="landing">
+        <div class="w-100 text-right hiring-title-section">
+          <h1 class="text-right">
+            HIRING <br />
+            PROCESS
+          </h1>
+        </div>
+      </section>
+
+      <div class="position-relative">
+        <div class="d-none d-lg-block">
+          <section id="steps">
+            <div class="steps_container d-none">
+              <div class="process_steps">
+                <div id="step_1" class="step step_one">
+                  <div class="step_content">
+                    <div class="step_img_content">
+                      <h6 class="step_title mb-3"><b>JOB</b> SEARCHING</h6>
+                      <img
+                        src="./assets/images/careers/one.png"
+                        class="step_img"
+                      />
+                      <b class="b_num">01</b>
+                    </div>
+                    <div class="bar bar_1"></div>
+                  </div>
+                </div>
+
+                <div class="step step_two">
+                  <div class="step_content">
+                    <div class="bar bar_2"></div>
+                    <div class="step_img_content">
+                      <b class="b_num">02</b>
+                      <img
+                        src="./assets/images/careers/two.png"
+                        class="step_img"
+                      />
+                      <h6 class="step_title my-2"><b>YOUR</b> RESUME</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step step_three">
+                  <div class="step_content">
+                    <div class="step_img_content">
+                      <h6 class="step_title mb-3"><b>APPLY</b> ONLINE</h6>
+                      <img
+                        src="./assets/images/careers/three.png"
+                        class="step_img"
+                      />
+                      <b class="b_num">03</b>
+                    </div>
+                    <div class="bar bar_3"></div>
+                  </div>
+                </div>
+
+                <div class="step step_four">
+                  <div class="step_content">
+                    <div class="bar bar_4"></div>
+                    <div class="step_img_content">
+                      <b class="b_num">04</b>
+                      <img
+                        src="./assets/images/careers/four.png"
+                        class="step_img"
+                      />
+                      <h6 class="step_title mb-3">INTERVIEWS</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step step_five">
+                  <div class="step_content">
+                    <div class="step_img_content">
+                      <h6 class="step_title mb-3">DECISION & OFFER</h6>
+                      <img
+                        src="./assets/images/careers/five.png"
+                        class="step_img"
+                      />
+                      <b class="b_num">05</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="d-block d-lg-none">
+          <section id="m-steps">
+            <div class="container">
+              <div class="m_steps">
+                <div class="m_step m_step_one">
+                  <div class="m_step_content">
+                    <div class="m_step_img_content">
+                      <h6 class="m_step_title mb-3"><b>JOB</b> SEARCHING</h6>
+                      <img
+                        src="./assets/images/careers/one.png"
+                        class="m_step_img"
+                      />
+                      <b class="m_b_num">01</b>
+                    </div>
+                    <div class="m_bar m_bar_1"></div>
+                  </div>
+                </div>
+                <div class="m_step m_step_two">
+                  <div class="m_step_content">
+                    <div class="m_step_img_content">
+                      <h6 class="m_step_title mb-3"><b>YOUR</b> RESUME</h6>
+                      <img
+                        src="./assets/images/careers/two.png"
+                        class="m_step_img"
+                      />
+                      <b class="m_b_num">02</b>
+                    </div>
+                    <div class="m_bar m_bar_1"></div>
+                  </div>
+                </div>
+                <div class="m_step m_step_three">
+                  <div class="m_step_content">
+                    <div class="m_step_img_content">
+                      <h6 class="m_step_title mb-3"><b>APPLY</b> ONLINE</h6>
+                      <img
+                        src="./assets/images/careers/three.png"
+                        class="m_step_img"
+                      />
+                      <b class="m_b_num">03</b>
+                    </div>
+                    <div class="m_bar m_bar_1"></div>
+                  </div>
+                </div>
+                <div class="m_step m_step_four">
+                  <div class="m_step_content">
+                    <div class="m_step_img_content">
+                      <h6 class="m_step_title mb-3">INTERVIEWS</h6>
+                      <img
+                        src="./assets/images/careers/four.png"
+                        class="m_step_img"
+                      />
+                      <b class="m_b_num">04</b>
+                    </div>
+                    <div class="m_bar m_bar_1"></div>
+                  </div>
+                </div>
+                <div class="m_step m_step_five">
+                  <div class="m_step_content">
+                    <div class="m_step_img_content">
+                      <h6 class="m_step_title mb-3">DECISION & OFFER</h6>
+                      <img
+                        src="./assets/images/careers/five.png"
+                        class="m_step_img"
+                      />
+                      <b class="m_b_num">05</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section id="job" class="steps d-none">
+          <div class="job-section">
+            <div class="job-content">
+              <div>
+                <h1>JOB SEARCHING</h1>
+                <ul>
+                  <li>Research SGS to find the right job match</li>
+                  <li>Visit company sites, YouTube, location, and blog</li>
+                  <li>
+                    Find the intersection of your interests and SGS values
+                  </li>
+                  <li>Determine the best role for you</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" class="steps d-none">
+          <div class="resume-content">
+            <div class="resume-container">
+              <div class="resume-heading">
+                <h1>YOUR RESUME</h1>
+              </div>
+              <ul>
+                <li>
+                  Create a job-specific resume by aligning skills with the job
+                  description, highlighting projects and leadership roles, and
+                  being concise
+                </li>
+                <li>
+                  Tailor cover letters to the job, demonstrating how you've made
+                  a difference and connecting your passion to the position
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="apply" class="steps d-none">
+          <div class="apply-content">
+            <div class="apply-container">
+              <div class="apply-heading">
+                <h1>APPLY ONLINE</h1>
+              </div>
+              <ul>
+                <li>Research SGS to find the right job match</li>
+                <li>Visit company sites, YouTube, location, and blog</li>
+                <li>Find the intersection of your interests and SGS values</li>
+                <li>Determine the best role for you</li>
+              </ul>
+            </div>
+            <img src="./assets/images/careers/apply.png" class="apply-img" />
+          </div>
+        </section>
+
+        <section id="interview" class="steps d-none">
+          <div class="interview-content">
+            <div class="interview-container">
+              <div class="interview-heading">
+                <h1>INTERVIEWS</h1>
+              </div>
+              <ul>
+                <li>Research SGS to find the right job match</li>
+                <li>Visit company sites, YouTube, location, and blog</li>
+                <li>Find the intersection of your interests and SGS values</li>
+                <li>Determine the best role for you</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="offer" class="steps d-none">
+          <div class="offer-content">
+            <div class="offer-container">
+              <div class="offer-heading">
+                <h1>DECISION & OFFER</h1>
+              </div>
+              <ul>
+                <li>
+                  After your interviews are done, we’ll bring everything
+                  together from your application and interviews and review it.
+                </li>
+                <li>
+                  We say “we” because we take into account a number of
+                  perspectives to come to a decision. If we decide that you’re
+                  the best candidate for the role, our team will reach out to
+                  you with an offer.
+                </li>
+                <li>
+                  Once you’ve accepted the offer, the SGS team will start the
+                  onboarding process with you, so you become our new SGS team
+                  member. 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.querySelector(".preloader").style.display = "none";
+      });
+    </script>
+    <script src="assets/js/sidebar.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        let isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
+
+        if (!isMobile) {
+          $(document).scroll(() => {
+            var scroll = $(window).scrollTop();
+            if (scroll > 350) {
+              $(".steps_container").removeClass("d-none");
+              setTimeout(renderAfterDisplay, 9000);
+            } else {
+              // $('.steps_container').addClass('d-none');
+            }
+          });
+        } else {
+          $(".steps_container").removeClass("d-none");
+          // display step one job
+          $(".m_step_one .m_step_content img").click(function () {
+            $("#job").removeClass("d-none").css("transition", "2s all");
+          });
+          $("#job").click(function () {
+            $("#job").addClass("d-none");
+          });
+
+          // display step two resume
+          $(".m_step_two .m_step_content img").click(function () {
+            $("#resume").removeClass("d-none").css("transition", "2s all");
+          });
+          $("#resume").click(function () {
+            $("#resume").addClass("d-none");
+          });
+
+          // display step three apply jobs
+          $(".m_step_three .m_step_content img").click(function () {
+            $("#apply").removeClass("d-none").css("transition", "2s all");
+          });
+          $("#apply").click(function () {
+            $("#apply").addClass("d-none");
+          });
+
+          // display step four interview
+          $(".m_step_four .m_step_content img").click(function () {
+            $("#interview").removeClass("d-none").css("transition", "2s all");
+          });
+          $("#interview").click(function () {
+            $("#interview").addClass("d-none");
+          });
+
+          // display step five offer
+          $(".m_step_five .m_step_content img").click(function () {
+            $("#offer").removeClass("d-none").css("transition", "2s all");
+          });
+          $("#offer").click(function () {
+            $("#offer").addClass("d-none");
+          });
+        }
+
+        function renderAfterDisplay() {
+          // display step one job
+          $(".step_one .step_content img").mouseover(function () {
+            $("#job").removeClass("d-none").css("transition", "2s all");
+          });
+          $(".job-content div").mouseleave(function () {
+            $("#job").addClass("d-none");
+          });
+
+          // display step two resume
+          $(".step_two .step_content img").mouseover(function () {
+            $("#resume").removeClass("d-none").css("transition", "2s all");
+          });
+          $(".resume-container").mouseleave(function () {
+            $("#resume").addClass("d-none");
+          });
+
+          // display step three apply jobs
+          $(".step_three .step_content img").mouseover(function () {
+            $("#apply").removeClass("d-none").css("transition", "2s all");
+          });
+          $(".apply-container").mouseleave(function () {
+            $("#apply").addClass("d-none");
+          });
+
+          // display step four interview
+          $(".step_four .step_content img").mouseover(function () {
+            $("#interview").removeClass("d-none").css("transition", "2s all");
+          });
+          $(".interview-container").mouseleave(function () {
+            $("#interview").addClass("d-none");
+          });
+
+          // display step five offer
+          $(".step_five .step_content img").mouseover(function () {
+            $("#offer").removeClass("d-none").css("transition", "2s all");
+          });
+          $(".offer-content").mouseleave(function () {
+            $("#offer").addClass("d-none");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

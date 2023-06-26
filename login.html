@@ -1,0 +1,199 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <title>SGS</title>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav"
+    >
+      <div class="d-flex align-items-center">
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <div class="dropdown mr-2">
+          <button
+            class="btn border-0 dropdown-toggle d-flex align-items-center"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="./assets/images/en.png" class="img-fluid" />
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/en.png" class="img-fluid"
+            /></a>
+            <a class="dropdown-item" href="#"
+              ><img src="./assets/images/de.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="button lg:mr-10 mr-2">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-6 py-2 text-xs block font-thin rounded-lg shadow-md"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div id="heading">
+      <h2 class="login-title text-center">Log in</h2>
+      <div class="login-content">
+        <form class="row login-form mt-10">
+          <div class="col-12 form-group">
+            <input type="text" placeholder="Username" class="form-control" />
+          </div>
+          <div class="col-12 form-group">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control"
+            />
+          </div>
+          <div class="col-12 form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" />
+                Remember me
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <a href="index.html" class="btn-login">Login</a>
+          </div>
+        </form>
+
+        <div class="forgot-psw text-center">
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-container flex items-center justify-between px-10">
+        <div class="left-part">
+          <ul class="contact-detail">
+            <li>
+              <a href="tel:+385 1 353 5930"
+                ><img
+                  src="./assets/images/social-icons/phone.png"
+                  class="img-fluid mr-2"
+                />+385 1 353 5930</a
+              >
+            </li>
+            <li>
+              <a href="tel:+385 91 557 36 24"
+                ><img
+                  src="./assets/images/social-icons/mobile.png"
+                  class="img-fluid mr-2"
+                />+385 91 557 36 24</a
+              >
+            </li>
+            <li>
+              <a href="mailto:business@sgs-daas.com"
+                ><img
+                  src="./assets/images/social-icons/mail.png"
+                  class="img-fluid mr-2"
+                />business@sgs-daas.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="right-part d-flex align-items-center">
+          <div class="dropdown mr-2">
+            <button
+              class="btn border-0 dropdown-toggle d-flex align-items-center"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="./assets/images/en.png" class="img-fluid" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"
+                ><img src="./assets/images/en.png" class="img-fluid"
+              /></a>
+              <a class="dropdown-item" href="#"
+                ><img src="./assets/images/de.png" class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <ul class="social-detail">
+            <li>
+              <a href="https://www.facebook.com/ScalableGlobalSolutions/"
+                ><img
+                  src="./assets/images/social-icons/facebook.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sgsdaas/"
+                ><img
+                  src="./assets/images/social-icons/instagram.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=QMIS3hJFZgc"
+                ><img
+                  src="./assets/images/social-icons/youtube.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/scalable-global-solutions/"
+                ><img
+                  src="./assets/images/social-icons/linkedin.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/jsc_sgs"
+                ><img
+                  src="./assets/images/social-icons/twitter.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.slideshare.net/SGSgroup"
+                ><img
+                  src="./assets/images/social-icons/tiktok.png"
+                  class="img-fluid"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

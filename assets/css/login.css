@@ -1,0 +1,90 @@
+body {
+  background-image: url("../images/login-bg.png");
+  background-position: top center;
+}
+.login-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 120px;
+  color: #292929;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form .form-control {
+  border-bottom: 1px solid #ffffff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+  padding-bottom: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  width: 100%;
+}
+
+.login-form .form-check-label,.forgot-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.btn-login {
+  background: #cc1521;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.login-form .form-control::placeholder {
+  color: #ffffff;
+}
+.login-form .form-group {
+    margin-bottom: 35px;
+}
+
+.forgot-psw {
+    margin-top: 50px;
+}
+@media screen and (min-width: 1700px) {
+  .login-title {
+    font-size: 96px;
+  }
+  .login-form .form-control,
+  .login-form .form-check-label,.forgot-link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767.59px) {
+    .login-title {
+        font-size: 45px;
+      }
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  background-image: url("../images/sector.png");
+  background-size: cover;
+  background-position: bottom center;
+  overflow: hidden;
+}
+.sector-section {
+  padding-top: 90px;
+  height: 100%;
+}
+.slider .slick-prev:before,
+.slider-vertical .slick-next:before {
+  display: none;
+}
+.slider-content div {
+  /* height: 380px; */
+  height: calc(100vh - 380px) !important;
+  color: #ffffff;
+}
+.slider-thumb {
+  border-top: 1px solid #ffffff;
+}
+.slider-thumb .slick-slide {
+  margin: 8px 8px 0;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+.slider-thumb div h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 6px;
+
+}
+.slider-thumb .slick-slide.slick-current,
+.slider-thumb .slick-slide.slick-center {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.slider-thumb .slick-slide::after {
+  transition: height 1s;
+  height: 0;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  opacity: 1;
+  background: linear-gradient(    180deg,    rgba(217, 217, 217, 0) 14.41%,    rgba(217, 217, 217, 0.63) 14.42%,    rgba(217, 217, 217, 0) 74.83%  );
+  content: "";
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: 0px;
+  z-index: 1;
+}
+.slider-thumb .slick-active.slick-slide::after {
+  height: 0%;
+  opacity: 0;
+ }
+.slider-thumb .slick-current.slick-slide::after,
+.slider-thumb .slick-center.slick-slide::after {
+ height: 100%;
+ opacity: 1;
+}
+
+
+.slider-thumb .slick-slide.slick-current h3,
+.slider-thumb .slick-slide.slick-center h3 {
+  font-weight: 600;
+  white-space: normal;
+  color: #cc1521;
+  z-index: 3;
+  position: relative;
+  animation: blinkText 1s linear;
+  -webkit-animation: blinkText 1s linear;
+}
+.sector-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sector-content p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+}
+.sector-content ul {
+  list-style: disc;
+}
+@media screen and (min-width: 1700px) {
+  .slider-thumb div h3,
+  .sector-content p {
+    font-size: 30px;
+  }
+
+  .slider-content div {
+    height: calc(100vh - 500px) !important;
+  }
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    height: 500px;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    width: 260px;
+    height: 230px;
+  }
+  .slider-thumb div h3,
+  .sector-content p {
+    font-size: 16px;
+  }
+  .slider-content div {
+    height: calc(100vh - 300px) !important;
+  }
+  .slider-thumb .slick-slide.slick-current,
+  .slider-thumb .slick-slide.slick-center {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+@keyframes blinkText {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+}

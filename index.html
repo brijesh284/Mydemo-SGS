@@ -300,7 +300,7 @@
 
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-60px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 hover_change_blank_01"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="1"
             />
 
@@ -318,7 +318,7 @@
             />
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[60px] lg:-translate-y-36 md:-translate-y-36 -translate-y-20 hover_change_blank_02"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="2"
             />
           </a>
@@ -335,7 +335,7 @@
             />
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[60px] translate-y-16 hover_change_blank_03"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="3"
             />
           </a>
@@ -352,7 +352,7 @@
             />
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-60px] lg:translate-y-40 md:translate-y-40 translate-y-32 hover_change_blank_04"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="4"
             />
           </a>
@@ -369,7 +369,7 @@
             />
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] translate-y-16 hover_change_blank_05"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="5"
             />
           </a>
@@ -386,7 +386,7 @@
             />
             <img
               class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_blank_06"
-              src="./assets/images/vector.png"
+              src="./assets/images/dark.png"
               alt="6"
             />
           </a>
@@ -544,7 +544,8 @@
   <script>
     if (screen.availWidth > 1023) {
       const mainHexImage = document.querySelector(".main-hex-img");
-      const hexSurround = document.querySelectorAll(".hex-surround");
+      const hexSurround = document.querySelectorAll(".hex-surround-common");
+      const hexSurroundBlank = document.querySelectorAll(".hex-surround-blank");
       const heading = document.querySelector("#heading");
 
       let hoveredOnAnyOne = false;
@@ -560,6 +561,9 @@
         hexSurround.forEach((element) => {
           element.classList.remove("hidden");
         });
+        hexSurroundBlank.forEach((element) => {
+          element.classList.remove("hidden");
+        });
       });
       mainHexImage?.addEventListener("mouseout", () => {
         hoveredOnAnyOne = false;
@@ -573,29 +577,36 @@
         // })
       });
 
+      var is_hover_in = false;
       hexSurround.forEach((element, i) => {
         element.addEventListener("mouseover", () => {
-          hoveredOnAnyOne = true;
+          if(!is_hover_in){
+            // is_hover_in = true;
+            // setTimeout(function(){
+            //   is_hover_in = false;
+            // },400);
+            hoveredOnAnyOne = true;
 
-          mainHexImage.classList.add("scale-150");
-          heading.classList.add("hidden"); // heading will be hidden
-          const imagePath = element.getAttribute("src");
-          if (!imagePath.includes("Hover")) {
-            element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
-          }
-
-          mainHexImage.setAttribute(
-            "src",
-            imagePath.replace(".png", "Coloured.png")
-          );
-
-          hexSurround.forEach((ele, index) => {
-            if (index != i) {
-              ele.classList.add("blur-sm");
-              ele.classList.add("opacity-40");
-              // ele.classList.remove("hidden")
+            mainHexImage.classList.add("scale-150");
+            heading.classList.add("hidden"); // heading will be hidden
+            const imagePath = element.getAttribute("src");
+            if (!imagePath.includes("Hover")) {
+              // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
             }
-          });
+
+            mainHexImage.setAttribute(
+              "src",
+              imagePath.replace(".png", "Coloured.png")
+            );
+
+            // hexSurround.forEach((ele, index) => {
+            //   if (index != i) {
+            //     ele.classList.add("blur-sm");
+            //     ele.classList.add("opacity-40");
+            //     // ele.classList.remove("hidden")
+            //   }
+            // });
+          }
         });
 
         element.addEventListener("mouseout", () => {
@@ -608,18 +619,21 @@
 
           const imagePath = element.getAttribute("src");
           if (imagePath.includes("Hover")) {
-            element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
+            // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
           }
 
-          hexSurround.forEach((ele, index) => {
-            ele.classList.remove("blur-sm");
-            ele.classList.remove("opacity-40");
-          });
+          // hexSurround.forEach((ele, index) => {
+          //   ele.classList.remove("blur-sm");
+          //   ele.classList.remove("opacity-40");
+          // });
         });
       });
 
       function hideSurround() {
         hexSurround.forEach((ele, index) => {
+          ele.classList.add("hidden");
+        });
+        hexSurroundBlank.forEach((ele, index) => {
           ele.classList.add("hidden");
         });
       }

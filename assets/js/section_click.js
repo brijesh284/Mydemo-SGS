@@ -147,38 +147,64 @@ if (screen.availWidth < 1024) {
 
 var mouseover = false;
 jQuery(document).ready(function() {
-  var img1_classes = jQuery('.img1').attr('class').replace('hidden', '');
-  var img2_classes = jQuery('.img2').attr('class').replace('hidden', '');
-  var img3_classes = jQuery('.img3').attr('class').replace('hidden', '');
-  var img4_classes = jQuery('.img4').attr('class').replace('hidden', '');
-  var img5_classes = jQuery('.img5').attr('class').replace('hidden', '');
-  var img6_classes = jQuery('.img6').attr('class').replace('hidden', '');
+  jQuery('.hex-surround-common').css({'z-index':'100',opacity:0});
+  // jQuery('.hex-surround-blank').css('display','none');
+  var img1_classes = jQuery('.img1').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
+  var img2_classes = jQuery('.img2').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
+  var img3_classes = jQuery('.img3').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
+  var img4_classes = jQuery('.img4').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
+  var img5_classes = jQuery('.img5').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
+  var img6_classes = jQuery('.img6').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover');
   
   var img_classes = ['.img1','.img2','.img3','.img4','.img5','.img6'];
 
+  jQuery('.hex-surround-blank').css('display','none');
+
+
   jQuery.each(img_classes, function( index, value ) {
+    console.log('.hex-surround'+value);
     jQuery('.hex-surround'+value).mouseover(function(){
         if(!mouseover){     
-          mouseover = true;
-          // console.log('11111111111111');
+          
+          jQuery('.hex-surround-hover').css({'transition':'0','opacity':'1'});
+  
+          console.log('11111111111111');
           jQuery('.hover_change_01').attr('class',img2_classes+' hover_change_01');
           jQuery('.hover_change_02').attr('class',img3_classes+' hover_change_02');
           jQuery('.hover_change_03').attr('class',img1_classes+' hover_change_03');
           jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
           jQuery('.hover_change_05').attr('class',img6_classes+' hover_change_05');
           jQuery('.hover_change_06').attr('class',img5_classes+' hover_change_06');
+
+          setTimeout(function(){
+            
+            mouseover = true;
+            console.log('____11111111111111');
+
+            jQuery('.hex-surround-hover').css({'transition':'0','opacity':'0'});
+
+            jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
+            jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
+            jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
+            jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+            jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
+            jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
+                  
+          },500);
         }
     });
     jQuery('.hex-surround'+value).mouseout(function(){
         if (mouseover) {        
           mouseover = false;
           // console.log('22222222222');
-          jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
-          jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
-          jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
-          jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
-          jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
-          jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
+          // jQuery('.hex-surround-blank').css('display','none');
+
+          // jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
+          // jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
+          // jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
+          // jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+          // jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
+          // jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
         }
     });  
   });

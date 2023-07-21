@@ -65,7 +65,7 @@ if (screen.availWidth < 1024) {
         jQuery(this).addClass("redirect");
 
         $main_logo.attr("src", "./assets/images/vector3-hover.png");
-        $main_logo.css({ "--tw-scale-x": "1.5", "--tw-scale-y": "1.5" });
+        // $main_logo.css({ "--tw-scale-x": "1.5", "--tw-scale-y": "1.5" });
         // $main_logo.removeClass('clickable');
         $all_img.removeClass("hidden");
       }

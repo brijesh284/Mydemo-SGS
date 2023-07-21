@@ -178,7 +178,7 @@ jQuery(document).ready(function() {
   var img5_classes = jQuery('.img5').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img5','');
   var img6_classes = jQuery('.img6').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img6','');
   var img_classes = ['.img1','.img2','.img3','.img4','.img5','.img6'];
-  
+   
   // var classes_array = [img1_classes,img2_classes,img3_classes,img4_classes,img5_classes,img6_classes];
   // var img_class_array = [];
   // for (let i = 0; i < classes_array.length; i++) {

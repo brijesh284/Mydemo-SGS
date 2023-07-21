@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: gainsboro;
-  background-image: url("../images/landing-bg.jpg");
+  background-image: url("../images/landing-bg.png");
   background-size: cover;
   background-position: center;
   background-clip: padding-box;
@@ -207,6 +207,7 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .footer-container ul li {
@@ -229,6 +230,9 @@ body {
   -moz-transition: opacity 0.2s ease-in;
   -ms-transition: opacity 0.2s ease-in;
   -o-transition: opacity 0.2s ease-in;
+}
+.wheel-footer ul li a {
+  opacity: 1 !important;
 }
 .footer-container ul li a:hover {
   opacity: 1;

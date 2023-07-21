@@ -303,7 +303,6 @@
               src="./assets/images/dark.png"
               alt="1"
             />
-
           </a>
           <a href="careers.html" class="hover-section section2">
             <img
@@ -441,57 +440,9 @@
     </div>
     <div class="footer-bottom">
       <div
-        class="footer-container flex lg:items-center justify-between lg:px-10 md:px-4 px-2"
+        class="footer-container flex lg:items-center justify-end lg:px-10 md:px-4 px-2"
       >
-        <div class="left-part">
-          <ul class="contact-detail">
-            <li>
-              <a href="tel:+385 1 353 5930"
-                ><img
-                  src="./assets/images/social-icons/phone.png"
-                  class="img-fluid mr-2"
-                />+385 1 353 5930</a
-              >
-            </li>
-            <li>
-              <a href="tel:+385 91 557 36 24"
-                ><img
-                  src="./assets/images/social-icons/mobile.png"
-                  class="img-fluid mr-2"
-                />+385 91 557 36 24</a
-              >
-            </li>
-            <li>
-              <a href="mailto:business@sgs-daas.com"
-                ><img
-                  src="./assets/images/social-icons/mail.png"
-                  class="img-fluid mr-2"
-                />business@sgs-daas.com</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="right-part d-flex align-items-center">
-          <div class="dropdown mr-2">
-            <button
-              class="btn border-0 dropdown-toggle d-flex align-items-center"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img src="./assets/images/en.png" class="img-fluid" />
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#"
-                ><img src="./assets/images/en.png" class="img-fluid"
-              /></a>
-              <a class="dropdown-item" href="#"
-                ><img src="./assets/images/de.png" class="img-fluid"
-              /></a>
-            </div>
-          </div>
+        <div class="right-part wheel-footer d-flex align-items-center">
           <ul class="social-detail">
             <li>
               <a href="https://www.facebook.com/ScalableGlobalSolutions/"
@@ -580,7 +531,7 @@
       var is_hover_in = false;
       hexSurround.forEach((element, i) => {
         element.addEventListener("mouseover", () => {
-          if(!is_hover_in){
+          if (!is_hover_in) {
             // is_hover_in = true;
             // setTimeout(function(){
             //   is_hover_in = false;

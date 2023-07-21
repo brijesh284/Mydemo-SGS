@@ -1,482 +1,789 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/sidebar.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/our-team.css" />
 
-  <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="assets/css/our-team.css" />
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <!-- <script src="node_modules/basicscroll/dist/basicScroll.min.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- scripts -->
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
-  <!-- <script src="node_modules/basicscroll/dist/basicScroll.min.js"></script> -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/our-team.js"></script>
+  </head>
 
-
-  <script src="assets/js/app.js" type="module"></script>
-  <script src="assets/js/our-team.js"></script>
-
-</head>
-
-
-<body>
-  <header class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top" id="main-header"
-    style="position: fixed">
-    <div class="d-flex align-items-center">
-      <div class="back-button mr-2">
-        <a class="btn btn-light p-0" id="back" href="index.html"
-          ><img src="assets/images/left.png" class="img-fluid" width="25px"
-        /></a>
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      id="main-header"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="back-button mr-2">
+          <a class="btn btn-light p-0" id="back" href="index.html"
+            ><img src="assets/images/left.png" class="img-fluid" width="25px"
+          /></a>
+        </div>
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
       </div>
-      <div class="logo w-20">
-        <a href="index.html"
-          ><img id="logo" src="assets/images/logo.png"
-        /></a>
-      </div>
-    </div>
-    <div class="side-nav flex items-center">
-      <!-- <a class="nav-link" href="career.html">Career</a>
+      <div class="side-nav flex items-center">
+        <!-- <a class="nav-link" href="career.html">Career</a>
           <a class="nav-link">Language</a> -->
-      <div class="button mr-10">
-        <a href="login.html" id="login"
-          class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black">Login</a>
+        <div class="button mr-10">
+          <a
+            href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
       </div>
-      <div class="menu">
-        <span
-          class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
-          style="color: #000">☰</span>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- ownSidebar -->
-  <own-sidebar></own-sidebar>
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
 
-
-  <div class="top-content content w-full flex justify-center items-center content-start">
-    <div class="overlay bg-no-repeat bg-cover bg-center fixed w-full h-screen">
-      <div class="px-4 flex justify-center items-center backdrop-blur-md w-full h-full">
-        <div class="card bg-transparent w-1/2 min-h-[60vh] hidden border-none ">
-          <div class="pic w-[15vw] h-[14vw] pt-[1vw]  bg-white ">
-            <img class="bg-white w-[13vw] h-[13vw] m-auto " src="" />
+    <div
+      class="top-content content w-full flex justify-center items-center content-start"
+    >
+      <div
+        class="overlay bg-no-repeat bg-cover bg-center fixed w-full h-screen"
+      >
+        <div
+          class="px-4 flex justify-center items-center backdrop-blur-md w-full h-full"
+        >
+          <div
+            class="card bg-transparent w-1/2 min-h-[60vh] hidden border-none"
+          >
+            <div class="pic w-[15vw] h-[14vw] pt-[1vw] bg-white">
+              <img class="bg-white w-[13vw] h-[13vw] m-auto" src="" />
+            </div>
+            <span
+              id="closeBtn"
+              class="text-3xl absolute left-[16vw] top-0 font-mono cursor-pointer hover:text-red-900 text-red-400 duration-500"
+              >X</span
+            >
+            <div class="text w-full bg-white p-[1vw]">
+              <span class="name">Filip Barilić</span><br />
+              <span class="position text-red-700">IT Specialist</span>
+              <p class="description mt-3">
+                Filip is a student at Algebra University, currently majoring
+                Bachelor’s in a field of Digital Marketing in Zagreb. Ever since
+                he started studying, Filip was perfecting his IT skills. He is a
+                hard-working, reliable and responsible type of person who takes
+                ownership of situations, and someone who is not afraid of a
+                difficult challenge.
+              </p>
+            </div>
           </div>
-          <span id="closeBtn"
-            class="text-3xl absolute left-[16vw] top-0  font-mono cursor-pointer hover:text-red-900 text-red-400 duration-500 ">X</span>
-          <div class="text w-full bg-white p-[1vw]">
-            <span class="name">Filip Barilić</span><br>
-            <span class="position text-red-700">IT Specialist</span>
-            <p class="description mt-3">Filip is a student at Algebra University, currently majoring Bachelor’s in a
-              field
-              of Digital Marketing in Zagreb. Ever since he started studying, Filip was perfecting his IT skills.
-              He is a hard-working, reliable and responsible type of person who takes ownership of situations, and
-              someone
-              who is not afraid of a difficult challenge.</p>
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="band_home_hero has-motion">
-    <div class="band_home_hero--progress progress-a"></div>
-    <div class="band_home_hero--progress progress-b"></div>
-    <div class="band_home_hero--wrap">
-      <div class="band_home_hero--inner">
-        <div class="band_home_hero--image_grid_wrap"
-          style="transform: translate(-50%, calc(-1 * (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) + 133.69817665510215px - 64px)); --imageGridTopPadProgressA: 10vh; --imageGridOpacity: 0.001; --imageGridScale: 1; --heroImageOpacity: 1; --imageGridTopPadProgressB: 10vh;">
-          <div class="persons band_home_hero--image_grid">
-            <div data-row="1" data-column="1" class=" grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img class="" src="assets/images/organization members/person-1.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="1" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-2.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="1" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-3.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="1" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-4.png" sizes="20vw">
-              </div>
-            </div>
-
-
-            <div data-row="1" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-5.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="1" data-column="5" class="grid_image hero-image">
-              <div class="band_home_hero--hero_image">
-                <div class="base_image contentful_image no-bg">
-                  <img src="assets/images/organization members/if-you-text.svg" sizes="50vw">
+    <div class="band_home_hero has-motion">
+      <div class="band_home_hero--progress progress-a"></div>
+      <div class="band_home_hero--progress progress-b"></div>
+      <div class="band_home_hero--wrap">
+        <div class="band_home_hero--inner">
+          <div
+            class="band_home_hero--image_grid_wrap"
+            style="
+              transform: translate(
+                -50%,
+                calc(
+                  -1 * (
+                      var(--imageGridTopPadProgressA) +
+                        var(--imageGridTopPadProgressB)
+                    ) + 133.69817665510215px - 64px
+                )
+              );
+              --imageGridTopPadProgressA: 10vh;
+              --imageGridOpacity: 0.001;
+              --imageGridScale: 1;
+              --heroImageOpacity: 1;
+              --imageGridTopPadProgressB: 10vh;
+            "
+          >
+            <div class="persons band_home_hero--image_grid">
+              <div data-row="1" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    class=""
+                    src="assets/images/organization members/person-1.png"
+                    sizes="20vw"
+                  />
                 </div>
               </div>
-            </div>
-            <div data-row="1" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-6.png" sizes="20vw">
+              <div data-row="1" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-2.png"
+                    sizes="20vw"
+                  />
+                </div>
               </div>
-            </div>
+              <div data-row="1" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-3.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="1" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-4.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
 
-            <div data-row="1" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-7.png" sizes="20vw">
+              <div data-row="1" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-5.png"
+                    sizes="20vw"
+                  />
+                </div>
               </div>
-            </div>
-            <div data-row="1" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-8.png" sizes="20vw">
+              <div data-row="1" data-column="5" class="grid_image hero-image">
+                <div class="band_home_hero--hero_image">
+                  <div class="base_image contentful_image no-bg">
+                    <img
+                      src="assets/images/organization members/if-you-text.svg"
+                      sizes="50vw"
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div data-row="1" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-9.png" sizes="20vw">
+              <div data-row="1" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-6.png"
+                    sizes="20vw"
+                  />
+                </div>
               </div>
-            </div>
-            <div data-row="1" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-10.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-11.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-12.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-13.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-14.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-15.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-16.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-17.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-18.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-19.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-20.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="2" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-21.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-22.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-23.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-24.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-25.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-26.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-27.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="5" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-28.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="4" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-29.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="3" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-30.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="2" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-31.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="3" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-32.png" sizes="20vw">
-              </div>
-            </div>
-            <div data-row="4" data-column="1" class="grid_image normal-image">
-              <div class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg">
-                <img src="assets/images/organization members/person-33.png" sizes="20vw">
-              </div>
-            </div>
 
-
+              <div data-row="1" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-7.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="1" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-8.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="1" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-9.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="1" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-10.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-11.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-12.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-13.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-14.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-15.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-16.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-17.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-18.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-19.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-20.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="2" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-21.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-22.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-23.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-24.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-25.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-26.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-27.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="5" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-28.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="4" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-29.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="3" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-30.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="2" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-31.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <div data-row="3" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-32.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div>
+              <!-- <div data-row="4" data-column="1" class="grid_image normal-image">
+                <div
+                  class="person person-hover cursor-pointer transition duration-300 base_image contentful_image no-bg"
+                >
+                  <img
+                    src="assets/images/organization members/person-33.png"
+                    sizes="20vw"
+                  />
+                </div>
+              </div> -->
+            </div>
           </div>
-        </div>
-        <!-- <div class="band_home_hero--hero_copy">
+          <!-- <div class="band_home_hero--hero_copy">
         <div class="band_home_hero--headline">
           <a class="c-hero__link" href="#">
             <h1><span class="text_crop">Make every contact matter.</span></h1>
           </a>
         </div>
       </div> -->
+        </div>
       </div>
     </div>
-  </div>
 
+    <div class="my-16 py-8 container">
+      <div class="title-divider mb-4">
+        <span>Our Team</span>
+      </div>
+      <div class="space-y-40">
+        <!-- 1 -->
+        <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
+          <div
+            class="image-wrapper transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-1.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 basis-3/5"
+            data-aos="fade-right"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              INVESTMENT
+            </h3>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                Attracting new investors by showcasing a successful track
+                record, effectively communicating investment strategy, and
+                networking to expand our investor base is a top priority for our
+                Investment Team at Scalable Global Solutions
+              </li>
+              <li class="text-base font-light">
+                The team also manages all aspects of investor relations, from
+                organizing shareholder meetings to sourcing new business
+                partners and investors globally
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <!-- 2 -->
+        <div
+          class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse"
+        >
+          <div
+            class="image-wrapper image-wrapper-2 transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 opacity-0 basis-3/5"
+            data-aos="fade-left"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              HUMAN RESOURCES
+            </h3>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                At SGS, we recognize that our people are our most valuable asset
+              </li>
+              <li class="text-base font-light">
+                The HR team is dedicated to attracting top talent, fostering a
+                positive work culture, and supporting the professional growth
+                and well-being of our employees
+              </li>
+              <li class="text-base font-light">
+                Through effective recruitment, training, and development
+                programs, we create an inclusive and engaging workplace
+                environment
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
+          <div
+            class="image-wrapper image-wrapper-3 transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-3.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 opacity-0 basis-3/5"
+            data-aos="fade-right"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              MARKETING
+            </h3>
 
-  <div class="my-16 py-8 container">
-    <div class="title-divider mb-4">
-      <span>Our Team</span>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                This team at our company is a highly creative and talented group
+                of individuals specializing in various graphic designs and
+                social media disciplines
+              </li>
+              <li class="text-base font-light">
+                They combine their expertise with advanced software tools to
+                create visually stunning and immersive designs that elevate our
+                brand and captivate audiences across digital and print platforms
+              </li>
+              <li class="text-base font-light">
+                By skillfully combining graphic design with marketing, this team
+                creates meaningful marketing materials and digital art for our
+                company and clients' audiences
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div
+          class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse"
+        >
+          <div
+            class="image-wrapper image-wrapper-4 transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-4.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 opacity-0 basis-3/5"
+            data-aos="fade-left"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              SALES
+            </h3>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                The Sales team at SGS is driven by passion and a
+                customer-centric approach
+              </li>
+              <li class="text-base font-light">
+                Our goal is to build strong relationships with clients,
+                understand their needs, and provide tailored solutions
+              </li>
+              <li class="text-base font-light">
+                Through effective communication and negotiation, we consistently
+                exceed sales targets and deliver exceptional results
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
+          <div
+            class="image-wrapper image-wrapper-5 transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-5.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 opacity-0 basis-3/5"
+            data-aos="fade-right"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              OPERATIONS & IT
+            </h3>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                The Operations and IT department consist of highly skilled
+                professionals who diligently work behind the scenes to ensure
+                the seamless functioning of our systems
+              </li>
+              <li class="text-base font-light">
+                Serving as the backbone of our business, this department is
+                responsible for meticulous day-to-day planning, coordination,
+                troubleshooting of technical issues, and efficient management of
+                our operations
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div
+          class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse"
+        >
+          <div
+            class="image-wrapper image-wrapper-6 transition duration-1000 basis-2/5 z-10"
+            data-aos="image-wrapper"
+          >
+            <img
+              class="mx-auto"
+              src="assets/images/our-team/img-6.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-wrapper transition duration-1000 opacity-0 basis-3/5"
+            data-aos="fade-left"
+          >
+            <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">
+              FRONT DESK
+            </h3>
+            <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+              <li class="text-base font-light">
+                The Front Desk team at SGS is the welcoming face of our
+                organization, providing exceptional customer service and
+                maintaining a well-organized reception area
+              </li>
+              <li class="text-base font-light">
+                They handle inquiries, schedule appointments, and assist with
+                administrative tasks while creating a positive and professional
+                environment for clients, visitors, and employees
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="space-y-40">
-      <!-- 1 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
-        <div class="image-wrapper transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper"
-          data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-1.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  basis-3/5" data-aos="fade-right">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">INVESTMENT</h3>
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
-            <li class="text-base font-light">Attracting new investors by showcasing a successful track
-              record, effectively communicating
-              investment
-              strategy, and networking to expand our investor base is a top priority for our Investment Team at
-              Scalable
-              Global Solutions
-            </li>
-            <li class="text-base font-light">The team also manages all aspects of investor relations, from organizing
-              shareholder meetings to
-              sourcing
-              new business partners and investors globally
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- 2 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse">
-        <div class="image-wrapper image-wrapper-2 transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-2.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  opacity-0 basis-3/5" data-aos="fade-left">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">HUMAN RESOURCES</h3>
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageGridWrap = document.querySelector(
+          ".band_home_hero--image_grid_wrap"
+        );
+        const homeHeroProgressA = document.querySelector(
+          ".band_home_hero--progress.progress-a"
+        );
+        const homeHeroProgressB = document.querySelector(
+          ".band_home_hero--progress.progress-b"
+        );
+        const heroImage = document.querySelector(".band_home_hero--hero_image");
 
-            <li class="text-base font-light">At SGS, we recognize that our people are our most valuable asset</li>
-            <li class="text-base font-light">The HR team is dedicated to attracting top talent, fostering a positive
-              work culture, and supporting the professional growth and well-being of our employees</li>
-            <li class="text-base font-light">Through effective recruitment, training, and development programs, we
-              create an inclusive and engaging workplace environment</li>
+        const transform = (instance, percentage, props) => {
+          const headerHeight = document
+            .querySelector("#main-header")
+            .getBoundingClientRect().height;
 
-          </ul>
-        </div>
-      </div>
-      <!-- 3 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
-        <div class="image-wrapper image-wrapper-3 transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-3.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  opacity-0 basis-3/5" data-aos="fade-right">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">MARKETING</h3>
+          const viewportHeight = document.documentElement.clientHeight;
+          const gridItemHeight =
+            heroImage.getBoundingClientRect().height /
+            getComputedStyle(heroImage).getPropertyValue("--imageGridScale");
 
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
-            <li class="text-base font-light">This team at our company is a highly creative and talented group of
-              individuals specializing in various graphic designs and social media disciplines</li>
-            <li class="text-base font-light">They combine their expertise with advanced software tools to create
-              visually stunning and immersive designs that elevate our brand and captivate audiences across digital
-              and
-              print platforms</li>
-            <li class="text-base font-light">By skillfully combining graphic design with marketing, this team creates
-              meaningful marketing materials and digital art for our company and clients' audiences</li>
-          </ul>
-        </div>
-      </div>
-      <!-- 4 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse">
-        <div class="image-wrapper image-wrapper-4 transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-4.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  opacity-0 basis-3/5" data-aos="fade-left">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">SALES</h3>
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
-            <li class="text-base font-light">The Sales team at SGS is driven by passion and a customer-centric
-              approach
-            </li>
-            <li class="text-base font-light">Our goal is to build strong relationships with clients, understand their
-              needs, and provide tailored solutions</li>
-            <li class="text-base font-light">Through effective communication and negotiation, we consistently exceed
-              sales targets and deliver exceptional results</li>
-          </ul>
-        </div>
-      </div>
-      <!-- 5 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row">
-        <div class="image-wrapper image-wrapper-5 transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-5.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  opacity-0 basis-3/5" data-aos="fade-right">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">OPERATIONS & IT</h3>
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
-            <li class="text-base font-light">The Operations and IT department consist of highly skilled professionals
-              who diligently work behind the scenes to ensure the seamless functioning of our systems</li>
-            <li class="text-base font-light">Serving as the backbone of our business, this department is responsible
-              for
-              meticulous day-to-day planning, coordination, troubleshooting of technical issues, and efficient
-              management of our operations</li>
-          </ul>
-        </div>
-      </div>
-      <!-- 6 -->
-      <div class="our-team-sec flex flex-col items-center gap-8 lg:flex-row-reverse">
-        <div class="image-wrapper image-wrapper-6 transition duration-1000 basis-2/5 z-10" data-aos="image-wrapper">
-          <img class="mx-auto" src="assets/images/our-team/img-6.png" alt="">
-        </div>
-        <div class="text-wrapper transition duration-1000  opacity-0 basis-3/5" data-aos="fade-left">
-          <h3 class="text-3xl font-medium text-[#B0304C] uppercase mb-4">FRONT DESK</h3>
-          <ul class="list-disc ps-3 space-y-4 max-w-[700px]">
-            <li class="text-base font-light">The Front Desk team at SGS is the welcoming face of our organization,
-              providing exceptional customer service and maintaining a well-organized reception area</li>
-            <li class="text-base font-light">They handle inquiries, schedule appointments, and assist with
-              administrative tasks while creating a positive and professional environment for clients, visitors, and
-              employees</li>
-          </ul>
-        </div>
-      </div>
+          imageGridWrap.style.transform = `translate(-50%, calc(-1 * (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) + ${
+            (viewportHeight - gridItemHeight) / 24
+          }px - ${headerHeight}px))`;
+        };
 
-
-    </div>
-
-  </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const imageGridWrap = document.querySelector('.band_home_hero--image_grid_wrap');
-      const homeHeroProgressA = document.querySelector('.band_home_hero--progress.progress-a');
-      const homeHeroProgressB = document.querySelector('.band_home_hero--progress.progress-b');
-      const heroImage = document.querySelector('.band_home_hero--hero_image');
-
-      const transform = (instance, percentage, props) => {
-        const headerHeight = document.querySelector('#main-header').getBoundingClientRect().height;
-
-        const viewportHeight = document.documentElement.clientHeight;
-        const gridItemHeight = heroImage.getBoundingClientRect().height / getComputedStyle(heroImage).getPropertyValue('--imageGridScale');
-
-
-        imageGridWrap.style.transform = `translate(-50%, calc(-1 * (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) + ${(viewportHeight - gridItemHeight) / 24}px - ${headerHeight}px))`;
-
-      };
-
-      const heroImageScrollPhaseOne = basicScroll.create({
-        elem: homeHeroProgressA,
-        from: 'top-top',
-        to: 'bottom-top',
-        timing: 'quadOut',
-        direct: imageGridWrap,
-        inside: transform,
-        props: {
-          '--imageGridTopPadProgressA': {
-            from: '10vh',
-            to: '0vh'
+        const heroImageScrollPhaseOne = basicScroll.create({
+          elem: homeHeroProgressA,
+          from: "top-top",
+          to: "bottom-top",
+          timing: "quadOut",
+          direct: imageGridWrap,
+          inside: transform,
+          props: {
+            "--imageGridTopPadProgressA": {
+              from: "10vh",
+              to: "0vh",
+            },
+            "--imageGridOpacity": {
+              from: 0.001,
+              to: 1,
+            },
+            "--imageGridScale": {
+              from: 1,
+              to: 0.333,
+            },
+            "--heroImageOpacity": {
+              from: 1,
+              to: 0.85,
+            },
           },
-          '--imageGridOpacity': {
-            from: 0.001,
-            to: 1
+        });
+        heroImageScrollPhaseOne.start();
+
+        const heroImageScrollPhaseTwo = basicScroll.create({
+          elem: homeHeroProgressB,
+          from: "top-top",
+          to: "bottom-top",
+          timing: "quadOut",
+          direct: imageGridWrap,
+          props: {
+            "--imageGridTopPadProgressB": {
+              from: "10vh",
+              to: "0vh",
+            },
           },
-          '--imageGridScale': {
-            from: 1,
-            to: .333
-          },
-          '--heroImageOpacity': {
-            from: 1,
-            to: 0.85
-          }
-        }
+        });
+        heroImageScrollPhaseTwo.start();
+
+        transform();
       });
-      heroImageScrollPhaseOne.start();
+    </script>
 
-      const heroImageScrollPhaseTwo = basicScroll.create({
-        elem: homeHeroProgressB,
-        from: 'top-top',
-        to: 'bottom-top',
-        timing: 'quadOut',
-        direct: imageGridWrap,
-        props: {
-          '--imageGridTopPadProgressB': {
-            from: '10vh',
-            to: '0vh'
-          }
-        }
-      });
-      heroImageScrollPhaseTwo.start();
-
-      transform();
-    });
-  </script>
-
-  <!-- <script>
+    <!-- <script>
 
     const sections = [];
 
@@ -496,7 +803,7 @@
     })
 
   </script> -->
-  <!-- <script>
+    <!-- <script>
 
     const instance = basicScroll.create({
       elem: document.querySelector('.text-wrapper'),
@@ -523,20 +830,17 @@
 
   </script> -->
 
-  <script>
-    AOS.init({
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 280, // offset (in px) from the original trigger point
-      // delay: 3000, // values from 0 to 3000, with step 50ms
-      duration: 800, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: true, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-    });
-  </script>
-</body>
-
+    <script>
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 280, // offset (in px) from the original trigger point
+        // delay: 3000, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
 </html>

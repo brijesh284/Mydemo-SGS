@@ -148,7 +148,7 @@ body {
   transition: 0.5s all;
   /* display: none !important; */
   z-index: 1000000;
-  top: 30%;
+  top: 20%;
 }
 
 .side-nav a.nav-link {

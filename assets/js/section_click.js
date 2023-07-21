@@ -147,39 +147,157 @@ if (screen.availWidth < 1024) {
 
 var mouseover = false;
 jQuery(document).ready(function() {
-  var img1_classes = jQuery('.img1').attr('class').replace('hidden', '');
-  var img2_classes = jQuery('.img2').attr('class').replace('hidden', '');
-  var img3_classes = jQuery('.img3').attr('class').replace('hidden', '');
-  var img4_classes = jQuery('.img4').attr('class').replace('hidden', '');
-  var img5_classes = jQuery('.img5').attr('class').replace('hidden', '');
-  var img6_classes = jQuery('.img6').attr('class').replace('hidden', '');
+
+  img1_src = jQuery(".img1").attr("src");
+  img2_src = jQuery(".img2").attr("src");
+  img3_src = jQuery(".img3").attr("src");
+  img4_src = jQuery(".img4").attr("src");
+  img5_src = jQuery(".img5").attr("src");
+  img6_src = jQuery(".img6").attr("src");
+  $main_logo = jQuery(".main_logo.clickable");
+  $all_img = jQuery(".hover-section img");
+  function all_off_img() {
+    jQuery(".img1").attr("src", img1_src);
+    jQuery(".img2").attr("src", img2_src);
+    jQuery(".img3").attr("src", img3_src);
+    jQuery(".img4").attr("src", img4_src);
+    jQuery(".img5").attr("src", img5_src);
+    jQuery(".img6").attr("src", img6_src);
+  }
+
+
+  jQuery('.hex-surround-common').css({'z-index':'100',opacity:1});
+  // jQuery('.hex-surround-blank').css({'--tw-scale-x': 0.90,'--tw-scale-y': 0.9});
+  // jQuery('.hex-surround-blank').css('display','none');
+  var img1_classes = jQuery('.img1').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img1','');
+  var img2_classes = jQuery('.img2').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img2','');
+  var img3_classes = jQuery('.img3').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img3','');
+  var img4_classes = jQuery('.img4').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img4','');
+  var img5_classes = jQuery('.img5').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img5','');
+  var img6_classes = jQuery('.img6').attr('class').replace('hidden', '').replace('hex-surround-common', 'hex-surround-hover').replace('img6','');
   
   var img_classes = ['.img1','.img2','.img3','.img4','.img5','.img6'];
 
+  jQuery('.hex-surround-blank').css({'transition':'0','opacity':'0'});
+
+
   jQuery.each(img_classes, function( index, value ) {
+    console.log('.hex-surround'+value);
+
     jQuery('.hex-surround'+value).mouseover(function(){
         if(!mouseover){     
+          _this = this;
           mouseover = true;
-          // console.log('11111111111111');
+
+          if (jQuery(this).attr("class").indexOf("img1") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask1Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask1Coloured.png");
+          } else if (jQuery(this).attr("class").indexOf("img2") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask2Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask2Coloured.png");
+          } else if (jQuery(this).attr("class").indexOf("img3") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask3Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask3Coloured.png");
+          } else if (jQuery(this).attr("class").indexOf("img4") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask4Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask4Coloured.png");
+          } else if (jQuery(this).attr("class").indexOf("img5") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask5Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask5Coloured.png");
+          } else if (jQuery(this).attr("class").indexOf("img6") >= 0) {
+            all_off_img();
+
+            // jQuery(this).css({ filter: "blur(0px)" });
+            // jQuery(this).addClass("redirect");
+            jQuery(this).attr("src", "./assets/images/Mask6Hover.png");
+            // jQuery($main_logo).attr("src", "./assets/images/Mask6Coloured.png");
+          }
+
+
+
+
+          jQuery('.hex-surround-blank').css({'transition':'0','opacity':'0'});
+          jQuery('.hex-surround-common').css({'transition':'0','opacity':'0'});
+          jQuery(this).css({'transition':'0','opacity':'1'});
+
+          jQuery('.hex-surround-hover').css({'transition':'0','opacity':'1'});
+  
+          console.log('11111111111111');
+          console.log('.hex-surround'+value);
+          console.log(_this);
           jQuery('.hover_change_01').attr('class',img2_classes+' hover_change_01');
           jQuery('.hover_change_02').attr('class',img3_classes+' hover_change_02');
           jQuery('.hover_change_03').attr('class',img1_classes+' hover_change_03');
           jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
           jQuery('.hover_change_05').attr('class',img6_classes+' hover_change_05');
           jQuery('.hover_change_06').attr('class',img5_classes+' hover_change_06');
+
+          setTimeout(function(){
+            mouseover = false;
+
+            jQuery('.hex-surround-hover').css({'display':'none'});
+            jQuery('.hex-surround-hover').css({'transition':'0.5s','opacity':'0'});
+
+            jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
+            jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
+            jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
+            jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+            jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
+            jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
+            
+            // setTimeout(function(argument) {
+              jQuery('.hex-surround-blank').css({'transition':'0.5s','opacity':'1','filter':' blur(4px)'});
+              console.log('____11111111111111');
+              console.log('.hex-surround'+value);
+              console.log(_this);
+              jQuery(_this).siblings('.hex-surround-blank').css({'transition':'0','opacity':'0'});
+              // },50);
+
+            setTimeout(function(argument) {
+              jQuery('.hex-surround-hover').css({'display':'block'});
+            },200);
+          },400);
         }
     });
-    jQuery('.hex-surround'+value).mouseout(function(){
-        if (mouseover) {        
-          mouseover = false;
-          // console.log('22222222222');
-          jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
-          jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
-          jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
-          jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
-          jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
-          jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
-        }
-    });  
+
+    jQuery('.main-hex-img').mouseover(function(){
+      jQuery('.hex-surround-common').css({'transition':'0','opacity':'1'});
+      all_off_img();
+
+    });
+    // jQuery('.hex-surround'+value).mouseout(function(){
+    //     if (mouseover) {        
+    //       mouseover = false;
+    //       // console.log('22222222222');
+    //       // jQuery('.hex-surround-blank').css('display','none');
+
+    //       // jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
+    //       // jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
+    //       // jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
+    //       // jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+    //       // jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
+    //       // jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
+    //     }
+    // });  
   });
 });

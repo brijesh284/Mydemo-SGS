@@ -282,6 +282,8 @@ jQuery(document).ready(function() {
 
     jQuery('.main-hex-img').mouseover(function(){
       jQuery('.hex-surround-common').css({'transition':'0','opacity':'1'});
+      all_off_img();
+
     });
     // jQuery('.hex-surround'+value).mouseout(function(){
     //     if (mouseover) {        

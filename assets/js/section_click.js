@@ -154,6 +154,9 @@ if (screen.availWidth < 1024) {
 var mouseover = false;
 jQuery(document).ready(function() {
 
+  jQuery('.hex-surround-blank').attr('src','');
+  jQuery('.hex-surround-blank').attr('display','none');
+
   jQuery('.hex-surround-common').css({'z-index':'100',opacity:1});
   jQuery('.hex-surround-blank').css({'transition':'0','opacity':'0'});
 
@@ -216,93 +219,172 @@ jQuery(document).ready(function() {
           
           _this = this;
           mouseover = true;
+          jQuery(".hover_change_01").attr("src",'./assets/images/Mask1.png');  
+          jQuery(".hover_change_02").attr("src",'./assets/images/Mask2.png');  
+          jQuery(".hover_change_03").attr("src",'./assets/images/Mask3.png');  
+          jQuery(".hover_change_04").attr("src",'./assets/images/Mask4.png');  
+          jQuery(".hover_change_05").attr("src",'./assets/images/Mask5.png');  
+          jQuery(".hover_change_06").attr("src",'./assets/images/Mask6.png');  
   
           console.log('hover in .hex-surround' +value);
 
-          mainHexImage.addClass('scale-130');
-          heading.addClass('hidden');
-
-          if (jQuery(this).attr("class").indexOf("img1") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask1Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask1Coloured.png");
-          } else if (jQuery(this).attr("class").indexOf("img2") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask2Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask2Coloured.png");
-          } else if (jQuery(this).attr("class").indexOf("img3") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask3Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask3Coloured.png");
-          } else if (jQuery(this).attr("class").indexOf("img4") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask4Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask4Coloured.png");
-          } else if (jQuery(this).attr("class").indexOf("img5") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask5Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask5Coloured.png");
-          } else if (jQuery(this).attr("class").indexOf("img6") >= 0) {
-            all_off_img();
-
-            // jQuery(this).css({ filter: "blur(0px)" });
-            // jQuery(this).addClass("redirect");
-            jQuery(this).attr("src", "./assets/images/Mask6Hover.png");
-            jQuery($main_logo).attr("src", "./assets/images/Mask6Coloured.png");
-          }
-
-          // -- only temp hover image display show
-          jQuery('.hex-surround-blank').css({'transition':'0','opacity':'0'});
-          jQuery('.hex-surround-common').css({'transition':'0','opacity':'0'});
-          jQuery(this).css({'transition':'0','opacity':'1'});
-          jQuery('.hex-surround-hover').css({'transition':'0','opacity':'1'});
-
-          // -- all image hover position change
-          jQuery('.hover_change_01').attr('class',img2_classes+' hover_change_01');
-          jQuery('.hover_change_02').attr('class',img3_classes+' hover_change_02');
-          jQuery('.hover_change_03').attr('class',img1_classes+' hover_change_03');
-          jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
-          jQuery('.hover_change_05').attr('class',img6_classes+' hover_change_05');
-          jQuery('.hover_change_06').attr('class',img5_classes+' hover_change_06');
+          // jQuery('.hex-surround-hover').attr('display','none');
+          jQuery('.hex-surround-hover').css({'transition':'0.2s','opacity':'0'});
 
           setTimeout(function(){
-            mouseover = false;
 
-            console.log('hover in position reset .hex-surround' +value);
-
-            // -- all image hover position set
-            jQuery('.hex-surround-hover').css({'display':'none'});
-            jQuery('.hex-surround-hover').css({'transition':'0.5s','opacity':'0'});
             jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
             jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
             jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
             jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
             jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
             jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
-          
-            // -- only hover image and other blank image show
-            jQuery('.hex-surround-blank').css({'transition':'0.5s','opacity':'1','filter':' blur(4px)'});
-            jQuery(_this).siblings('.hex-surround-blank').css({'transition':'0','opacity':'0'});
 
-            setTimeout(function(argument) {
-              jQuery('.hex-surround-hover').css({'display':'block'});
-            },200);
-          },600);
+            mainHexImage.addClass('scale-130');
+            heading.addClass('hidden');
+
+            if (jQuery(_this).attr("class").indexOf("img1") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask1Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask1Coloured.png");
+            } else if (jQuery(_this).attr("class").indexOf("img2") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask2Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask2Coloured.png");
+            } else if (jQuery(_this).attr("class").indexOf("img3") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask3Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask3Coloured.png");
+            } else if (jQuery(_this).attr("class").indexOf("img4") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask4Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask4Coloured.png");
+            } else if (jQuery(_this).attr("class").indexOf("img5") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask5Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask5Coloured.png");
+            } else if (jQuery(_this).attr("class").indexOf("img6") >= 0) {
+              all_off_img();
+
+              // jQuery(this).css({ filter: "blur(0px)" });
+              // jQuery(this).addClass("redirect");
+              jQuery(_this).attr("src", "./assets/images/Mask6Hover.png");
+              jQuery($main_logo).attr("src", "./assets/images/Mask6Coloured.png");
+            }
+
+            // -- only temp hover image display show
+            jQuery('.hex-surround-blank').css({'transition':'0','opacity':'0'});
+            jQuery('.hex-surround-common').css({'transition':'0','opacity':'0'});
+            jQuery(_this).css({'transition':'0','opacity':'1'});
+
+            jQuery('.hex-surround-blank').attr('display','block');
+            setTimeout(function(){
+              jQuery('.hex-surround-hover').css({'transition':'0.5','opacity':'1'});
+
+              setTimeout(function(){
+                mouseover = false;
+                // -- all image hover position change
+                jQuery('.hover_change_01').attr('class',img2_classes+' hover_change_01');
+                jQuery('.hover_change_02').attr('class',img3_classes+' hover_change_02');
+                jQuery('.hover_change_03').attr('class',img1_classes+' hover_change_03');
+                jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+                jQuery('.hover_change_05').attr('class',img6_classes+' hover_change_05');
+                jQuery('.hover_change_06').attr('class',img5_classes+' hover_change_06');
+
+                // jQuery('.hover_change_01').attr('class',img2_classes+' hover_change_01');
+                // jQuery('.hover_change_02').attr('class',img3_classes+' hover_change_02');
+                // jQuery('.hover_change_03').attr('class',img1_classes+' hover_change_03');
+                // jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+                // jQuery('.hover_change_05').attr('class',img6_classes+' hover_change_05');
+                // jQuery('.hover_change_06').attr('src',);
+                // jQuery(".hover_change_06")
+                //     .fadeOut(1000, function() {
+                //         jQuery(".hover_change_06").attr('src','./assets/images/Mask2.png');
+                //     }).fadeIn(1000,function(){
+                //     });
+                    // jQuery('.hover_change_06').fadeTo( "slow" , 0.5, function() {
+                    //     // jQuery(".hover_change_06").attr('src','./assets/images/dark.png');
+                    // });
+
+                // jQuery(".hover_change_06").fadeOut(100, function() {
+                //     jQuery(".hover_change_06").attr("src",'./assets/images/dark.png');
+                // }).fadeIn(100);
+                console.log('hover in position reset .hex-surround' +value);
+                // jQuery(".hover_change_06").click(function(){
+                
+
+                // });
+                // -- all image hover position set
+                // jQuery('.hex-surround-hover').css({'display':'none'});
+                // jQuery('.hex-surround-hover').css({'transition':'0.5s','opacity':'0'});
+                // jQuery('.hover_change_01').attr('class',img1_classes+' hover_change_01');
+                // jQuery('.hover_change_02').attr('class',img2_classes+' hover_change_02');
+                // jQuery('.hover_change_03').attr('class',img3_classes+' hover_change_03');
+                // jQuery('.hover_change_04').attr('class',img4_classes+' hover_change_04');
+                // jQuery('.hover_change_05').attr('class',img5_classes+' hover_change_05');
+                // jQuery('.hover_change_06').attr('class',img6_classes+' hover_change_06');
+              
+                // -- only hover image and other blank image show
+                // jQuery('.hex-surround-blank').css({'transition':'0.5s','opacity':'1','filter':' blur(4px)'});
+                jQuery(_this).siblings('.hex-surround-blank').css({'transition':'0','opacity':'0'});
+
+                setTimeout(function(argument) {
+                  // jQuery('.hex-surround-hover').css({'display':'block'});
+                },200);
+              },200);  
+              setTimeout(function(){
+                jQuery(".hover_change_01").fadeOut(300,function(){
+                  jQuery(".hover_change_01").attr("src",'./assets/images/dark.png');  
+                });
+                jQuery(".hover_change_02").fadeOut(300,function(){
+                  jQuery(".hover_change_02").attr("src",'./assets/images/dark.png');  
+                });
+                jQuery(".hover_change_03").fadeOut(300,function(){
+                  jQuery(".hover_change_03").attr("src",'./assets/images/dark.png');  
+                });
+                jQuery(".hover_change_04").fadeOut(300,function(){
+                  jQuery(".hover_change_04").attr("src",'./assets/images/dark.png');  
+                });
+                jQuery(".hover_change_05").fadeOut(300,function(){
+                  jQuery(".hover_change_05").attr("src",'./assets/images/dark.png');  
+                });
+                jQuery(".hover_change_06").fadeOut(300,function(){
+                  jQuery(".hover_change_06").attr("src",'./assets/images/dark.png');  
+                });
+                setTimeout(function (){
+                  jQuery(".hover_change_01").fadeIn(100,function(){
+                  });
+                  jQuery(".hover_change_02").fadeIn(100,function(){
+                  });
+                  jQuery(".hover_change_03").fadeIn(100,function(){
+                  });
+                  jQuery(".hover_change_04").fadeIn(100,function(){
+                  });
+                  jQuery(".hover_change_05").fadeIn(100,function(){
+                  });
+                  jQuery(".hover_change_06").fadeIn(100,function(){
+                    // jQuery(".hover_change_06").attr("src",'./assets/images/dark.png');  
+                  });
+                }, 300);                
+              },200);
+
+            },100);         
+          },300);
         }
     });
     jQuery('.hex-surround'+value).mouseout(function(){

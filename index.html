@@ -24,6 +24,13 @@
   </head>
 
   <body>
+    <div class="temp">
+    <style type="text/css">
+      body::before{
+        filter: blur(0px);
+      }
+    </style>
+    </div>
     <header
       class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
       style="position: fixed"
@@ -493,6 +500,8 @@
     </div>
   </body>
   <script>
+    var background_blur = "<style>body::before{filter: blur(3px);}</style>";
+    var background_set = "<style>body::before{filter: blur(0px);}</style>";
     if (screen.availWidth > 1023) {
       const mainHexImage = document.querySelector(".main-hex-img");
       const hexSurround = document.querySelectorAll(".hex-surround-common");
@@ -504,7 +513,6 @@
       // on hovering the main middle image
       mainHexImage?.addEventListener("mouseover", () => {
         hoveredOnAnyOne = true;
-
         heading.classList.add("hidden"); // heading will be hidden
         mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
         mainHexImage.classList.add("scale-100");
@@ -515,6 +523,7 @@
         hexSurroundBlank.forEach((element) => {
           element.classList.remove("hidden");
         });
+        jQuery('.temp').append(background_blur);
       });
       mainHexImage?.addEventListener("mouseout", () => {
         hoveredOnAnyOne = false;
@@ -526,6 +535,7 @@
         // hexSurround.forEach((element) => {
         //     element.classList.add("hidden")
         // })
+        jQuery('.temp').append(background_set);
       });
 
       var is_hover_in = false;
@@ -538,17 +548,17 @@
             // },400);
             hoveredOnAnyOne = true;
 
-            mainHexImage.classList.add("scale-130");
+            // mainHexImage.classList.add("scale-130");
             heading.classList.add("hidden"); // heading will be hidden
-            const imagePath = element.getAttribute("src");
-            if (!imagePath.includes("Hover")) {
+            // const imagePath = element.getAttribute("src");
+            // if (!imagePath.includes("Hover")) {
               // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
-            }
+            // }
 
-            mainHexImage.setAttribute(
-              "src",
-              imagePath.replace(".png", "Coloured.png")
-            );
+            // mainHexImage.setAttribute(
+            //   "src",
+            //   imagePath.replace(".png", "Coloured.png")
+            // );
 
             // hexSurround.forEach((ele, index) => {
             //   if (index != i) {
@@ -557,26 +567,28 @@
             //     // ele.classList.remove("hidden")
             //   }
             // });
+            jQuery('.temp').append(background_blur);
           }
         });
 
         element.addEventListener("mouseout", () => {
           hoveredOnAnyOne = false;
 
-          mainHexImage.classList.remove("scale-100");
+          // mainHexImage.classList.remove("scale-100");
           heading.classList.remove("hidden"); // heading will be hidden
-          mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
+          // mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
           // mainHexImage.classList.add("scale-150")
 
-          const imagePath = element.getAttribute("src");
-          if (imagePath.includes("Hover")) {
+          // const imagePath = element.getAttribute("src");
+          // if (imagePath.includes("Hover")) {
             // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
-          }
+          // }
 
           // hexSurround.forEach((ele, index) => {
           //   ele.classList.remove("blur-sm");
           //   ele.classList.remove("opacity-40");
           // });
+          jQuery('.temp').append(background_set);
         });
       });
 

@@ -1,0 +1,54 @@
+.error-content {
+  height: 100vh;
+  text-align: center;
+}
+.error-title {
+  color: #414141;
+  font-family: Inter;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+.error-dec {
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 200;
+  color: rgba(65, 65, 65, 1);
+}
+.error-dec a {
+  color: #000;
+  font-family: Inter;
+  text-decoration-line: underline;
+}
+@media screen and (min-width: 1600px) {
+  .error-title {
+    font-size: 92px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .error-title {
+    font-size: 60px;
+  }
+  .error-dec {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .error-title {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .error-title {
+    font-size: 34px;
+  }
+  .error-dec {
+    font-size: 16px;
+  }
+}

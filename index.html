@@ -24,29 +24,30 @@
   </head>
 
   <body>
-    <div class="temp">
-    <style type="text/css">
-      body::before{
-        filter: blur(0px);
-      }
-    </style>
-    </div>
-    <header
-      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
-      style="position: fixed"
-    >
-      <div class="d-flex align-items-center">
-        <div class="logo w-20">
-          <a href="index.html"
-            ><img id="logo" src="assets/images/logo.png"
-          /></a>
-        </div>
+    <div class="main-body">
+      <div class="temp">
+        <style type="text/css">
+          body::before {
+            filter: blur(0px);
+          }
+        </style>
       </div>
-      <div class="side-nav flex items-center">
-        <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
-          >Career</a
-        >
-        <!-- <div class="dropdown mr-2">
+      <header
+        class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+        style="position: fixed"
+      >
+        <div class="d-flex align-items-center">
+          <div class="logo w-20">
+            <a href="index.html"
+              ><img id="logo" src="assets/images/logo.png"
+            /></a>
+          </div>
+        </div>
+        <div class="side-nav flex items-center">
+          <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
+            >Career</a
+          >
+          <!-- <div class="dropdown mr-2">
           <button
             class="btn border-0 dropdown-toggle d-flex align-items-center"
             type="button"
@@ -66,339 +67,342 @@
             /></a>
           </div>
         </div> -->
-        <div class="button mr-4">
-          <a href="login.html" id="login" class="nav-link">Login</a>
+          <div class="button mr-4">
+            <a href="login.html" id="login" class="nav-link">Login</a>
+          </div>
+          <div class="menu">
+            <span
+              class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+              style="color: #000"
+              >☰</span
+            >
+          </div>
         </div>
-        <div class="menu">
-          <span
-            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
-            style="color: #000"
-            >☰</span
-          >
+      </header>
+
+      <aside class="side-bar">
+        <div class="close-container">
+          <span class="bar-closer"> &times;</span>
         </div>
-      </div>
-    </header>
 
-    <aside class="side-bar">
-      <div class="close-container">
-        <span class="bar-closer"> &times;</span>
-      </div>
-
-      <ol>
-        <li class="side-link">
-          <div class="nav-main nav-one">
-            <h6>ABOUT US</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
-            <li>
-              <a href="about.html">About SGS</a>
-            </li>
-            <li>
-              <a href="sectors.html">Sector Of Excellence</a>
-            </li>
-            <li>
-              <a href="about.html">Mission & Vision</a>
-            </li>
-            <li>
-              <a href="our-team.html">Our Team</a>
-            </li>
-            <li>
-              <a href="blog-main.html">Blog</a>
-            </li>
-            <li>
-              <a href="blog.html#tab-news">News</a>
-            </li>
-            <li>
-              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact us</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="side-link">
-          <div class="nav-main nav-two">
-            <h6 class="">CAREER</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
-            <li>
-              <a href="career.html">Our Process</a>
-            </li>
-            <li>
-              <a href="career.html">Job Opportunities</a>
-            </li>
-            <li>
-              <a href="careers.html" class="text-dark">General Application</a>
-            </li>
-          </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-three">
-            <h6 class="">PARTNERSHIP</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
-            <li>
-              <a href="partnership.html">Partnership Executive Summary</a>
-            </li>
-            <li>
-              <a href="partnership.html">Partnership program</a>
-            </li>
-            <li>
-              <a href="#">Channel Program</a>
-            </li>
-            <li>
-              <a href="partnership.html#apply-partnership"
-                >Apply for partnership</a
+        <ol>
+          <li class="side-link">
+            <div class="nav-main nav-one">
+              <h6>ABOUT US</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </li>
-          </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-four">
-            <h6 class="">Investment</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
-            <li>
-              <a href="investment.html">Investor's Corner</a>
-            </li>
-            <li>
-              <a href="investment.html">Investors NDA Signup</a>
-            </li>
-          </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-five">
-            <h6 class="">POLICIES</h6>
-            <svg
-              sidebar-toggle-item=""
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
-            <li>
-              <a href="terms.html">Terms and Conditions</a>
-            </li>
-            <li>
-              <a href="#">Data Protection</a>
-            </li>
-            <li>
-              <a href="#">Professional Practice</a>
-            </li>
-            <li>
-              <a href="#">Confidentiality</a>
-            </li>
-            <li>
-              <a href="#">Client Bill of Rights</a>
-            </li>
-            <li>
-              <a href="#">Candidate Bill of Rights</a>
-            </li>
-            <li>
-              <a href="#">Imprint</a>
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </aside>
-    <div
-      class="w-100 h-100 d-flex align-items-center justify-content-center flex-column body-wrap-dec"
-    >
-      <div id="heading" class="text-center">
-        <h2
-          class="lg:text-5xl md:text-3xl text-2xl font-semibold mt-7 lg:mb-4 mb-2"
-        >
-          Department as a Solution
-        </h2>
-        <p
-          class="max-w-3xl m-auto lg:text-2xl md:text-lg text-base mt-5 font-thin"
-        >
-          Helping Businesses expand into new markets, find matching talent and
-          office space without creating a new business entity
-        </p>
-      </div>
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+              <li>
+                <a href="about.html">About SGS</a>
+              </li>
+              <li>
+                <a href="sectors.html">Sector Of Excellence</a>
+              </li>
+              <li>
+                <a href="about.html">Mission & Vision</a>
+              </li>
+              <li>
+                <a href="our-team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="blog-main.html">Blog</a>
+              </li>
+              <li>
+                <a href="blog.html#tab-news">News</a>
+              </li>
+              <li>
+                <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </li>
 
-      <div class="hex-container text-center relative h-50 w-100 d-block">
-        <div class="main-hex m-auto group relative h-100 d-block m-auto">
-          <a href="categories.html" id="myLink">
-            <img
-              class="main-hex-img absolute lg:w-60 md:w-60 w-40 left-1/2 lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-90px] z-0 main_logo clickable"
-              src="./assets/images/vector3.png"
-              alt="main logo"
-            />
-          </a>
-          <a href="sgs-one.html" class="hover-section section1">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 img1"
-              src="./assets/images/Mask1.png"
-              alt="1"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 hover_change_01"
-              src="./assets/images/Mask1.png"
-              alt="1"
-            />
-
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-60px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 hover_change_blank_01"
-              src="./assets/images/dark.png"
-              alt="1"
-            />
-          </a>
-          <a href="careers.html" class="hover-section section2">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 img2"
-              src="./assets/images/Mask2.png"
-              alt="2"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_02"
-              src="./assets/images/Mask2.png"
-              alt="2"
-            />
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_blank_02"
-              src="./assets/images/dark.png"
-              alt="2"
-            />
-          </a>
-          <a href="administration.html" class="hover-section section3">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 img3"
-              src="./assets/images/Mask3.png"
-              alt="3"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 hover_change_03"
-              src="./assets/images/Mask3.png"
-              alt="3"
-            />
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 hover_change_blank_03"
-              src="./assets/images/dark.png"
-              alt="3"
-            />
-          </a>
-          <a href="Office-Management.html" class="hover-section section4">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 img4"
-              src="./assets/images/Mask4.png"
-              alt="4"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 hover_change_04"
-              src="./assets/images/Mask4.png"
-              alt="4"
-            />
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 hover_change_blank_04"
-              src="./assets/images/dark.png"
-              alt="4"
-            />
-          </a>
-          <a href="fleet-manage.html" class="hover-section section5">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 img5"
-              src="./assets/images/Mask5.png"
-              alt="5"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 hover_change_05"
-              src="./assets/images/Mask5.png"
-              alt="5"
-            />
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 hover_change_blank_05"
-              src="./assets/images/dark.png"
-              alt="5"
-            />
-          </a>
-          <a href="video.html" class="hover-section section6">
-            <img
-              class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 img6"
-              src="./assets/images/Mask6.png"
-              alt="6"
-            />
-            <img
-              class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_06"
-              src="./assets/images/Mask6.png"
-              alt="6"
-            />
-            <img
-              class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_blank_06"
-              src="./assets/images/dark.png"
-              alt="6"
-            />
-          </a>
+          <li class="side-link">
+            <div class="nav-main nav-two">
+              <h6 class="">CAREER</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+              <li>
+                <a href="career.html">Our Process</a>
+              </li>
+              <li>
+                <a href="career.html">Job Opportunities</a>
+              </li>
+              <li>
+                <a href="careers.html" class="text-dark">General Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-three">
+              <h6 class="">PARTNERSHIP</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul
+              id="dropdown-example"
+              class="hidden nav-links nav-three-content"
+            >
+              <li>
+                <a href="partnership.html">Partnership Executive Summary</a>
+              </li>
+              <li>
+                <a href="partnership.html">Partnership program</a>
+              </li>
+              <li>
+                <a href="#">Channel Program</a>
+              </li>
+              <li>
+                <a href="partnership.html#apply-partnership"
+                  >Apply for partnership</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-four">
+              <h6 class="">Investment</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+              <li>
+                <a href="investment.html">Investor's Corner</a>
+              </li>
+              <li>
+                <a href="investment.html">Investors NDA Signup</a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-five">
+              <h6 class="">POLICIES</h6>
+              <svg
+                sidebar-toggle-item=""
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+              <li>
+                <a href="terms.html">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="#">Data Protection</a>
+              </li>
+              <li>
+                <a href="#">Professional Practice</a>
+              </li>
+              <li>
+                <a href="#">Confidentiality</a>
+              </li>
+              <li>
+                <a href="#">Client Bill of Rights</a>
+              </li>
+              <li>
+                <a href="#">Candidate Bill of Rights</a>
+              </li>
+              <li>
+                <a href="#">Imprint</a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </aside>
+      <div
+        class="w-100 h-100 d-flex align-items-center justify-content-center flex-column body-wrap-dec"
+      >
+        <div id="heading" class="text-center">
+          <h2
+            class="lg:text-5xl md:text-3xl text-2xl font-semibold mt-7 lg:mb-4 mb-2"
+          >
+            Department as a Solution
+          </h2>
+          <p
+            class="max-w-3xl m-auto lg:text-2xl md:text-lg text-base mt-5 font-thin"
+          >
+            Helping Businesses expand into new markets, find matching talent and
+            office space without creating a new business entity
+          </p>
         </div>
 
-        <!-- <div class="wheel-cont" id="wheel-cont">
+        <div class="hex-container text-center relative h-50 w-100 d-block">
+          <div class="main-hex m-auto group relative h-100 d-block m-auto">
+            <a href="categories.html" id="myLink">
+              <img
+                class="main-hex-img absolute lg:w-60 md:w-60 w-40 left-1/2 lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-90px] z-0 main_logo clickable"
+                src="./assets/images/vector3.png"
+                alt="main logo"
+              />
+            </a>
+            <a href="sgs-one.html" class="hover-section section1">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 img1"
+                src="./assets/images/Mask1.png"
+                alt="1"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 hover_change_01"
+                src="./assets/images/Mask1.png"
+                alt="1"
+              />
+
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-60px] lg:-translate-y-60 md:-translate-y-60 -translate-y-40 hover:scale-130 hover_change_blank_01"
+                src="./assets/images/dark.png"
+                alt="1"
+              />
+            </a>
+            <a href="careers.html" class="hover-section section2">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 img2"
+                src="./assets/images/Mask2.png"
+                alt="2"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_02"
+                src="./assets/images/Mask2.png"
+                alt="2"
+              />
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_blank_02"
+                src="./assets/images/dark.png"
+                alt="2"
+              />
+            </a>
+            <a href="administration.html" class="hover-section section3">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 img3"
+                src="./assets/images/Mask3.png"
+                alt="3"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 hover_change_03"
+                src="./assets/images/Mask3.png"
+                alt="3"
+              />
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[60px] md:translate-x-[60px] translate-x-[30px] lg:translate-y-16 translate-y-8 hover_change_blank_03"
+                src="./assets/images/dark.png"
+                alt="3"
+              />
+            </a>
+            <a href="Office-Management.html" class="hover-section section4">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 img4"
+                src="./assets/images/Mask4.png"
+                alt="4"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 hover_change_04"
+                src="./assets/images/Mask4.png"
+                alt="4"
+              />
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-120px] md:translate-x-[-120px] translate-x-[-80px] lg:translate-y-40 md:translate-y-40 translate-y-24 hover_change_blank_04"
+                src="./assets/images/dark.png"
+                alt="4"
+              />
+            </a>
+            <a href="fleet-manage.html" class="hover-section section5">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 img5"
+                src="./assets/images/Mask5.png"
+                alt="5"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 hover_change_05"
+                src="./assets/images/Mask5.png"
+                alt="5"
+              />
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:translate-y-16 translate-y-8 hover_change_blank_05"
+                src="./assets/images/dark.png"
+                alt="5"
+              />
+            </a>
+            <a href="video.html" class="hover-section section6">
+              <img
+                class="hex-surround hex-surround-common lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 img6"
+                src="./assets/images/Mask6.png"
+                alt="6"
+              />
+              <img
+                class="hex-surround hex-surround-hover lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_06"
+                src="./assets/images/Mask6.png"
+                alt="6"
+              />
+              <img
+                class="hex-surround hex-surround-blank lg:w-60 md:w-60 w-36 scale-125 absolute left-1/2 hidden lg:translate-x-[-300px] md:translate-x-[-300px] translate-x-[-190px] lg:-translate-y-36 md:-translate-y-36 -translate-y-24 hover_change_blank_06"
+                src="./assets/images/dark.png"
+                alt="6"
+              />
+            </a>
+          </div>
+
+          <!-- <div class="wheel-cont" id="wheel-cont">
               <div class="col col1">
                   <div class="hexa">
                       <a href="#">
@@ -443,70 +447,70 @@
                   </div>
               </div>
           </div> -->
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div
-        class="footer-container flex lg:items-center justify-end lg:px-10 md:px-4 px-2"
-      >
-        <div class="right-part wheel-footer d-flex items-end justify-end">
-          <ul class="social-detail">
-            <li>
-              <a href="https://www.facebook.com/ScalableGlobalSolutions/"
-                ><img
-                  src="./assets/images/social-icons/facebook.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/sgsdaas/"
-                ><img
-                  src="./assets/images/social-icons/instagram.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/watch?v=QMIS3hJFZgc"
-                ><img
-                  src="./assets/images/social-icons/youtube.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/scalable-global-solutions/"
-                ><img
-                  src="./assets/images/social-icons/linkedin.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/jsc_sgs"
-                ><img
-                  src="./assets/images/social-icons/twitter.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.slideshare.net/SGSgroup"
-                ><img
-                  src="./assets/images/social-icons/tiktok.png"
-                  class="img-fluid"
-              /></a>
-            </li>
-          </ul>
+      <div class="footer-bottom">
+        <div
+          class="footer-container flex lg:items-center justify-end lg:px-10 md:px-4 px-2"
+        >
+          <div class="right-part wheel-footer d-flex items-end justify-end">
+            <ul class="social-detail">
+              <li>
+                <a href="https://www.facebook.com/ScalableGlobalSolutions/"
+                  ><img
+                    src="./assets/images/social-icons/facebook.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sgsdaas/"
+                  ><img
+                    src="./assets/images/social-icons/instagram.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=QMIS3hJFZgc"
+                  ><img
+                    src="./assets/images/social-icons/youtube.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/scalable-global-solutions/"
+                  ><img
+                    src="./assets/images/social-icons/linkedin.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jsc_sgs"
+                  ><img
+                    src="./assets/images/social-icons/twitter.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.slideshare.net/SGSgroup"
+                  ><img
+                    src="./assets/images/social-icons/tiktok.png"
+                    class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script>
-    var background_blur = "<style>body::before{filter: blur(3px);}</style>";
-    var background_set = "<style>body::before{filter: blur(0px);}</style>";
+    var background_blur = "<style>.main-body::before{filter: blur(3px);}</style>";
+    var background_set = "<style>.main-body::before{filter: blur(0px);}</style>";
     if (screen.availWidth > 1023) {
       const mainHexImage = document.querySelector(".main-hex-img");
       const hexSurround = document.querySelectorAll(".hex-surround-common");
       const hexSurroundBlank = document.querySelectorAll(".hex-surround-hover");
-      const hexSurroundHover = document.querySelectorAll(".hover-section");
       const heading = document.querySelector("#heading");
 
       let hoveredOnAnyOne = false;
@@ -514,10 +518,6 @@
       // on hovering the main middle image
       mainHexImage?.addEventListener("mouseover", () => {
         hoveredOnAnyOne = true;
-
-        setTimeout(function(){
-          jQuery('.hex-surround-hover').css('display','block');
-        },300);
         heading.classList.add("hidden"); // heading will be hidden
         mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
         mainHexImage.classList.add("scale-100");
@@ -528,7 +528,7 @@
         hexSurroundBlank.forEach((element) => {
           element.classList.remove("hidden");
         });
-        jQuery('.temp').append(background_blur);
+        jQuery(".temp").append(background_blur);
       });
       mainHexImage?.addEventListener("mouseout", () => {
         hoveredOnAnyOne = false;
@@ -540,7 +540,7 @@
         // hexSurround.forEach((element) => {
         //     element.classList.add("hidden")
         // })
-        jQuery('.temp').append(background_set);
+        jQuery(".temp").append(background_set);
       });
 
       var is_hover_in = false;
@@ -554,14 +554,10 @@
             hoveredOnAnyOne = true;
 
             // mainHexImage.classList.add("scale-130");
-
-            setTimeout(function(){
-              jQuery('.hex-surround-hover').css('display','block');
-            },300);
             heading.classList.add("hidden"); // heading will be hidden
             // const imagePath = element.getAttribute("src");
             // if (!imagePath.includes("Hover")) {
-              // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
+            // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
             // }
 
             // mainHexImage.setAttribute(
@@ -576,7 +572,7 @@
             //     // ele.classList.remove("hidden")
             //   }
             // });
-            jQuery('.temp').append(background_blur);
+            jQuery(".temp").append(background_blur);
           }
         });
 
@@ -584,81 +580,22 @@
           hoveredOnAnyOne = false;
 
           // mainHexImage.classList.remove("scale-100");
-          setTimeout(function(){
-            jQuery('.hex-surround-hover').css('display','none');
-          },300);
           heading.classList.remove("hidden"); // heading will be hidden
           // mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
           // mainHexImage.classList.add("scale-150")
 
           // const imagePath = element.getAttribute("src");
           // if (imagePath.includes("Hover")) {
-            // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
+          // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
           // }
 
           // hexSurround.forEach((ele, index) => {
           //   ele.classList.remove("blur-sm");
           //   ele.classList.remove("opacity-40");
           // });
-          jQuery('.temp').append(background_set);
+          jQuery(".temp").append(background_set);
         });
       });
-
-      hexSurroundHover.forEach((element, i) => {
-        // element.addEventListener("mouseover", () => {
-        //   if (!is_hover_in) {
-        //     // is_hover_in = true;
-        //     // setTimeout(function(){
-        //     //   is_hover_in = false;
-        //     // },400);
-        //     hoveredOnAnyOne = true;
-
-        //     // mainHexImage.classList.add("scale-130");
-        //     hexSurroundBlank.forEach((element) => {
-        //       element.classList.remove("hidden");
-        //     });
-        //     heading.classList.add("hidden"); // heading will be hidden
-        //     // const imagePath = element.getAttribute("src");
-        //     // if (!imagePath.includes("Hover")) {
-        //       // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
-        //     // }
-
-        //     // mainHexImage.setAttribute(
-        //     //   "src",
-        //     //   imagePath.replace(".png", "Coloured.png")
-        //     // );
-
-        //     // hexSurround.forEach((ele, index) => {
-        //     //   if (index != i) {
-        //     //     ele.classList.add("blur-sm");
-        //     //     ele.classList.add("opacity-40");
-        //     //     // ele.classList.remove("hidden")
-        //     //   }
-        //     // });
-        //     jQuery('.temp').append(background_blur);
-        //   }
-        // });
-
-        element.addEventListener("mouseout", () => {
-          hoveredOnAnyOne = false;
-
-          // mainHexImage.classList.remove("scale-100");
-          heading.classList.remove("hidden"); // heading will be hidden
-          // mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
-          // mainHexImage.classList.add("scale-150")
-
-          // const imagePath = element.getAttribute("src");
-          // if (imagePath.includes("Hover")) {
-            // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
-          // }
-
-          // hexSurround.forEach((ele, index) => {
-          //   ele.classList.remove("blur-sm");
-          //   ele.classList.remove("opacity-40");
-          // });
-          jQuery('.temp').append(background_set);
-        });
-      });      
 
       function hideSurround() {
         hexSurround.forEach((ele, index) => {
@@ -674,10 +611,10 @@
           !e.target.classList.contains("hex-surround") &&
           !e.target.classList.contains("main-hex-img")
         ) {
-          mainHexImage.setAttribute("src", "./assets/images/vector3.png"); // changing the main image to red coloured
           hexSurround.forEach((ele, index) => {
             hideSurround();
           });
+          mainHexImage.setAttribute("src", "./assets/images/vector3.png"); // changing the main image to red coloured
         }
       });
     }

@@ -506,6 +506,7 @@
       const mainHexImage = document.querySelector(".main-hex-img");
       const hexSurround = document.querySelectorAll(".hex-surround-common");
       const hexSurroundBlank = document.querySelectorAll(".hex-surround-hover");
+      const hexSurroundHover = document.querySelectorAll(".hover-section");
       const heading = document.querySelector("#heading");
 
       let hoveredOnAnyOne = false;
@@ -513,6 +514,10 @@
       // on hovering the main middle image
       mainHexImage?.addEventListener("mouseover", () => {
         hoveredOnAnyOne = true;
+
+        setTimeout(function(){
+          jQuery('.hex-surround-hover').css('display','block');
+        },300);
         heading.classList.add("hidden"); // heading will be hidden
         mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
         mainHexImage.classList.add("scale-100");
@@ -549,6 +554,10 @@
             hoveredOnAnyOne = true;
 
             // mainHexImage.classList.add("scale-130");
+
+            setTimeout(function(){
+              jQuery('.hex-surround-hover').css('display','block');
+            },300);
             heading.classList.add("hidden"); // heading will be hidden
             // const imagePath = element.getAttribute("src");
             // if (!imagePath.includes("Hover")) {
@@ -575,6 +584,9 @@
           hoveredOnAnyOne = false;
 
           // mainHexImage.classList.remove("scale-100");
+          setTimeout(function(){
+            jQuery('.hex-surround-hover').css('display','none');
+          },300);
           heading.classList.remove("hidden"); // heading will be hidden
           // mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
           // mainHexImage.classList.add("scale-150")
@@ -592,6 +604,62 @@
         });
       });
 
+      hexSurroundHover.forEach((element, i) => {
+        // element.addEventListener("mouseover", () => {
+        //   if (!is_hover_in) {
+        //     // is_hover_in = true;
+        //     // setTimeout(function(){
+        //     //   is_hover_in = false;
+        //     // },400);
+        //     hoveredOnAnyOne = true;
+
+        //     // mainHexImage.classList.add("scale-130");
+        //     hexSurroundBlank.forEach((element) => {
+        //       element.classList.remove("hidden");
+        //     });
+        //     heading.classList.add("hidden"); // heading will be hidden
+        //     // const imagePath = element.getAttribute("src");
+        //     // if (!imagePath.includes("Hover")) {
+        //       // element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
+        //     // }
+
+        //     // mainHexImage.setAttribute(
+        //     //   "src",
+        //     //   imagePath.replace(".png", "Coloured.png")
+        //     // );
+
+        //     // hexSurround.forEach((ele, index) => {
+        //     //   if (index != i) {
+        //     //     ele.classList.add("blur-sm");
+        //     //     ele.classList.add("opacity-40");
+        //     //     // ele.classList.remove("hidden")
+        //     //   }
+        //     // });
+        //     jQuery('.temp').append(background_blur);
+        //   }
+        // });
+
+        element.addEventListener("mouseout", () => {
+          hoveredOnAnyOne = false;
+
+          // mainHexImage.classList.remove("scale-100");
+          heading.classList.remove("hidden"); // heading will be hidden
+          // mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
+          // mainHexImage.classList.add("scale-150")
+
+          // const imagePath = element.getAttribute("src");
+          // if (imagePath.includes("Hover")) {
+            // element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
+          // }
+
+          // hexSurround.forEach((ele, index) => {
+          //   ele.classList.remove("blur-sm");
+          //   ele.classList.remove("opacity-40");
+          // });
+          jQuery('.temp').append(background_set);
+        });
+      });      
+
       function hideSurround() {
         hexSurround.forEach((ele, index) => {
           ele.classList.add("hidden");
@@ -606,10 +674,10 @@
           !e.target.classList.contains("hex-surround") &&
           !e.target.classList.contains("main-hex-img")
         ) {
+          mainHexImage.setAttribute("src", "./assets/images/vector3.png"); // changing the main image to red coloured
           hexSurround.forEach((ele, index) => {
             hideSurround();
           });
-          mainHexImage.setAttribute("src", "./assets/images/vector3.png"); // changing the main image to red coloured
         }
       });
     }

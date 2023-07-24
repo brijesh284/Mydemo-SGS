@@ -3,11 +3,11 @@ body {
   background-position: top center;
 }
 .login-content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .login-title {
   font-family: "Inter";
@@ -40,7 +40,8 @@ body {
   width: 100%;
 }
 
-.login-form .form-check-label,.forgot-link {
+.login-form .form-check-label,
+.forgot-link {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -67,24 +68,26 @@ body {
   color: #ffffff;
 }
 .login-form .form-group {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .forgot-psw {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 @media screen and (min-width: 1700px) {
   .login-title {
     font-size: 96px;
   }
   .login-form .form-control,
-  .login-form .form-check-label,.forgot-link {
+  .login-form .form-check-label,
+  .forgot-link {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 767.59px) {
-    .login-title {
-        font-size: 45px;
-      }
+  .login-title {
+    font-size: 45px;
+    line-height: normal;
+  }
 }

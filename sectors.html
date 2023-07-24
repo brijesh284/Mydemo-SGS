@@ -1,563 +1,745 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/sectors.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <script src="assets/js/script-sector.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="assets/css/sectors.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/sidebar.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  <script src="assets/js/script-sector.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 
+    <title>SGS-Sectors</title>
+  </head>
 
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/app.js" type="module"></script>
-
-  <title>SGS-Sectors</title>
-
-</head>
-
-<body>
-  <div id="container">
-    <header class="w-full fixed flex justify-between h-16 z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav">
-      <div class="d-flex align-items-center">
-        <div class="back-button mr-2">
-          <a class="btn btn-light p-0" id="back" href="index.html"
-            ><img src="assets/images/left.png" class="img-fluid" width="25px"
-          /></a>
-        </div>
-        <div class="logo w-20">
-          <a href="index.html"
-            ><img id="logo" src="assets/images/logo.png"
-          /></a>
-        </div>
-      </div>
-      <div class="side-nav flex">
-        <div class="button mr-10">
-          <a id="login"
-            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-6 py-2 text-xs block font-thin rounded-lg shadow-md">Login</a>
-        </div>
-        <div class="menu">
-          <span
-            class="side-toogleer text-2xl text-slate-200 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300">☰</span>
-        </div>
-      </div>
-    </header>
-
-    <aside class="side-bar">
-      <div class="close-container">
-        <span class="bar-closer"> &times;</span>
-      </div>
-
-      <ol>
-        <li class="side-link">
-          <div class="nav-main nav-one">
-            <h6>ABOUT US</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
+  <body>
+    <div id="container">
+      <header
+        class="w-full fixed flex justify-between h-16 z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav"
+      >
+        <div class="d-flex align-items-center">
+          <div class="back-button mr-2">
+            <a class="btn btn-light p-0" id="back" href="index.html"
+              ><img src="assets/images/left.png" class="img-fluid" width="25px"
+            /></a>
           </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
-            <li>
-              <a href="about.html">About SGS</a>
-            </li>
-            <li>
-              <a href="sectors.html">Sector Of Excellence</a>
-            </li>
-            <li>
-              <a href="about.html">Mission & Vision</a>
-            </li>
-            <li>
-              <a href="our-team.html">Our Team</a>
-            </li>
-            <li>
-              <a href="blog-main.html">Blog</a>
-            </li>
-            <li>
-              <a href="blog.html#tab-news">News</a>
-            </li>
-            <li>
-              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact us</a>
-            </li>
-          </ul>
-        </li>
+          <div class="logo w-20">
+            <a href="index.html"
+              ><img id="logo" src="assets/images/logo.png"
+            /></a>
+          </div>
+        </div>
+        <div class="side-nav flex">
+          <div class="button mr-10">
+            <a
+              id="login"
+              class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-6 py-2 text-xs block font-thin rounded-lg shadow-md"
+              >Login</a
+            >
+          </div>
+          <div class="menu">
+            <span
+              class="side-toogleer text-2xl text-slate-200 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+              >☰</span
+            >
+          </div>
+        </div>
+      </header>
 
-        <li class="side-link">
-          <div class="nav-main nav-two">
-            <h6 class="">CAREER</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
-            <li>
-              <a href="career.html">Our Process</a>
-            </li>
-            <li>
-              <a href="career.html">Job Opportunities</a>
-            </li>
-            <li>
-              <a href="careers.html" class="text-dark">General Application</a>
-            </li>
-          </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-three">
-            <h6 class="">PARTNERSHIP</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
-            <li>
-              <a href="partnership.html">Partnership Executive Summary</a>
-            </li>
-            <li>
-              <a href="partnership.html">Partnership program</a>
-            </li>
-            <li>
-              <a href="#">Channel Program</a>
-            </li>
-            <li>
-              <a href="partnership.html#apply-partnership"
-                >Apply for partnership</a
+      <aside class="side-bar">
+        <div class="close-container">
+          <span class="bar-closer"> &times;</span>
+        </div>
+
+        <ol>
+          <li class="side-link">
+            <div class="nav-main nav-one">
+              <h6>ABOUT US</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </li>
-          </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-four">
-            <h6 class="">Investment</h6>
-            <svg
-              sidebar-toggle-item
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+              <li>
+                <a href="about.html">About SGS</a>
+              </li>
+              <li>
+                <a href="sectors.html">Sector Of Excellence</a>
+              </li>
+              <li>
+                <a href="about.html">Mission & Vision</a>
+              </li>
+              <li>
+                <a href="our-team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="blog-main.html">Blog</a>
+              </li>
+              <li>
+                <a href="blog.html#tab-news">News</a>
+              </li>
+              <li>
+                <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="side-link">
+            <div class="nav-main nav-two">
+              <h6 class="">CAREER</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+              <li>
+                <a href="career.html">Our Process</a>
+              </li>
+              <li>
+                <a href="career.html">Job Opportunities</a>
+              </li>
+              <li>
+                <a href="careers.html" class="text-dark">General Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-three">
+              <h6 class="">PARTNERSHIP</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul
+              id="dropdown-example"
+              class="hidden nav-links nav-three-content"
             >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+              <li>
+                <a href="partnership.html">Partnership Executive Summary</a>
+              </li>
+              <li>
+                <a href="partnership.html">Partnership program</a>
+              </li>
+              <li>
+                <a href="#">Channel Program</a>
+              </li>
+              <li>
+                <a href="partnership.html#apply-partnership"
+                  >Apply for partnership</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-four">
+              <h6 class="">Investment</h6>
+              <svg
+                sidebar-toggle-item
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+              <li>
+                <a href="investment.html">Investor's Corner</a>
+              </li>
+              <li>
+                <a href="investment.html">Investors NDA Signup</a>
+              </li>
+            </ul>
+          </li>
+          <li class="side-link">
+            <div class="nav-main nav-five">
+              <h6 class="">POLICIES</h6>
+              <svg
+                sidebar-toggle-item=""
+                class="arrow w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                  color="#000"
+                ></path>
+              </svg>
+            </div>
+            <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+              <li>
+                <a href="terms.html">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="#">Data Protection</a>
+              </li>
+              <li>
+                <a href="#">Professional Practice</a>
+              </li>
+              <li>
+                <a href="#">Confidentiality</a>
+              </li>
+              <li>
+                <a href="#">Client Bill of Rights</a>
+              </li>
+              <li>
+                <a href="#">Candidate Bill of Rights</a>
+              </li>
+              <li>
+                <a href="#">Imprint</a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </aside>
+      <!-- ownSidebar -->
+      <own-sidebar></own-sidebar>
+
+      <div class="content">
+        <div
+          class="side-nav w-[10vw] z-50 min-h-screen flex items-center pl-1 fixed top-0"
+        >
+          <ul>
             <li>
-              <a href="investment.html">Investor's Corner</a>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/LEISURE TOURISM.png"
+              />
             </li>
             <li>
-              <a href="investment.html">Investors NDA Signup</a>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/CONSTRUCTION.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[60%]"
+                src="assets/images/sectors/AVIATION.png"
+              />
+            </li>
+            <li>
+              <img class="tab w-[25%]" src="assets/images/sectors/ICT.png" />
+            </li>
+            <li>
+              <img
+                class="tab w-[85%]"
+                src="assets/images/sectors/INSURANCE.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[85%]"
+                src="assets/images/sectors/INDUSTRIAL.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[70%]"
+                src="assets/images/sectors/FINANCE.png"
+              />
+            </li>
+            <li>
+              <img class="tab w-[45%]" src="assets/images/sectors/LEGAL.png" />
+            </li>
+            <li>
+              <img
+                class="tab w-[95%]"
+                src="assets/images/sectors/PROFESSIONAL SERVICES.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[97%]"
+                src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/RETAIL & FMCG.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/NEW ENERGY & UTILITY.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/LIFE SCIENCE.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/AUTOMOTIVE.png"
+              />
             </li>
           </ul>
-        </li>
-        <li class="side-link">
-          <div class="nav-main nav-five">
-            <h6 class="">POLICIES</h6>
-            <svg
-              sidebar-toggle-item=""
-              class="arrow w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-                color="#000"
-              ></path>
-            </svg>
-          </div>
-          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
-            <li>
-              <a href="terms.html">Terms and Conditions</a>
-            </li>
-            <li>
-              <a href="#">Data Protection</a>
-            </li>
-            <li>
-              <a href="#">Professional Practice</a>
-            </li>
-            <li>
-              <a href="#">Confidentiality</a>
-            </li>
-            <li>
-              <a href="#">Client Bill of Rights</a>
-            </li>
-            <li>
-              <a href="#">Candidate Bill of Rights</a>
-            </li>
-            <li>
-              <a href="#">Imprint</a>
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </aside>
-    <!-- ownSidebar -->
-    <own-sidebar></own-sidebar>
-
-    <div class="content">
-      <div class="side-nav w-[10vw] z-50 min-h-screen flex items-center pl-1 fixed top-0">
-        <ul>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/LEISURE TOURISM.png" /></li>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/CONSTRUCTION.png" /></li>
-          <li><img class="tab w-[60%]" src="assets/images/sectors/AVIATION.png" /></li>
-          <li><img class="tab w-[25%]" src="assets/images/sectors/ICT.png" /></li>
-          <li><img class="tab w-[85%]" src="assets/images/sectors/INSURANCE.png" /></li>
-          <li><img class="tab w-[85%]" src="assets/images/sectors/INDUSTRIAL.png" /></li>
-          <li><img class="tab w-[70%]" src="assets/images/sectors/FINANCE.png" /></li>
-          <li><img class="tab w-[45%]" src="assets/images/sectors/LEGAL.png" /></li>
-          <li><img class="tab w-[95%]" src="assets/images/sectors/PROFESSIONAL SERVICES.png" /></li>
-          <li><img class="tab w-[97%]" src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png" /></li>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/RETAIL & FMCG.png" /></li>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/NEW ENERGY & UTILITY.png" /></li>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/LIFE SCIENCE.png" /></li>
-          <li><img class="tab w-[90%]" src="assets/images/sectors/AUTOMOTIVE.png" /></li>
-        </ul>
-      </div>
-      <div class="bg w-full min-h-screen" id="bg">
-        <img class="min-h-full fixed w-full" src="assets/images/sectors/bg.png" />
-
-      </div>
-
-      <div class="texture w-[90vw] right-0 absolute top-0 " id="texture_container">
-        <div class="flex flex-col items-center space-y-10">
-          <div id="section0" class="section fixed min-h-screen flex flex-col  items-center">
-
-            <div class="flex justify-center w-full " id="s0e1">
-              <img class="w-2/3" src="assets/images/sectors/SECTORS OF EXPERTISE.png" />
-            </div>
-          </div>
-          <div id="section1" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s1e1">
-              <img class="w-1/2" src="assets/images/sectors/LEISURE TOURISM.png" />
-            </div>
-            <div class="el" id="s1e2">
-              <p>
-              <ul class="list-disc text-slate-300 text-xl w-10/12 m-auto space-y-1">
-                <li>
-                  In any other vertical like in tourism, the sector must address candidates who gave genuine interest
-                  and position-specific qualifications. When it comes to working with people, this becomes the critical
-                  attribute for success.
-                </li>
-                <li>
-                  We have a decade of experience in placing suitable candidates with the best tourism jobs.
-                </li>
-                <li>
-                  Our services are not only focused exclusively on leisure tourism but as well as other forms of
-                  hospitality.
-                </li>
-                <li>
-                  As well as the candidates we are looking for, and we are genuinely passionate about what we do.
-                </li>
-              </ul>
-              </p>
-            </div>
-          </div>
-
-          <div id="section2" class="section fixed  min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s2e1">
-              <img class="w-1/2" src="assets/images/sectors/CONSTRUCTION.png" />
-            </div>
-            <div class="el " id="s2e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search understands the challenges of managing complex multi-functional international
-                projects in construction and infrastructure. We provide customized solutions to meet the unique needs of
-                each project, ensuring success. With a focus on sustainable development, we seek project partners who
-                share our values. Our team of experts provides guidance and delivers top-quality human resources to meet
-                market demands for high-quality results within short time frames. As a well-established player in the
-                construction and infrastructure sector, we are equipped to support our clients in achieving their
-                project goals.
-              </p>
-            </div>
-          </div>
-
-          <div id="section3" class="section fixed  min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s3e1">
-              <img class="w-1/2" src="assets/images/sectors/AVIATION.png" />
-            </div>
-            <div class="el" id="s3e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search offers a custom-tailored staffing solution for hiring highly skilled aviation
-                professionals. We combine an extensive database of former technical professionals and recruitment
-                specialists to provide our clients with the best candidates. Our aviation competence center is based on
-                this approach, and we are proud to offer insight into a worldwide candidate database.
-              </p>
-            </div>
-          </div>
-
-          <div id="section4" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s4e1">
-              <img class="w-1/2" src="assets/images/sectors/ICT.png" />
-            </div>
-            <div class="el" id="s4e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Human Capital Placement helps clients find top IT leaders to give them a competitive edge. Our
-                global resources are utilized for every assignment, and we have experience working with world leaders in
-                "the Internet", "networking", and "ERP".
-              </p>
-            </div>
-          </div>
-
-
-          <div id="section5" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s5e1">
-              <img class="w-1/2" src="assets/images/sectors/INSURANCE.png" />
-            </div>
-            <div class="el" id="s5e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search excels in finding top talent for the rapidly evolving insurance industry. With our
-                deep understanding of the market, we recognize that consolidation and rising rates are driving the need
-                for skilled business leaders with financial expertise and a solid understanding of risk. Our global team
-                is dedicated to identifying and attracting the best talent to help our clients stay ahead of the
-                competition.
-              </p>
-            </div>
-          </div>
-
-          <div id="section6" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s6e1">
-              <img class="w-1/2" src="assets/images/sectors/INDUSTRIAL.png" />
-            </div>
-            <div class="el" id="s6e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                Financial services companies seek out SGS Executive Search for top-tier talent. In this fast-paced and
-                intense industry, companies require business leaders who understand global finance dynamics, have the
-                confidence to drive and adapt to change, and can identify emerging opportunities. Our professional teams
-                worldwide work closely with executives to identify and secure the right candidate for your organization.
-              </p>
-            </div>
-          </div>
-
-          <div id="section7" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s7e1">
-              <img class="w-1/2" src="assets/images/sectors/FINANCE.png" />
-            </div>
-            <div class="el" id="s7e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                Financial services companies seek out SGS Executive Search for top-tier talent. In this fast-paced and
-                intense industry, companies require business leaders who understand global finance dynamics, have the
-                confidence to drive and adapt to change, and can identify emerging opportunities. Our professional teams
-                worldwide work closely with executives to identify and secure the right candidate for your organization.
-              </p>
-            </div>
-          </div>
-
-          <div id="section8" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s8e1">
-              <img class="w-1/2" src="assets/images/sectors/LEGAL.png" />
-            </div>
-            <div class="el" id="s8e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS is specialized in legal and compliance recruitment, offering clients and candidates a full range of
-                recruitment solutions. Using our extensive market expertise, we place legal professionals at all levels
-                with international law companies worldwide. We aim to improve the business of our legal clients,
-                covering not only permanent but also interim positions. Deliver quality human resources.
-              </p>
-            </div>
-          </div>
-
-          <div id="section9" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s9e1">
-              <img class="w-1/2" src="assets/images/sectors/PROFESSIONAL SERVICES.png" />
-            </div>
-            <div class="el" id="s9e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search understands that professional services firms require exceptional talent to provide
-                high-quality services. Our experience in working with these firms enables us to find the right
-                candidates for you.
-                We provide assistance in areas such as strategic planning, organizational restructuring, and cost
-                reduction.
-              </p>
-            </div>
-          </div>
-
-          <div id="section10" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s10e1">
-              <img class="w-1/2" src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png" />
-            </div>
-            <div class="el" id="s10e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search has extensive experience in the Transportation and Logistics sector. Our
-                consultants have worked with complex logistics organizations, understanding their needs and
-                requirements. We help our clients find suitable candidates for recruitment and human resource needs to
-                ensure efficient and cost-effective logistics operations.
-
-              </p>
-            </div>
-          </div>
-
-          <div id="section11" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s11e1">
-              <img class="w-1/2" src="assets/images/sectors/RETAIL & FMCG.png" />
-            </div>
-            <div class="el" id="s11e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search helps companies differentiate and grow their brands through meaningful innovation,
-                develop corporate strategies in sales and marketing, and make marketing investments. Our approach is
-                grounded in a deep understanding of our clients' business situation, strategic goals, and sales and
-                marketing priorities. We use a team-based approach to engage the best, most knowledgeable resources from
-                our firm for every project.
-              </p>
-            </div>
-          </div>
-
-          <div id="section12" class="section fixed  min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s12e1">
-              <img class="w-1/2" src="assets/images/sectors/NEW ENERGY & UTILITY.png" />
-            </div>
-            <div class="el" id="s12e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search understands the unique challenges faced by natural resources companies, including
-                rapidly changing business cycles and increased competition for limited resources. Our global presence
-                allows us to offer seamless solutions to our clients across industries and geographic markets. We help
-                our clients attract top talent to navigate these challenges and succeed in the ever-changing natural
-                resources sector.
-              </p>
-            </div>
-          </div>
-
-          <div id="section13" class="section fixed  min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s13e1">
-              <img class="w-1/2" src="assets/images/sectors/LIFE SCIENCE.png" />
-            </div>
-            <div class="el" id="s13e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                SGS Executive Search specializes in finding top talent for the Life Science sector, including
-                pharmaceuticals, medical devices, diagnostics, and biotechnology. With increasing demands for improved
-                health care and manufacturing technologies, our consultants understand the needs of this sector and can
-                help you attract, recruit, and retain international executives to meet these challenges.
-              </p>
-            </div>
-          </div>
-
-          <div id="section14" class="section fixed min-h-screen flex flex-col   items-center">
-            <div class="el flex justify-center " id="s14e1">
-              <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
-            </div>
-            <div class="el el2" id="s14e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                Our Automotive Practice consultants have extensive industry experience, enabling us to partner with
-                leading original equipment manufacturers to identify top executives who can drive change in operations,
-                supply chain management, alliances, and information technologies. SGS Executive Search has a deep
-                understanding of our clients' businesses and cultures and can provide exceptional support for their
-                global and regional needs.
-              </p>
-            </div>
-
-          </div>
-
-          <div id="section15" class="section  min-h-screen flex flex-col   items-center">
-            <div class="el opacity-0 el1 flex justify-center " id="s1e1">
-              <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
-            </div>
-            <div class="el el2 opacity-0" id="s1e2">
-              <p class=" text-slate-300 text-xl  w-10/12 m-auto space-y-1">
-                Our Automotive Practice consultants have extensive industry experience, enabling us to partner with
-                leading original equipment manufacturers to identify top executives who can drive change in operations,
-                supply chain management, alliances, and information technologies. SGS Executive Search has a deep
-                understanding of our clients' businesses and cultures and can provide exceptional support for their
-                global and regional needs.
-              </p>
-            </div>
-
-          </div>
-
+        </div>
+        <div class="bg w-full min-h-screen" id="bg">
+          <img
+            class="min-h-full fixed w-full"
+            src="assets/images/sectors/bg.png"
+          />
         </div>
 
+        <div
+          class="texture w-[90vw] right-0 absolute top-0"
+          id="texture_container"
+        >
+          <div class="flex flex-col items-center space-y-10">
+            <div
+              id="section0"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="flex justify-center w-full" id="s0e1">
+                <img
+                  class="w-2/3"
+                  src="assets/images/sectors/SECTORS OF EXPERTISE.png"
+                />
+              </div>
+            </div>
+            <div
+              id="section1"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s1e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/LEISURE TOURISM.png"
+                />
+              </div>
+              <div class="el" id="s1e2">
+                <ul
+                  class="list-disc text-slate-300 text-xl w-10/12 m-auto space-y-1"
+                >
+                  <li>
+                    In any other vertical like in tourism, the sector must
+                    address candidates who gave genuine interest and
+                    position-specific qualifications. When it comes to working
+                    with people, this becomes the critical attribute for
+                    success.
+                  </li>
+                  <li>
+                    We have a decade of experience in placing suitable
+                    candidates with the best tourism jobs.
+                  </li>
+                  <li>
+                    Our services are not only focused exclusively on leisure
+                    tourism but as well as other forms of hospitality.
+                  </li>
+                  <li>
+                    As well as the candidates we are looking for, and we are
+                    genuinely passionate about what we do.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
+            <div
+              id="section2"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s2e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/CONSTRUCTION.png"
+                />
+              </div>
+              <div class="el" id="s2e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands the challenges of managing
+                  complex multi-functional international projects in
+                  construction and infrastructure. We provide customized
+                  solutions to meet the unique needs of each project, ensuring
+                  success. With a focus on sustainable development, we seek
+                  project partners who share our values. Our team of experts
+                  provides guidance and delivers top-quality human resources to
+                  meet market demands for high-quality results within short time
+                  frames. As a well-established player in the construction and
+                  infrastructure sector, we are equipped to support our clients
+                  in achieving their project goals.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section3"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s3e1">
+                <img class="w-1/2" src="assets/images/sectors/AVIATION.png" />
+              </div>
+              <div class="el" id="s3e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search offers a custom-tailored staffing
+                  solution for hiring highly skilled aviation professionals. We
+                  combine an extensive database of former technical
+                  professionals and recruitment specialists to provide our
+                  clients with the best candidates. Our aviation competence
+                  center is based on this approach, and we are proud to offer
+                  insight into a worldwide candidate database.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section4"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s4e1">
+                <img class="w-1/2" src="assets/images/sectors/ICT.png" />
+              </div>
+              <div class="el" id="s4e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Human Capital Placement helps clients find top IT leaders
+                  to give them a competitive edge. Our global resources are
+                  utilized for every assignment, and we have experience working
+                  with world leaders in "the Internet", "networking", and "ERP".
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section5"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s5e1">
+                <img class="w-1/2" src="assets/images/sectors/INSURANCE.png" />
+              </div>
+              <div class="el" id="s5e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search excels in finding top talent for the
+                  rapidly evolving insurance industry. With our deep
+                  understanding of the market, we recognize that consolidation
+                  and rising rates are driving the need for skilled business
+                  leaders with financial expertise and a solid understanding of
+                  risk. Our global team is dedicated to identifying and
+                  attracting the best talent to help our clients stay ahead of
+                  the competition.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section6"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s6e1">
+                <img class="w-1/2" src="assets/images/sectors/INDUSTRIAL.png" />
+              </div>
+              <div class="el" id="s6e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Financial services companies seek out SGS Executive Search for
+                  top-tier talent. In this fast-paced and intense industry,
+                  companies require business leaders who understand global
+                  finance dynamics, have the confidence to drive and adapt to
+                  change, and can identify emerging opportunities. Our
+                  professional teams worldwide work closely with executives to
+                  identify and secure the right candidate for your organization.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section7"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s7e1">
+                <img class="w-1/2" src="assets/images/sectors/FINANCE.png" />
+              </div>
+              <div class="el" id="s7e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Financial services companies seek out SGS Executive Search for
+                  top-tier talent. In this fast-paced and intense industry,
+                  companies require business leaders who understand global
+                  finance dynamics, have the confidence to drive and adapt to
+                  change, and can identify emerging opportunities. Our
+                  professional teams worldwide work closely with executives to
+                  identify and secure the right candidate for your organization.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section8"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s8e1">
+                <img class="w-1/2" src="assets/images/sectors/LEGAL.png" />
+              </div>
+              <div class="el" id="s8e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS is specialized in legal and compliance recruitment,
+                  offering clients and candidates a full range of recruitment
+                  solutions. Using our extensive market expertise, we place
+                  legal professionals at all levels with international law
+                  companies worldwide. We aim to improve the business of our
+                  legal clients, covering not only permanent but also interim
+                  positions. Deliver quality human resources.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section9"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s9e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/PROFESSIONAL SERVICES.png"
+                />
+              </div>
+              <div class="el" id="s9e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands that professional services
+                  firms require exceptional talent to provide high-quality
+                  services. Our experience in working with these firms enables
+                  us to find the right candidates for you. We provide assistance
+                  in areas such as strategic planning, organizational
+                  restructuring, and cost reduction.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section10"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s10e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png"
+                />
+              </div>
+              <div class="el" id="s10e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search has extensive experience in the
+                  Transportation and Logistics sector. Our consultants have
+                  worked with complex logistics organizations, understanding
+                  their needs and requirements. We help our clients find
+                  suitable candidates for recruitment and human resource needs
+                  to ensure efficient and cost-effective logistics operations.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section11"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s11e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/RETAIL & FMCG.png"
+                />
+              </div>
+              <div class="el" id="s11e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search helps companies differentiate and grow
+                  their brands through meaningful innovation, develop corporate
+                  strategies in sales and marketing, and make marketing
+                  investments. Our approach is grounded in a deep understanding
+                  of our clients' business situation, strategic goals, and sales
+                  and marketing priorities. We use a team-based approach to
+                  engage the best, most knowledgeable resources from our firm
+                  for every project.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section12"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s12e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/NEW ENERGY & UTILITY.png"
+                />
+              </div>
+              <div class="el" id="s12e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands the unique challenges faced
+                  by natural resources companies, including rapidly changing
+                  business cycles and increased competition for limited
+                  resources. Our global presence allows us to offer seamless
+                  solutions to our clients across industries and geographic
+                  markets. We help our clients attract top talent to navigate
+                  these challenges and succeed in the ever-changing natural
+                  resources sector.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section13"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s13e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/LIFE SCIENCE.png"
+                />
+              </div>
+              <div class="el" id="s13e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search specializes in finding top talent for the
+                  Life Science sector, including pharmaceuticals, medical
+                  devices, diagnostics, and biotechnology. With increasing
+                  demands for improved health care and manufacturing
+                  technologies, our consultants understand the needs of this
+                  sector and can help you attract, recruit, and retain
+                  international executives to meet these challenges.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section14"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s14e1">
+                <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
+              </div>
+              <div class="el el2" id="s14e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Our Automotive Practice consultants have extensive industry
+                  experience, enabling us to partner with leading original
+                  equipment manufacturers to identify top executives who can
+                  drive change in operations, supply chain management,
+                  alliances, and information technologies. SGS Executive Search
+                  has a deep understanding of our clients' businesses and
+                  cultures and can provide exceptional support for their global
+                  and regional needs.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section15"
+              class="section min-h-screen flex flex-col items-center"
+            >
+              <div class="el opacity-0 el1 flex justify-center" id="s1e1">
+                <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
+              </div>
+              <div class="el el2 opacity-0" id="s1e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Our Automotive Practice consultants have extensive industry
+                  experience, enabling us to partner with leading original
+                  equipment manufacturers to identify top executives who can
+                  drive change in operations, supply chain management,
+                  alliances, and information technologies. SGS Executive Search
+                  has a deep understanding of our clients' businesses and
+                  cultures and can provide exceptional support for their global
+                  and regional needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <script>
-    $(document).ready(function () {
-  let isMobile = window.matchMedia(
-    "only screen and (max-width: 760px)"
-  ).matches;
+    <script>
+      $(document).ready(function () {
+        let isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
 
-  if (isMobile) {
-    $(".side-bar").css("display", "none");
-    $(".side-toogleer").click(function () {
-      $(".side-bar").css("display", "block");
-    });
-    $(".bar-closer").click(function () {
-      $(".side-bar").css("display", "none");
-    });
-  } else {
-    $(".side-toogleer").click(function () {
-      $(".side-bar").css("right", "0%");
-    });
-    $(".bar-closer").click(function () {
-      $(".side-bar").css("right", "-50%");
-    });
-  }
+        if (isMobile) {
+          $(".side-bar").css("display", "none");
+          $(".side-toogleer").click(function () {
+            $(".side-bar").css("display", "block");
+          });
+          $(".bar-closer").click(function () {
+            $(".side-bar").css("display", "none");
+          });
+        } else {
+          $(".side-toogleer").click(function () {
+            $(".side-bar").css("right", "0%");
+          });
+          $(".bar-closer").click(function () {
+            $(".side-bar").css("right", "-50%");
+          });
+        }
 
-  // togglers
-  $(".nav-one").click(function () {
-    $(".nav-one-content").slideToggle();
-  });
-  $(".nav-two").click(function () {
-    $(".nav-two-content").slideToggle();
-  });
-  $(".nav-three").click(function () {
-    $(".nav-three-content").slideToggle();
-  });
-  $(".nav-four").click(function () {
-    $(".nav-four-content").slideToggle();
-  });
+        // togglers
+        $(".nav-one").click(function () {
+          $(".nav-one-content").slideToggle();
+        });
+        $(".nav-two").click(function () {
+          $(".nav-two-content").slideToggle();
+        });
+        $(".nav-three").click(function () {
+          $(".nav-three-content").slideToggle();
+        });
+        $(".nav-four").click(function () {
+          $(".nav-four-content").slideToggle();
+        });
 
-  $("#language").click(() => {
-    if ($("#language").attr("title") == "Germany") {
-      $("#language").attr("src", "assets/images/united-kingdom.png");
-      $("#language").attr("title", "English");
-    } else {
-      $("#language").attr("src", "assets/images/germany.png");
-      $("#language").attr("title", "Germany");
-    }
-  });
-});
-
-  </script>
-</body>
-
+        $("#language").click(() => {
+          if ($("#language").attr("title") == "Germany") {
+            $("#language").attr("src", "assets/images/united-kingdom.png");
+            $("#language").attr("title", "English");
+          } else {
+            $("#language").attr("src", "assets/images/germany.png");
+            $("#language").attr("title", "Germany");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

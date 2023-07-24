@@ -1,26 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 div#heading {
-    z-index: 1;
+  z-index: 1;
 }
 
-body::before{
-  margin: 0;
-  background-image: url(../images/landing-bg.png);
-  background-position: center;
-  background-clip: padding-box;
-  /* overflow: hidden; */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-clip: padding-box;
-}
 
 body {
   width: 100%;

@@ -304,6 +304,16 @@ p.subtitle-title,
   text-decoration: none;
   color: #000;
 }
+.partnership-tabs .card .card-body {
+  margin: auto;
+  width: 80%;
+}
+.partnership-tabs .card .card-body .left-arrow {
+  width: 25px;
+}
+.partnership-tabs .card .card-body img {
+  width: 100%;
+}
 .table {
   border-radius: 18px;
   -webkit-border-radius: 18px;
@@ -332,6 +342,12 @@ p.subtitle-title,
 @media screen and (max-width: 768px) {
   .side-nav a.nav-link {
     padding: 0.5rem;
+  }
+  .partnership-tabs .card .card-body .left-arrow {
+    display: none;
+  }
+  .partnership-tabs .card .card-body {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {

@@ -9,8 +9,20 @@ jQuery(document).ready(function () {
     console.log(screen.availHeight);
     console.log(jQuery(".first_page_section_logo").innerHeight());
     jQuery(".first_page_section_logo").css({
-      "margin-top": first_page_section_logo_top,
+      // "margin-top": first_page_section_logo_top,
     });
+    // if (screen.availWidth > 767){
+    //   jQuery(".first_page_section_logo img").css({
+    //     transition: "1s",
+    //     width: "60%",
+    //   });
+    // }else{    
+    //   jQuery(".first_page_section_logo img").css({
+    //     transition: "1s",
+    //     width: "90%",
+    //   });
+    // }
+    lp_sc_1('preview');
   }, 500);
 
   // lp_sc_1();
@@ -25,32 +37,56 @@ jQuery(document).ready(function () {
 
   var call_on_time = 0;
 
+  var lp_sc_2_flag = false;
+
   function lp_sc_1(next_preview) {
     console.log("111");
-    if (next_preview == "next") {
-    } else if (next_preview == "preview") {
-      jQuery(".first_page_section_logo").css({
-        transition: "1s",
-        "margin-top": first_page_section_logo_top,
-      });
+    console.log(lp_sc_2_flag);
+    // if(lp_sc_2_flag){
+      
+      // lp_sc_2_flag = false;
 
-      if (screen.availWidth > 767) {
-        jQuery(".first_page_section_logo img").css({
+      if (next_preview == "next") {
+      } else if (next_preview == "preview") {
+        jQuery(".first_page_section_logo").css({
           transition: "1s",
-          width: "40%",
+          // "margin-top": first_page_section_logo_top,
+          'flex-basis': '100%',
+          "width":"100%",
         });
-      } else {
-        jQuery(".first_page_section_logo img").css({
-          transition: "1s",
-          width: "75%",
-        });
+
+        // jQuery(".first_page_section_contant_main").css({
+        //   'transition': "1s",
+        //   'opacity': "0",
+        // });
+        if (screen.availWidth > 767) {
+          jQuery(".first_page_section").css({
+            transition: "1s",
+            // "margin-top": first_page_section_logo_top,
+            'margin-left': '10%',
+            "width":"80%",
+          });
+          jQuery(".first_page_section_logo img").css({
+            transition: "1s",
+            width: "65%",
+          });
+          jQuery(".first_page_section_contant_main").css({'display':'none'});
+        } else {
+          jQuery(".first_page_section_logo img").css({
+            transition: "1s",
+            width: "90%",
+          });
+  
+          // jQuery(".first_page_section_contant_main").css({'transition': "1s",'opacity':'0'});
+            jQuery(".first_page_section_contant_main").css({'transition': "1s",'max-height':'0px'});
+          setTimeout(function(){
+            setTimeout(function(){
+              // jQuery(".first_page_section_contant_main").css({'transition': "1s",'display':'none'});
+            },1000);
+          },1000);
+        }
       }
-
-      jQuery(".first_page_section_contant_main").css({
-        transition: "1s",
-        opacity: "0",
-      });
-    }
+    // }  
   }
 
   function lp_sc_2(next_preview) {
@@ -58,28 +94,51 @@ jQuery(document).ready(function () {
 
     if (next_preview == "next") {
       if (screen.availWidth > 767) {
-        jQuery(".first_page_section_logo").css({
-          transition: "1s",
-          "margin-top": "10vw",
+        setTimeout(function(){
+          jQuery(".first_page_section_contant_main").css({'transition': "1s",'display':'block'});
+          setTimeout(function(argument) {
+            jQuery(".first_page_section_contant_main").css({
+              transition: "1s",
+              opacity: "1",
+            });
+            console.log('ttttttt');
+            // lp_sc_2_flag = true;
+          },100);
+        },1000);
+        jQuery(".first_page_section_contant_main").css({
+          'padding-left': "7px",
         });
         jQuery(".first_page_section_logo img").css({
           transition: "1s",
-          width: "27%",
+          width: "100%",
+        });
+        jQuery(".first_page_section_logo").css({
+          transition: "1s",
+          "margin-top": "0",
+          "flex-basis": "20%",
+          "width":"20%",
         });
       } else {
+
+        jQuery(".first_page_section_contant_main").css({'transition': "1s",'display':'block','max-height':'300px'});
+        setTimeout(function(){
+          jQuery(".first_page_section_contant_main").css({'transition': "1s",'opacity':'1'});
+        },1000);
+
         jQuery(".first_page_section_logo").css({
           transition: "1s",
-          "margin-top": "45vw",
+          "margin-top": "0",
         });
         jQuery(".first_page_section_logo img").css({
           transition: "1s",
-          width: "42%",
+          width: "80%",
+        });
+        jQuery(".first_page_section_contant_main").css({
+          transition: "1s",
+          'margin-left': "10%",
+          opacity: "1",
         });
       }
-      jQuery(".first_page_section_contant_main").css({
-        transition: "1s",
-        opacity: "1",
-      });
     } else if (next_preview == "preview") {
       jQuery(".secound_page_section").css({ transition: "0.5s", opacity: "0" });
       setTimeout(function () {
@@ -87,7 +146,7 @@ jQuery(document).ready(function () {
           transition: "0.5s",
           display: "none",
         });
-        jQuery(".first_page_section").css({ display: "block" });
+        jQuery(".first_page_section").css({ display: "flex" });
         setTimeout(function () {
           jQuery(".first_page_section").css({
             transition: "0.5s",
@@ -381,14 +440,27 @@ jQuery(document).ready(function () {
     var on_click = true;
     if (screen.availWidth > 767) {
       // -- hover code --
+
+      jQuery('.main_card').mouseover(function(){
+        jQuery(".four_card_container_h").css({
+          top: "-20",
+        });
+      });
+
+      jQuery('.main_card').mouseout(function(){
+        jQuery(".four_card_container_h").css({
+          top: "-60",
+        });
+      });
+
       jQuery(".main_card").hover(
         function () {
           var _this = this;
 
-          jQuery(".four_card_container_h").css({
-            transition: "0.5s",
-            opacity: "0",
-          });
+          // jQuery(".four_card_container_h").css({
+          //   transition: "0.5s",
+          //   opacity: "0",
+          // });
 
           jQuery(".main_card").addClass("hover_hide");
           jQuery(_this).removeClass("hover_hide");

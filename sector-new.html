@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/sector-new.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <script src="assets/js/script-sector.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,37 +27,17 @@
             /></a>
           </div>
         </div>
-        <div class="side-nav flex items-center">
-          <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
-            >Career</a
-          >
-          <!-- <div class="dropdown mr-2">
-          <button
-            class="btn border-0 dropdown-toggle d-flex align-items-center"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"SSSSS
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img src="./assets/images/en.png" class="img-fluid" />
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#"
-              ><img src="./assets/images/en.png" class="img-fluid"
-            /></a>
-            <a class="dropdown-item" href="#"
-              ><img src="./assets/images/de.png" class="img-fluid"
-            /></a>
-          </div>
-        </div> -->
-          <div class="button mr-4">
-            <a href="login.html" id="login" class="nav-link">Login</a>
+        <div class="side-nav flex">
+          <div class="button mr-10">
+            <a
+              id="login"
+              class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-6 py-2 text-xs block font-thin rounded-lg shadow-md"
+              >Login</a
+            >
           </div>
           <div class="menu">
             <span
-              class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
-              style="color: #000"
+              class="side-toogleer text-2xl text-slate-200 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
               >☰</span
             >
           </div>
@@ -258,450 +237,456 @@
       </aside>
       <!-- ownSidebar -->
       <own-sidebar></own-sidebar>
-      <section class="sector-main">
-        <div class="sector-container">
-          <div class="sector-main-title">
-            <h2>SECTOR OF EXPERTISE</h2>
-          </div>
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="side-nav">
-                <h2>Services we offer</h2>
-                <ul class="all_item_list">
+
+      <div class="content">
+        <div
+          class="side-nav w-[10vw] z-50 min-h-screen flex items-center pl-1 fixed top-0"
+        >
+          <ul>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/LEISURE TOURISM.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/CONSTRUCTION.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[60%]"
+                src="assets/images/sectors/AVIATION.png"
+              />
+            </li>
+            <li>
+              <img class="tab w-[25%]" src="assets/images/sectors/ICT.png" />
+            </li>
+            <li>
+              <img
+                class="tab w-[85%]"
+                src="assets/images/sectors/INSURANCE.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[85%]"
+                src="assets/images/sectors/INDUSTRIAL.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[70%]"
+                src="assets/images/sectors/FINANCE.png"
+              />
+            </li>
+            <li>
+              <img class="tab w-[45%]" src="assets/images/sectors/LEGAL.png" />
+            </li>
+            <li>
+              <img
+                class="tab w-[95%]"
+                src="assets/images/sectors/PROFESSIONAL SERVICES.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[97%]"
+                src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/RETAIL & FMCG.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/NEW ENERGY & UTILITY.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/LIFE SCIENCE.png"
+              />
+            </li>
+            <li>
+              <img
+                class="tab w-[90%]"
+                src="assets/images/sectors/AUTOMOTIVE.png"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="bg w-full min-h-screen" id="bg">
+          <img
+            class="min-h-full fixed w-full"
+            src="assets/images/sectors/bg.png"
+          />
+        </div>
+
+        <div
+          class="texture w-[90vw] right-0 absolute top-0"
+          id="texture_container"
+        >
+          <div class="flex flex-col items-center space-y-10">
+            <div
+              id="section0"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="flex justify-center w-full" id="s0e1">
+                <img
+                  class="w-2/3"
+                  src="assets/images/sectors/SECTORS OF EXPERTISE.png"
+                />
+              </div>
+            </div>
+            <div
+              id="section1"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s1e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/LEISURE TOURISM.png"
+                />
+              </div>
+              <div class="el" id="s1e2">
+                <ul
+                  class="list-disc text-slate-300 text-xl w-10/12 m-auto space-y-1"
+                >
                   <li>
-                    <a href="#item1" class="item-active">
-                      PROFESASIONAL SERVICES</a
-                    >
+                    In any other vertical like in tourism, the sector must
+                    address candidates who gave genuine interest and
+                    position-specific qualifications. When it comes to working
+                    with people, this becomes the critical attribute for
+                    success.
                   </li>
-                  <li><a href="#item2"> AUTOMOTIVE</a></li>
-                  <li><a href="#item3">FINANCE </a></li>
-                  <li><a href="#item4"> TRANSPORTATION</a></li>
-                  <li><a href="#item5">AVIATION </a></li>
-                  <li><a href="#item6">INDUSTRIAL </a></li>
-                  <li><a href="#item7">INSURANCE </a></li>
-                  <li><a href="#item8">ICT </a></li>
-                  <li><a href="#item9">LIFE SCIENCE </a></li>
-                  <li><a href="#item10">NEW ENERGY & UTILITY </a></li>
-                  <li><a href="#item11">RETAIL & FMCG </a></li>
-                  <li><a href="#item12">Construction </a></li>
-                  <li><a href="#item13">LEISURE TOURISM </a></li>
-                  <li><a href="#item14">LEGAL </a></li>
+                  <li>
+                    We have a decade of experience in placing suitable
+                    candidates with the best tourism jobs.
+                  </li>
+                  <li>
+                    Our services are not only focused exclusively on leisure
+                    tourism but as well as other forms of hospitality.
+                  </li>
+                  <li>
+                    As well as the candidates we are looking for, and we are
+                    genuinely passionate about what we do.
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-9">
-              <div class="main-item-sector">
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item1"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item1.png"
-                      alt="item1"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>PROFESSIONAL SERVICES</h3>
-                    <p>
-                      In these times, good counselling advice is in high demand
-                      from businesses as well as public institutions.
-                      Professional Services is very much a people business with
-                      the consultants’ analysis and judgment directly
-                      determining the quality of the service provided.
-                      <br /><br />
-                      We can range from giving advice and assistance to
-                      companies and strategic and organizational planning,
-                      restructuring and cost reduction. We at SGS Executive
-                      Search have extensive experience working with professional
-                      services firms, and we will find the right people for you.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item2"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>AUTOMOTIVE</h3>
-                    <p>
-                      The automotive industry is at an inflexion point that has
-                      triggered the need to create new business models and find
-                      top business leaders who can manage them. Our Automotive
-                      Practice consultants have worked in the industry, and
-                      their exceptional expertise has made us one of the leading
-                      recruiters.
-                      <br /><br />
-                      We partner with the world’s foremost original equipment
-                      manufacturers to identify top executives who can drive
-                      change in operations, supply chain management, alliances,
-                      and information technologies. SGS Executive Search has
-                      deep knowledge of our client’s businesses and cultures and
-                      an exceptional ability to support their global and
-                      regional needs.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item2.png"
-                      alt="item2"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item3"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item3.png"
-                      alt="item3"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>FINANCE</h3>
-                    <p>
-                      Financial services companies turn to SGS Executive Search
-                      for world-class talent. To excel in this fast-paced,
-                      intense environment, companies require skilled business
-                      leaders who understand the dynamics of global finance,
-                      have the confidence to anticipate and mandate change, and
-                      possess the vision to recognize emerging opportunities.
-                      <br /><br />
-                      We at SGS Executive Search have highly professional teams
-                      worldwide who work with executives of different
-                      organizations to address and find the right candidate for
-                      you.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item4"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>TRANSPORTATION & LOGISTICS</h3>
-                    <p>
-                      Delivering goods efficiently in today’s connected world
-                      requires attention to detail throughout the supply chain.
-                      Ensuring proper logistical personnel and procedures can
-                      dramatically cut costs and increase the efficiency of an
-                      organization. A company with poor logistics can fail to
-                      meet customers’ expectations and see its business as a
-                      whole suffer.
-                      <br /><br />
-                      At SGS, we have consultants who have worked, managed and
-                      controlled the logistics of complex organizations to
-                      understand the needs and requirements of the
-                      Transportation and Logistics Sector. Through this
-                      understanding, SHARK can ensure and fulfil our Logistic
-                      Clients’ recruitment and human resource needs.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item4.png"
-                      alt="item4"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item5"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item5.png"
-                      alt="item5"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>AVIATION</h3>
-                    <p>
-                      The best solution to hire highly skilled aviation
-                      professionals is to combine an extensive database with
-                      former technical professionals and recruitment specialists
-                      – our custom-tailored staffing solution in the aviation
-                      competence centre based upon both.
-                      <br /><br />
-                      Today, we can proudly offer insight into a worldwide
-                      candidate database.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item6"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>INDUSTRIAL</h3>
-                    <p>
-                      SGS Executive Search’s Industrial Practice is an
-                      established player in the metals, mining, pulp and paper
-                      fields, and we fully understand the dynamics of these
-                      changes. Our global team has the hands-on industry
-                      expertise and direct experience working with the
-                      industry’s global market leaders.
-                      <br /><br />
-                      Moreover, industrial transformations are our passion. We
-                      use our long-standing relationships with the most
-                      influential executives in the industry. SGS Executive
-                      Search finds talented senior executives worldwide,
-                      mirroring the borderless needs of our transnational
-                      clients.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item6.png"
-                      alt="item6"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item7"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item7.png"
-                      alt="item7"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>INSURANCE</h3>
-                    <p>
-                      The global insurance community is undergoing massive
-                      change, driven by significant consolidation in both the
-                      underwriting and brokering areas. These factors are
-                      driving rates higher and creating the need for new
-                      business leaders who have strong financial backgrounds and
-                      a solid appreciation of risk.
-                      <br /><br />
-                      To stay ahead of the competition, insurers will need to
-                      ensure they have the most highly skilled staff available.
-                      SGS Executive Search will help our clients to find the
-                      right person for this sector.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item8"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>ICT</h3>
-                    <p>
-                      Information technology plays a significant role in a
-                      company’s performance and competitiveness. Therefore,
-                      having the right IT leader at the right place is very
-                      important. At SGS Human Capital Placement, we find and
-                      identify suitable candidates to give our clients the
-                      necessary competitive edge.
-                      <br /><br />
-                      We emphasize teamwork, drawing on the extensive global
-                      resources of our firm for every assignment. We have worked
-                      with the world leaders who have made a revolution with
-                      “the Internet”, “networking”, and “ERP”, and we have found
-                      the people who made the processes happen.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item8.png"
-                      alt="item8"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item9"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item9.png"
-                      alt="item9"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>LIFE SCIENCE</h3>
-                    <p>
-                      Life Science combines modern biological techniques with
-                      supporting technologies to improve human and animal
-                      health, address environmental issues, improve agriculture,
-                      contain diseases and improve current manufacturing
-                      technologies. Life expectancy for the world population
-                      increases, health care companies has to manage
-                      ever-increasing demands and be more efficient.
-                      <br /><br />
-                      SGS Executive Search consultants are well acquainted with
-                      the needs of the Life Science sector – from a pharmacy,
-                      medical devices and disposables to diagnostics and
-                      biotechnology – and will help you attract, recruit and
-                      retain international executives to meet these challenges.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item10"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>NEW ENERGY AND UTILITY</h3>
-                    <p>
-                      Natural resources companies adapt to rapid business
-                      cycles, continuously shifting growth patterns and more
-                      efficient supply chains. Natural resources companies also
-                      face unprecedented pressures. As the world population
-                      continues to grow, the competition for limited resources
-                      presents an increasingly volatile and highly challenging
-                      operating climate.
-                      <br /><br />
-                      SGS Executive Search established global presence enables
-                      us to provide seamless solutions across industries and
-                      geographic markets, which is a vital advantage for our
-                      clients.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item10.png"
-                      alt="item10"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item11"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item11.png"
-                      alt="item11"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>RETAIL & FMCG</h3>
-                    <p>
-                      To stay on top, companies must differentiate and grow
-                      their brands through meaningful innovation; make marketing
-                      investments, develop corporate strategies in sales and
-                      marketing. From the start, our efforts at SGS Executive
-                      Search are grounded in deep understanding of your business
-                      situation, strategic goals and sales and marketing
-                      priorities. Our consultants work with you to develop a
-                      detailed profile of your ideal candidate.
-                      <br /><br />
-                      We use a team-based approach to engage the best,
-                      most-knowledgeable resources from our firm for every
-                      project.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item12"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>CONSTRUCTION</h3>
-                    <p>
-                      How to manage complex multi-functional (international)
-                      projects in construction and infrastructure? Construction
-                      projects are becoming increasingly complex, and you need
-                      specifically tailored solutions to meet individual project
-                      needs. This merging of a high level of competence to meet
-                      the specific requirement is the key to the success of
-                      projects. If you focus on sustainable development, you
-                      have to seek your project partners accordingly. In any
-                      case, companies need experts who advise and deliver
-                      quality human resources.
-                      <br /><br />
-                      Markets require high quality in a short time frame to
-                      reduce their cost day by day. SGS is a well-established
-                      player within the construction and infrastructure sector.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item12.png"
-                      alt="item12"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col"
-                  id="item13"
-                >
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item13.png"
-                      alt="item13"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>LEISURE TOURISM</h3>
-                    <p>
-                      In any other vertical like in tourism, the sector must
-                      address candidates who gave genuine interest and
-                      position-specific qualifications. When it comes to working
-                      with people, this becomes the critical attribute for
-                      success. We have a decade of experience in placing
-                      suitable candidates with the best tourism jobs.
-                      <br /><br />
-                      Our services are not only focused exclusively on leisure
-                      tourism but as well as other forms of hospitality. As well
-                      as the candidates we are looking for, and we are genuinely
-                      passionate about what we do.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="item-wrap flex items-center lg:flex-row md:flex-row flex-col-reverse"
-                  id="item14"
-                >
-                  <div class="item-right-dec lg:w-3/4">
-                    <h3>LEGAL</h3>
-                    <p>
-                      SGS is specialized in legal and compliance recruitment,
-                      offering clients and candidates a full range of
-                      recruitment solutions. Using our extensive market
-                      expertise, we place legal professionals at all levels with
-                      international law companies worldwide. We aim to improve
-                      the business of our legal clients, covering not only
-                      permanent but also interim positions. Deliver quality
-                      human resources. Markets require high quality in a short
-                      time frame to reduce their cost day by day.
-                      <br /><br />
-                      SGS is a well-established player within the construction
-                      and infrastructure sector.
-                    </p>
-                  </div>
-                  <div class="item-left-img lg:w-1/4 md:w-full w-2/4 m-auto">
-                    <img
-                      src="assets/images/sectors/item14.png"
-                      alt="item14"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
+
+            <div
+              id="section2"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s2e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/CONSTRUCTION.png"
+                />
+              </div>
+              <div class="el" id="s2e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands the challenges of managing
+                  complex multi-functional international projects in
+                  construction and infrastructure. We provide customized
+                  solutions to meet the unique needs of each project, ensuring
+                  success. With a focus on sustainable development, we seek
+                  project partners who share our values. Our team of experts
+                  provides guidance and delivers top-quality human resources to
+                  meet market demands for high-quality results within short time
+                  frames. As a well-established player in the construction and
+                  infrastructure sector, we are equipped to support our clients
+                  in achieving their project goals.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section3"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s3e1">
+                <img class="w-1/2" src="assets/images/sectors/AVIATION.png" />
+              </div>
+              <div class="el" id="s3e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search offers a custom-tailored staffing
+                  solution for hiring highly skilled aviation professionals. We
+                  combine an extensive database of former technical
+                  professionals and recruitment specialists to provide our
+                  clients with the best candidates. Our aviation competence
+                  center is based on this approach, and we are proud to offer
+                  insight into a worldwide candidate database.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section4"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s4e1">
+                <img class="w-1/2" src="assets/images/sectors/ICT.png" />
+              </div>
+              <div class="el" id="s4e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Human Capital Placement helps clients find top IT leaders
+                  to give them a competitive edge. Our global resources are
+                  utilized for every assignment, and we have experience working
+                  with world leaders in "the Internet", "networking", and "ERP".
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section5"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s5e1">
+                <img class="w-1/2" src="assets/images/sectors/INSURANCE.png" />
+              </div>
+              <div class="el" id="s5e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search excels in finding top talent for the
+                  rapidly evolving insurance industry. With our deep
+                  understanding of the market, we recognize that consolidation
+                  and rising rates are driving the need for skilled business
+                  leaders with financial expertise and a solid understanding of
+                  risk. Our global team is dedicated to identifying and
+                  attracting the best talent to help our clients stay ahead of
+                  the competition.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section6"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s6e1">
+                <img class="w-1/2" src="assets/images/sectors/INDUSTRIAL.png" />
+              </div>
+              <div class="el" id="s6e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Financial services companies seek out SGS Executive Search for
+                  top-tier talent. In this fast-paced and intense industry,
+                  companies require business leaders who understand global
+                  finance dynamics, have the confidence to drive and adapt to
+                  change, and can identify emerging opportunities. Our
+                  professional teams worldwide work closely with executives to
+                  identify and secure the right candidate for your organization.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section7"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s7e1">
+                <img class="w-1/2" src="assets/images/sectors/FINANCE.png" />
+              </div>
+              <div class="el" id="s7e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Financial services companies seek out SGS Executive Search for
+                  top-tier talent. In this fast-paced and intense industry,
+                  companies require business leaders who understand global
+                  finance dynamics, have the confidence to drive and adapt to
+                  change, and can identify emerging opportunities. Our
+                  professional teams worldwide work closely with executives to
+                  identify and secure the right candidate for your organization.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section8"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s8e1">
+                <img class="w-1/2" src="assets/images/sectors/LEGAL.png" />
+              </div>
+              <div class="el" id="s8e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS is specialized in legal and compliance recruitment,
+                  offering clients and candidates a full range of recruitment
+                  solutions. Using our extensive market expertise, we place
+                  legal professionals at all levels with international law
+                  companies worldwide. We aim to improve the business of our
+                  legal clients, covering not only permanent but also interim
+                  positions. Deliver quality human resources.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section9"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s9e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/PROFESSIONAL SERVICES.png"
+                />
+              </div>
+              <div class="el" id="s9e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands that professional services
+                  firms require exceptional talent to provide high-quality
+                  services. Our experience in working with these firms enables
+                  us to find the right candidates for you. We provide assistance
+                  in areas such as strategic planning, organizational
+                  restructuring, and cost reduction.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section10"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s10e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/TRANSPORTATION & LOGISTICS.png"
+                />
+              </div>
+              <div class="el" id="s10e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search has extensive experience in the
+                  Transportation and Logistics sector. Our consultants have
+                  worked with complex logistics organizations, understanding
+                  their needs and requirements. We help our clients find
+                  suitable candidates for recruitment and human resource needs
+                  to ensure efficient and cost-effective logistics operations.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section11"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s11e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/RETAIL & FMCG.png"
+                />
+              </div>
+              <div class="el" id="s11e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search helps companies differentiate and grow
+                  their brands through meaningful innovation, develop corporate
+                  strategies in sales and marketing, and make marketing
+                  investments. Our approach is grounded in a deep understanding
+                  of our clients' business situation, strategic goals, and sales
+                  and marketing priorities. We use a team-based approach to
+                  engage the best, most knowledgeable resources from our firm
+                  for every project.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section12"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s12e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/NEW ENERGY & UTILITY.png"
+                />
+              </div>
+              <div class="el" id="s12e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search understands the unique challenges faced
+                  by natural resources companies, including rapidly changing
+                  business cycles and increased competition for limited
+                  resources. Our global presence allows us to offer seamless
+                  solutions to our clients across industries and geographic
+                  markets. We help our clients attract top talent to navigate
+                  these challenges and succeed in the ever-changing natural
+                  resources sector.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section13"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s13e1">
+                <img
+                  class="w-1/2"
+                  src="assets/images/sectors/LIFE SCIENCE.png"
+                />
+              </div>
+              <div class="el" id="s13e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  SGS Executive Search specializes in finding top talent for the
+                  Life Science sector, including pharmaceuticals, medical
+                  devices, diagnostics, and biotechnology. With increasing
+                  demands for improved health care and manufacturing
+                  technologies, our consultants understand the needs of this
+                  sector and can help you attract, recruit, and retain
+                  international executives to meet these challenges.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section14"
+              class="section fixed min-h-screen flex flex-col items-center"
+            >
+              <div class="el flex justify-center" id="s14e1">
+                <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
+              </div>
+              <div class="el el2" id="s14e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Our Automotive Practice consultants have extensive industry
+                  experience, enabling us to partner with leading original
+                  equipment manufacturers to identify top executives who can
+                  drive change in operations, supply chain management,
+                  alliances, and information technologies. SGS Executive Search
+                  has a deep understanding of our clients' businesses and
+                  cultures and can provide exceptional support for their global
+                  and regional needs.
+                </p>
+              </div>
+            </div>
+
+            <div
+              id="section15"
+              class="section min-h-screen flex flex-col items-center"
+            >
+              <div class="el opacity-0 el1 flex justify-center" id="s1e1">
+                <img class="w-1/2" src="assets/images/sectors/AUTOMOTIVE.png" />
+              </div>
+              <div class="el el2 opacity-0" id="s1e2">
+                <p class="text-slate-300 text-xl w-10/12 m-auto space-y-1">
+                  Our Automotive Practice consultants have extensive industry
+                  experience, enabling us to partner with leading original
+                  equipment manufacturers to identify top executives who can
+                  drive change in operations, supply chain management,
+                  alliances, and information technologies. SGS Executive Search
+                  has a deep understanding of our clients' businesses and
+                  cultures and can provide exceptional support for their global
+                  and regional needs.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     <script>
       $(document).ready(function () {
@@ -749,19 +734,6 @@
             $("#language").attr("title", "Germany");
           }
         });
-
-        $('.all_item_list>li>a').on('click',function(){
-          var _this = this;
-          $($(_this).attr('href')).css({'transition':'0s','opacity':'0'});  
-          $('.all_item_list>li>a').removeClass("item-active");  
-          $(_this).addClass("item-active");  
-          $(_this).attr('href');
-          setTimeout(function(){
-
-            $($(_this).attr('href')).css({'transition':'1s','opacity':'1'});    
-          },200);
-        });
-
       });
     </script>
   </body>

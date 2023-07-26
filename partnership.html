@@ -4,7 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SGS</title>
-    <link rel="stylesheet" href="assets/css/officeStyle.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/officeScript.js"></script>
@@ -31,11 +30,11 @@
       style="position: fixed"
     >
       <div class="d-flex align-items-center">
-        <div class="back-button mr-2">
+        <!-- <div class="back-button mr-2">
           <a class="btn btn-light p-0" id="back" href="index.html"
             ><img src="assets/images/left.png" class="img-fluid" width="25px"
           /></a>
-        </div>
+        </div> -->
         <div class="logo w-20">
           <a href="index.html"
             ><img id="logo" src="assets/images/logo.png"
@@ -43,15 +42,31 @@
         </div>
       </div>
       <div class="side-nav flex items-center">
-        <a class="nav-link" href="career.html">Career</a>
-        <a class="nav-link">Language</a>
-        <div class="button mr-10">
-          <a
-            href="login.html"
-            id="login"
-            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
-            >Login</a
-          >
+        <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
+          >Career</a
+        >
+        <!-- <div class="dropdown mr-2">
+        <button
+          class="btn border-0 dropdown-toggle d-flex align-items-center"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"SSSSS
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="./assets/images/en.png" class="img-fluid" />
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"
+            ><img src="./assets/images/en.png" class="img-fluid"
+          /></a>
+          <a class="dropdown-item" href="#"
+            ><img src="./assets/images/de.png" class="img-fluid"
+          /></a>
+        </div>
+      </div> -->
+        <div class="button mr-4">
+          <a href="login.html" id="login" class="nav-link">Login</a>
         </div>
         <div class="menu">
           <span
@@ -1025,7 +1040,7 @@
               </div>
             </div>
             <div class="button d-flex justify-center">
-              <button class="btn-position">APPLY FOR PARTNERSHIP</button>
+              <button class="btn-position">Apply for Partnership</button>
             </div>
           </div>
         </div>
@@ -1034,7 +1049,7 @@
       <!-- partnership benefits section -->
       <section class="benefits-section">
         <div class="partner-container">
-          <h2 class="position-title">PARTNERSHIP BENEFITS:</h2>
+          <h2 class="position-title">Partnership Benefits</h2>
           <div class="benefits-content">
             <p class="benefits-title">
               <strong>Certification levels:</strong> Consultant, Basic, Premium,
@@ -1045,9 +1060,7 @@
               specific technology areas, as well as in people, process, and
               infrastructure practices
             </p>
-            <div
-              class="benefit-container d-flex align-items-lg-end align-items-center justify-between flex-lg-row flex-column"
-            >
+            <div class="benefit-container">
               <ul class="benefits-list">
                 <li class="benefits-item">
                   <p>Commission on every deal’s net amount</p>
@@ -1095,9 +1108,6 @@
                   <p>deal calculation support</p>
                 </li>
               </ul>
-              <div class="button mt-4 mt-lg-0">
-                <button class="btn-apply">Learn More</button>
-              </div>
             </div>
           </div>
         </div>
@@ -1116,37 +1126,36 @@
           <div class="channel-profile text-center">
             <div class="profile-img">
               <img
-                src="./assets/images/partnership/Marko Klenovic.png"
+                src="./assets/images/partnership/Mirta.png"
+                alt="Mirta"
                 class="img-fluid"
               />
             </div>
-            <p class="user-name">Marko Klenović</p>
-            <p
-              class="user-number d-flex align-items-center justify-center mt-3"
-            >
-              <img
-                src="./assets/images/partnership/phone.png"
-                width="28px"
-                class="mr-2"
-              />
-              +38513535738
-            </p>
+            <p class="user-name">Mirta Radić</p>
+            <a href="#">
+              <p class="user-number d-flex align-items-center justify-center">
+                <img
+                  src="./assets/images/partnership/phone.png"
+                  width="28px"
+                  class="mr-2"
+                />
+                +38515102088
+              </p>
+            </a>
             <div class="social-link d-flex justify-center">
               <a href="#" class="social mx-2"
                 ><img
                   src="./assets/images/partnership/gmail.png"
                   class="img-fluid"
-                  width="45px"
               /></a>
               <a href="#" class="social mx-2"
                 ><img
                   src="./assets/images/partnership/linkedin.png"
                   class="img-fluid"
-                  width="45px"
               /></a>
             </div>
-            <div class="button d-flex align-items-center justify-center mt-4">
-              <button class="btn-apply">BOOK A MEETING</button>
+            <div class="book-button d-flex align-items-center justify-center">
+              <button class="btn-apply">Book a Meeting</button>
             </div>
           </div>
         </div>
@@ -1159,220 +1168,226 @@
             <h2 class="text-center">Apply for partnership</h2>
           </div>
           <div class="general-form partner-form">
-            <form class="row">
+            <form class="row justify-between">
               <div class="general-form-title col-12">REQUIRED</div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="First name"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Last name"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input type="email" class="form-control" placeholder="E-mail" />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input type="tel" class="form-control" placeholder="Phone" />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input type="text" class="form-control" placeholder="Address" />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Industry"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Company name"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Company address"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <label class="title">Select DaaS:</label>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="consultant"
-                  />
-                  <label class="form-check-label text-red" for="consultant">
-                    CONSULTANT
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="basic"
-                  />
-                  <label class="form-check-label text-red" for="basic">
-                    BASIC
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="premium"
-                  />
-                  <label class="form-check-label text-red" for="premium">
-                    PREMIUM
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="gold"
-                  />
-                  <label class="form-check-label text-red" for="gold">
-                    GOLD
-                  </label>
+              <div class="form-group col-md-12 col-12">
+                <label class="title">Select partnership plan:</label>
+                <div class="partnership-check">
+                  <div class="form-check mb-1">
+                    <input
+                      class="form-check-input consultant-box"
+                      type="checkbox"
+                      value=""
+                      id="consultant"
+                    />
+                    <label class="form-check-label text-red" for="consultant">
+                      CONSULTANT
+                    </label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input
+                      class="form-check-input basic-box"
+                      type="checkbox"
+                      value=""
+                      id="basic"
+                    />
+                    <label class="form-check-label text-red" for="basic">
+                      BASIC
+                    </label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input
+                      class="form-check-input premium-box"
+                      type="checkbox"
+                      value=""
+                      id="premium"
+                    />
+                    <label class="form-check-label text-red" for="premium">
+                      PREMIUM
+                    </label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input
+                      class="form-check-input gold-box"
+                      type="checkbox"
+                      value=""
+                      id="gold"
+                    />
+                    <label class="form-check-label text-red" for="gold">
+                      GOLD
+                    </label>
+                  </div>
                 </div>
               </div>
-              <div class="form-group col-md-6 col-12">
-                <label class="title">Select partnership plan:</label>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="sales"
-                  />
-                  <label class="form-check-label text-red" for="sales">
-                    SALES
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="hr"
-                  />
-                  <label class="form-check-label text-red" for="hr">
-                    HUMAN RESOURCES
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="operation"
-                  />
-                  <label class="form-check-label text-red" for="operation">
-                    OPERATIONS
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="backoffice"
-                  />
-                  <label class="form-check-label text-red" for="backoffice">
-                    BACK OFFICE
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="it"
-                  />
-                  <label class="form-check-label text-red" for="it"> IT </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="finance"
-                  />
-                  <label class="form-check-label text-red" for="finance">
-                    FINANCE
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="marketing"
-                  />
-                  <label class="form-check-label text-red" for="marketing">
-                    MARKETING
-                  </label>
-                </div>
-                <div class="form-check mb-1">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="customercare"
-                  />
-                  <label class="form-check-label text-red" for="customercare">
-                    CUSTOMER CARE
-                  </label>
+              <div class="form-group col-md-12 col-12">
+                <label class="title">Select DaaS:</label>
+                <div class="daas-box">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="sales"
+                    />
+                    <label class="form-check-label text-red" for="sales">
+                      SALES
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="hr"
+                    />
+                    <label class="form-check-label text-red" for="hr">
+                      HUMAN RESOURCES
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="operation"
+                    />
+                    <label class="form-check-label text-red" for="operation">
+                      OPERATIONS
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="backoffice"
+                    />
+                    <label class="form-check-label text-red" for="backoffice">
+                      BACK OFFICE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="it"
+                    />
+                    <label class="form-check-label text-red" for="it">
+                      IT
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="finance"
+                    />
+                    <label class="form-check-label text-red" for="finance">
+                      FINANCE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="marketing"
+                    />
+                    <label class="form-check-label text-red" for="marketing">
+                      MARKETING
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="customercare"
+                    />
+                    <label class="form-check-label text-red" for="customercare">
+                      CUSTOMER CARE
+                    </label>
+                  </div>
                 </div>
               </div>
 
-              <div class="general-form-title col-12">OPTIONAL</div>
-              <div class="form-group col-md-6 col-12">
+              <div class="general-form-title col-12 lg:mt-5">OPTIONAL</div>
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Company size"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input type="text" class="form-control" placeholder="Website" />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="State / Province / Region"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Street address"
                 />
               </div>
-              <div class="form-group col-md-12 col-12">
+              <div class="form-group mb-0 col-md-12 col-12">
                 <label class="title" style="font-weight: 500">Message</label>
                 <textarea class="text-control form-control" rows="6"></textarea>
               </div>
-              <div class="general-form-title col-12">CONSENT</div>
-              <div class="col-12 form-group">
+              <div class="general-sec-title col-12">CONSENT</div>
+              <div class="col-12">
                 <div class="form-check">
                   <label class="form-check-label">
                     <input
@@ -1384,7 +1399,7 @@
                   </label>
                 </div>
               </div>
-              <div class="general-form-title col-12">CAPTCHA</div>
+              <div class="general-sec-title col-12">CAPTCHA</div>
               <div class="form-group col-12">
                 <div class="captcha-img">
                   <img
@@ -1394,7 +1409,7 @@
                 </div>
               </div>
               <div
-                class="button d-flex align-items-center justify-content-center w-100"
+                class="book-button d-flex align-items-center justify-center w-100"
               >
                 <button class="btn-apply">Apply</button>
               </div>

@@ -4,13 +4,16 @@
   width: 100%;
   background: url(../images/partnership/partnership.png) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: 350px 0px;
+  /* background-attachment: fixed; */
   position: relative;
 }
 .preloader {
   z-index: 100000000;
 }
-
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
 #landing,
 #resume,
 #interview,
@@ -28,7 +31,7 @@
   z-index: 100000000;
 }
 .partner-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .partner-title-section {
@@ -48,19 +51,14 @@
   margin-bottom: 30px;
 }
 .partner-title-section h1 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 87px;
+  color: #000;
   text-align: center;
-
-  color: #000000;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
 }
-.btn-position,
-.btn-apply {
+.btn-position {
   background: #cc1521;
-  border-radius: 16px;
   padding: 20px 50px;
   display: flex;
   align-items: center;
@@ -73,77 +71,118 @@
   line-height: 24px;
   color: #fff;
   white-space: nowrap;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /* gerenal section */
 .general-section {
   width: 100%;
-  /* background-image: url("../images/career/general-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
-  position: relative;
-  padding: 180px 0;
+  padding: 150px 0;
 }
 .general-form {
-  /* min-width: 300px; */
-  max-width: 912px;
+  max-width: 70%;
   margin: 0 auto;
 }
 .general-title h2 {
-  font-family: "Inter";
+  color: #292929;
+  font-family: Inter;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
-  line-height: 120%;
-  color: #cc1521;
-  display: inline-flex;
-  z-index: 2;
-  background-color: #f1f1f1;
-  padding: 0 20px;
-  margin-bottom: 0;
+  position: relative;
 }
-.general-form-title,
-label.title {
-  font-family: "Inter";
+.general-title h2::after {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 1px;
+  background-color: #292929;
+  right: 0;
+  top: 28px;
+}
+.general-title h2::before {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 1px;
+  background-color: #292929;
+  left: 0;
+  top: 28px;
+}
+.general-form-title {
+  color: #cc1521;
+  font-family: Inter;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #292929;
-  margin-bottom: 20px;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
 label.title {
+  color: #292929;
+  font-family: Inter;
+  font-size: 22px;
   font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-
+.partnership-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.partnership-check .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 0px !important;
+}
+.partnership-check .form-check-input {
+  width: 20px;
+  height: 20px;
+  position: unset;
+  margin: 0;
+}
+.daas-box .form-check {
+  margin-bottom: 10px;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.daas-box .form-check input {
+  width: 15px;
+  height: 15px;
+  position: unset;
+  margin: 0;
+}
 .general-form .form-control {
-  font-family: "Inter";
+  color: #292929;
+  font-family: Inter;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: normal;
   border-bottom: 1px solid #292929;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   background-color: transparent;
   padding-left: 0;
   padding-bottom: 6px;
-  color: #292929;
+  border-radius: 0px;
+}
+.general-form .form-control:focus {
+  box-shadow: none;
 }
 .general-form .form-control::placeholder {
   color: #292929;
 }
 .general-form .form-group {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 .general-form .form-check-label {
   font-family: "Inter";
@@ -153,32 +192,39 @@ label.title {
   line-height: 23px;
   color: #292929;
 }
-.general-form .form-check-label span,
-.general-form .form-check-label.text-red {
+.general-form .form-check-label span {
   color: #cc1521;
 }
 
 /* benefits-section */
 .benefits-section {
-  padding: 136px 0;
+  padding: 100px 0;
 }
 .benefits-section .position-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 67px;
+  padding-left: 70px;
   color: #292929;
-  margin-bottom: 60px;
+  font-family: Inter;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  position: relative;
+}
+.benefits-section .position-title::after {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 30px;
+  background-color: #cc1521;
+  left: -30px;
+  top: 5px;
 }
 .benefits-content .benefits-title,
 .benefits-list .benefits-item p,
-p.subtitle-title,
-.channel-profile .user-number {
+p.subtitle-title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 164.52%;
   color: #000000;
   margin-bottom: 0;
@@ -191,52 +237,31 @@ p.subtitle-title,
 }
 .benefit-container ul {
   list-style: disc;
+  padding-left: 25px;
 }
 /* channel-section */
 .channel-section .channel-title h2 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
+  color: #292929;
+  font-family: Inter;
   font-size: 45px;
+  font-weight: 500;
   line-height: 67px;
   text-align: center;
-  color: #292929;
-  background-color: #f1f1f1;
-  padding: 0 40px;
-  display: inline-block;
-  z-index: 2;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
-.channel-section .channel-title,
-.general-title {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.channel-section .channel-title::after,
-.general-title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 0;
-  width: 100%;
-  border: 2px solid rgba(41, 41, 41, 0.21);
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.channel-section .channel-title {
+  text-align: center;
 }
 .channel-profile .profile-img {
-  width: 294px;
-  height: 294px;
+  width: 215px;
+  height: 215px;
   border-radius: 100%;
   overflow: hidden;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-  margin: 99px auto 45px;
+  margin: 40px auto 30px;
 }
 .channel-profile .profile-img img {
   width: 100%;
@@ -244,24 +269,77 @@ p.subtitle-title,
   object-fit: cover;
 }
 .channel-profile .user-name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 46px;
-  text-align: center;
   color: #292929;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+}
+.channel-profile a:hover {
+  text-decoration: none;
+}
+.channel-profile .user-number {
+  color: #292929;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .social-link {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+.social-link img {
+  width: 35px;
+}
+.book-button {
+  margin-top: 35px;
+}
+.book-button button {
+  color: #cc1521;
+  text-align: center;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #cc1521;
+  padding: 14px 40px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  z-index: 99;
+}
+.book-button button::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 100%;
+  background-color: #cc1521;
+  left: 0;
+  top: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: -1;
+}
+.book-button button:hover::after {
+  width: 100%;
+}
+.book-button button:hover {
+  color: #fff;
 }
 .general-form .text-control {
-  background: #ffffff;
   border: 1px solid #000000;
+  padding: 15px;
+}
+.general-sec-title {
+  color: #292929;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 /* tabs */
 .partnership-tabs {
-  margin: 120px 0 50px;
+  margin: 50px 0;
 }
 .partnership-tabs .nav-tabs {
   display: none;
@@ -273,8 +351,8 @@ p.subtitle-title,
   -webkit-filter: blur(0) !important;
 }
 .partnership-tabs .nav-tabs .nav-link {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 145px;
   /*opacity: 0.5;
   */
   filter: blur(2.5px);
@@ -313,6 +391,7 @@ p.subtitle-title,
 }
 .partnership-tabs .card .card-body img {
   width: 100%;
+  box-shadow: 13px 13px 48px 14px rgba(0, 0, 0, 0.25);
 }
 .table {
   border-radius: 18px;
@@ -416,29 +495,36 @@ p.subtitle-title,
     margin: 200px 0 50px;
   }
 }
-
+@media screen and (max-width: 1350px) {
+  .general-title h2::before {
+    content: "";
+    width: 28%;
+  }
+  .general-title h2::after {
+    content: "";
+    width: 28%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .general-title h2 {
-    font-size: 56px;
+    font-size: 40px;
   }
 
   .partner-container {
     width: 90%;
   }
-  .btn-position,
-  .btn-apply {
+  .btn-position {
     padding: 10px 40px;
     height: 55px;
-    border-radius: 11px;
-    -webkit-border-radius: 11px;
-    -moz-border-radius: 11px;
-    -ms-border-radius: 11px;
-    -o-border-radius: 11px;
   }
   .general-form .form-control,
   .general-form-title,
   label.title {
     font-size: 20px;
+  }
+  .general-form {
+    width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -448,8 +534,8 @@ p.subtitle-title,
     height: 200px;
   }
   .partner-title-section h1 {
-    font-size: 47px;
-    line-height: 120%;
+    font-size: 40px;
+    line-height: normal;
   }
   .partnership-tabs {
     margin-top: 80px;
@@ -462,20 +548,32 @@ p.subtitle-title,
     line-height: 120%;
     font-size: 40px;
   }
-  .channel-section .channel-title,
-  .general-title {
-    margin-bottom: 40px;
-  }
   .career-title-section h1,
   .general-title h2,
   .position-section .position-title {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .partner-title-section h1 {
     font-size: 40px;
+  }
+  .general-title h2 {
+    font-size: 28px;
+  }
+  .general-title h2::before {
+    content: "";
+    width: 25%;
+    top: 20px;
+  }
+  .general-title h2::after {
+    content: "";
+    width: 25%;
+    top: 20px;
+  }
+  .partnership-tabs {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -508,10 +606,14 @@ p.subtitle-title,
     font-size: 32px;
   }
   .partner-subtitle {
-    padding-top: 70px;
+    padding-top: 40px;
+    margin-bottom: 0px;
   }
   .partnership-tabs {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+  .partner-title-section {
+    padding-bottom: 40px;
   }
   .category-location span,
   .general-form .form-control,
@@ -522,13 +624,12 @@ p.subtitle-title,
   .benefits-list .benefits-item p,
   p.subtitle-title,
   .channel-profile .user-number {
-    font-size: 18px;
+    font-size: 16px;
   }
   .general-form .form-group {
     margin-bottom: 35px;
   }
-  .btn-position,
-  .btn-apply {
+  .btn-position {
     font-size: 18px;
   }
   .benefits-section .position-title,
@@ -545,35 +646,120 @@ p.subtitle-title,
     padding: 0 20px;
   }
   .general-title h2 {
-    padding: 0 10px;
+    padding: 0px;
+    font-size: 22px;
+  }
+  .general-title h2::before {
+    content: "";
+    width: 20%;
+    top: 13px;
+  }
+  .general-title h2::after {
+    content: "";
+    width: 20%;
+    top: 13px;
+  }
+  .general-form {
+    max-width: 100%;
+  }
+  .benefits-section .position-title::after {
+    content: "";
+    width: 60px;
+    height: 20px;
+    left: -30px;
+    top: 10px;
+  }
+  .benefits-section .position-title {
+    padding-left: 50px;
+  }
+  .book-button button {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+  .partnership-check {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 0px;
+  }
+  label.title {
+    margin-top: 0px;
+  }
+  .general-sec-title {
+    margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .general-title h2,
   .partner-title-section h1 {
-    font-size: 28px;
+    font-size: 22px;
+  }
+  .benefits-section .position-title,
+  .channel-section .channel-title h2 {
+    font-size: 26px;
+  }
+  .benefits-section .position-title::after {
+    content: "";
+    width: 60px;
+    height: 20px;
+    left: -40px;
+    top: 7px;
+  }
+  .category-location span,
+  .general-form .form-control,
+  .general-form-title,
+  .general-form .form-check-label,
+  label.title,
+  .benefits-content .benefits-title,
+  .benefits-list .benefits-item p,
+  p.subtitle-title,
+  .channel-profile .user-number {
+    font-size: 14px;
+  }
+  .channel-profile .profile-img {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto 20px;
+  }
+  .benefits-section .position-title {
+    padding-left: 35px;
+  }
+  .book-button {
+    margin-top: 20px;
+  }
+  .partner-container {
+    width: 95%;
   }
   .btn-position,
-  .btn-apply,
   .general-form .form-control,
   .general-form-title,
   .general-form .form-check-label,
   label.title {
     font-size: 16px;
   }
-  .btn-position,
-  .btn-apply {
+  .btn-position {
     height: auto;
   }
   .general-section {
-    padding: 100px 0;
+    padding: 80px 0;
+  }
+  .partnership-check {
+    gap: 10px;
+  }
+  .general-form .form-group {
+    margin-bottom: 25px;
   }
   .position-section .position-title {
     margin-bottom: 45px;
   }
   .position-section {
     padding: 60px 0 5px;
+  }
+  .general-title h2::before,
+  .general-title h2::after {
+    content: "";
+    width: 15%;
   }
 }
 
@@ -585,7 +771,7 @@ p.subtitle-title,
     margin: 0;
   }
   .general-title h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .general-section {
     padding-top: 90px;

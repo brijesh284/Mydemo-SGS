@@ -15,6 +15,7 @@
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="assets/js/app.js" type="module"></script>
     <script src="assets/js/investment.js"></script>
+    <script src="assets/js/investment_animation.js"></script>
 
     <!-- chart js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
@@ -302,12 +303,12 @@
       <div class="pitchBook">
         <div class="bg-pitchBook">
           <div class="content-pitchBook flex flex-wrap justify-center">
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="lg:text-6xl md:text-6xl text-5xl block">€500K</b><br />
                   <span class="text-2xl font-bold">INVESTMENTS IN 2022</span>
@@ -315,7 +316,7 @@
               </div>
             </div>
 
-            <div class="card card-pic">
+            <div class="card card-pic card_hover">
               <div class="w-full h-full absolute top-0">
                 <img
                   class="grayscale hover:grayscale-0 hover:scale-105 duration-300"
@@ -324,12 +325,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="lg:text-6xl md:text-6xl text-5xl block">232%</b><br />
                   <span class="text-2xl font-bold">YOY GROWTH</span>
@@ -337,7 +338,7 @@
               </div>
             </div>
 
-            <div class="card card-pic">
+            <div class="card card-pic card_hover">
               <div class="w-full h-full absolute top-0">
                 <img
                   class="grayscale hover:grayscale-0 hover:scale-105 duration-300"
@@ -346,7 +347,7 @@
               </div>
             </div>
 
-            <div class="card card-pic">
+            <div class="card card-pic card_hover">
               <div class="w-full h-full absolute top-0">
                 <img
                   class="grayscale hover:grayscale-0 hover:scale-105 duration-300"
@@ -355,12 +356,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">14</b><br />
                   <span class="text-2xl font-bold"> INVESTORS </span>
@@ -368,7 +369,7 @@
               </div>
             </div>
 
-            <div class="card card-pic">
+            <div class="card card-pic card_hover">
               <div class="w-full h-full absolute top-0">
                 <img
                   class="grayscale hover:grayscale-0 hover:scale-105 duration-300"
@@ -377,12 +378,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">11</b><br />
                   <span class="text-2xl font-bold"> CLIENTS </span>
@@ -390,12 +391,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">€3M</b><br />
                   <span class="text-2xl font-bold">
@@ -405,12 +406,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">€70K</b><br />
                   <span class="text-xl font-bold">
@@ -424,7 +425,7 @@
               <img class="w-full" src="assets/images/investment/Group 23.png" />
             </div>
 
-            <div class="card rectangle-card">
+            <div class="card rectangle-card card_hover">
               <div class="w-full h-full absolute top-0">
                 <img
                   class="grayscale hover:grayscale-0 hover:scale-105 duration-300"
@@ -433,12 +434,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">31%</b><br />
                   <span class="text-xl font-bold">
@@ -448,12 +449,12 @@
               </div>
             </div>
 
-            <div class="card group card-text">
+            <div class="card group card-text card_hover">
               <div
                 class="w-full h-full border-2 border-red-700 absolute top-0 group-hover:border-white group-hover:bg-white"
               >
                 <p
-                  class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                  class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                 >
                   <b class="text-7xl block">€1.9M</b><br />
                   <span class="text-xl font-bold">
@@ -468,7 +469,7 @@
             <div class="map-title">
               <h2>Investors map <span>by the numbers </span></h2>
             </div>
-            <div class="map-content relative">
+            <div class="map-content relative map_hover">
               <svg
                 id="map"
                 class="map-img"
@@ -755,12 +756,12 @@
             </div>
 
             <div class="content-pitchBook flex flex-wrap justify-center">
-              <div class="card group card-text">
+              <div class="card group card-text card_hover">
                 <div
                   class="w-full h-full border-2 border-white-700 absolute top-0 group-hover:border-white group-hover:bg-white"
                 >
                   <p
-                    class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                    class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                   >
                     <b class="lg:text-6xl md:text-6xl text-5xl block">€1M</b><br />
                     <span class="text-2xl font-bold"> INVESTMENT ROUND </span>
@@ -768,12 +769,12 @@
                 </div>
               </div>
 
-              <div class="card group card-text">
+              <div class="card group card-text card_hover">
                 <div
                   class="w-full h-full border-2 border-white-700 absolute top-0 group-hover:border-white group-hover:bg-white"
                 >
                   <p
-                    class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                    class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                   >
                     <b class="lg:text-6xl md:text-6xl text-5xl block">13%</b><br />
                     <span class="text-2xl font-bold"> RAISED </span>
@@ -781,12 +782,12 @@
                 </div>
               </div>
 
-              <div class="card group card-text">
+              <div class="card group card-text card_hover">
                 <div
                   class="w-full h-full border-2 border-white-700 absolute top-0 group-hover:border-white group-hover:bg-white"
                 >
                   <p
-                    class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                    class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                   >
                     <b class="text-4xl block">30.09.2023.</b><br />
                     <span class="text-3xl font-bold">CLOSING DATE</span>
@@ -794,12 +795,12 @@
                 </div>
               </div>
 
-              <div class="card group card-text">
+              <div class="card group card-text card_hover">
                 <div
                   class="w-full h-full border-2 border-white-700 absolute top-0 group-hover:border-white group-hover:bg-white"
                 >
                   <p
-                    class="card-cont group-hover:cursor-default group-hover:text-red-700"
+                    class="card-cont group-hover:cursor-default group-hover:text-red-700 card_hover_inner_text"
                   >
                     <b class="lg:text-6xl md:text-6xl text-5xl block">€115</b><br />
                     <span class="text-2xl font-bold">SHARE PRICE</span>

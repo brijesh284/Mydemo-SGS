@@ -50,10 +50,12 @@
         </div>
       </div>
       <div class="side-nav flex items-center">
-        <a href="login.html" class="login-wrap nav-link mr-3 text-red-700"
+        <a
+          href="login.html"
+          class="login-wrap nav-link font-bold mr-2 login-bold-text"
           >Login</a
         >
-        <a class="nav-link mr-10" href="career.html">Career</a>
+        <a class="nav-link mr-4" href="career.html">Career</a>
 
         <div class="menu">
           <span
@@ -295,7 +297,7 @@
             <div class="left_con_part">
               <div class="landing_con_1">
                 <h1 class="landing-office-title">
-                  Office & Facility <br />
+                  Office <span>&</span> Facility <br />
                   Management
                 </h1>
                 <div class="landing_con_dec_main">
@@ -303,9 +305,7 @@
                     <p class="">
                       Our beautifully-designed office spaces suit any size of
                       team and come fully serviced, so you can focus on
-                      <strong>
-                        growing your business without distractions</strong
-                      >
+                      <span> growing your business without distractions</span>
                     </p>
                   </div>
                 </div>
@@ -317,9 +317,7 @@
                     <p class="">
                       Our beautifully-designed office spaces suit any size of
                       team and come fully serviced, so you can focus on
-                      <strong
-                        >growing your business without distractions
-                      </strong>
+                      <span>growing your business without distractions </span>
                     </p>
                   </div>
                 </div>
@@ -352,9 +350,9 @@
                 <h1 class="landing_con_title">Facility Management</h1>
                 <p>
                   General Services available in DaaS for all <br />
-                  <strong> Office Solutions:</strong>
+                  <span> Office Solutions:</span>
                 </p>
-                <ul>
+                <ul id="myList">
                   <li class="item menu_1">
                     <a href="Business.html">Business Address</a>
                   </li>
@@ -393,5 +391,14 @@
       type="text/javascript"
       src="./assets/js/office-management.js"
     ></script>
+    <script>
+      const myList = document.getElementById("myList");
+      myList.addEventListener("mouseover", function () {
+        myList.classList.add("coloring");
+      });
+      myList.addEventListener("mouseout", function () {
+        myList.classList.remove("coloring");
+      });
+    </script>
   </body>
 </html>

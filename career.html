@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/dass-landing.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/officeStyle.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
     <link rel="stylesheet" href="assets/css/career.css" />
 
@@ -39,15 +38,11 @@
         </div>
       </div>
       <div class="side-nav flex items-center">
-        <a class="nav-link" href="career.html">Career</a>
-        <a class="nav-link">Language</a>
-        <div class="button mr-10">
-          <a
-            href="login.html"
-            id="login"
-            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
-            >Login</a
-          >
+        <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
+          >Career</a
+        >
+        <div class="button mr-4">
+          <a href="login.html" id="login" class="nav-link">Login</a>
         </div>
         <div class="menu">
           <span
@@ -254,6 +249,9 @@
     </div>
 
     <main class="">
+      <div class="sub-title">
+        <p>CAREER</p>
+      </div>
       <!-- 1st section -->
       <section id="landing" class="career-section">
         <div class="career-container">
@@ -272,7 +270,7 @@
       </section>
 
       <!-- open position section -->
-      <scetion class="position-section">
+      <section class="position-section">
         <div class="career-container">
           <h2 class="position-title">Open positions</h2>
           <div class="open-category">
@@ -445,7 +443,7 @@
             </div>
           </div>
         </div>
-      </scetion>
+      </section>
 
       <!-- General application section -->
       <section class="general-section" id="generalApplication">
@@ -454,125 +452,51 @@
             <h2 class="text-center">General application</h2>
           </div>
           <div class="general-form">
-            <form class="row">
-              <div class="general-form-title col-12">REQUIRED</div>
-              <div class="form-group col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Job position you are applying for"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
+            <form class="row justify-between">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="First name"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Last name"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <input type="email" class="form-control" placeholder="E-mail" />
-              </div>
-              <div class="form-group col-md-6 col-12">
+
+              <div class="form-group col-md-5 col-12">
                 <input type="tel" class="form-control" placeholder="Phone" />
               </div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
+                <input type="email" class="form-control" placeholder="E-mail" />
+              </div>
+              <div class="form-group col-md-5 col-12">
                 <input type="text" class="form-control" placeholder="Address" />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Date of birth"
-                />
+              <div class="form-group col-md-5 col-12">
+                <input type="text" class="form-control" placeholder="City" />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Recent job title"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input type="text" class="form-control" placeholder="Gender" />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="English CV"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="How did you hear about us?"
-                />
-              </div>
-              <div class="form-group col-12">
-                <div class="image-upload-wrap">
-                  <input class="file-upload-input" type="file" />
-                  <div class="drag-text">
-                    <h3>Drag and drop CV</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="general-form-title col-12">OPTIONAL</div>
-              <div class="form-group col-md-6 col-12">
+              <div class="form-group col-md-5 col-12">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Additional links"
                 />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Resident of"
-                />
+              <div class="form-group col-md-5 col-12">
+                <input type="text" class="form-control" placeholder="Other" />
               </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nativ language"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Secondary laguages"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nationality"
-                />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input type="text" class="form-control" placeholder="Country" />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input type="text" class="form-control" placeholder="City" />
-              </div>
-              <div class="form-group col-md-6 col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="ZIP/ Postal code"
-                />
+              <div class="form-group drag-file col-12">
+                <div class="image-upload-wrap">
+                  <input class="file-upload-input" type="file" />
+                  <div class="drag-text">
+                    <h3>Drag and drop CV</h3>
+                  </div>
+                </div>
               </div>
               <div class="form-group col-12">
                 <div class="image-upload-wrap">
@@ -582,26 +506,9 @@
                   </div>
                 </div>
               </div>
-              <div class="general-form-title col-12">CONSENT</div>
-              <div class="col-12 form-group">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      value=""
-                    />By submitting this form, you agree we use this data in
-                    accordance with our <span>Data protection policy.</span>
-                  </label>
-                </div>
-              </div>
-              <div class="general-form-title col-12">CAPTCHA</div>
-              <div class="form-group col-12">
-                <div class="captcha-img">
-                  <img
-                    src="./assets/images/career/image2.png"
-                    class="img-fluid"
-                  />
+              <div class="col-12">
+                <div class="form-apply">
+                  <button class="btn-apply">Apply</button>
                 </div>
               </div>
             </form>

@@ -163,6 +163,13 @@ body {
   padding-right: 20px;
   width: 71%;
 }
+.seeking .seeking-title h2 span {
+  color: #d9d9d9;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+}
 .rectangle-card {
   width: calc(46% + 20px);
   margin: 10px;
@@ -465,7 +472,8 @@ body {
     width: 35%;
     line-height: 50px;
   }
-  .map .map-title h2 span {
+  .map .map-title h2 span,
+  .seeking .seeking-title h2 span {
     font-size: 22px;
   }
   .map .map-title::after {
@@ -553,7 +561,8 @@ body {
     width: 55%;
     line-height: 40px;
   }
-  .map .map-title h2 span {
+  .map .map-title h2 span,
+  .seeking .seeking-title h2 span {
     font-size: 20px;
   }
   .map .map-title::after {

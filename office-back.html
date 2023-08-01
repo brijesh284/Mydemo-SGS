@@ -1,0 +1,512 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS Back-Office</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/office-back.css" />
+    <link rel="stylesheet" href="assets/js/sidebar.js" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/investment.js"></script>
+    <script src="assets/js/investment_animation.js"></script>
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 lg:px-10 md:px-5 px-3.5 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="d-flex align-items-center">
+        <div class="logo w-20">
+          <a href="index.html"
+            ><img id="logo" src="assets/images/logo.png"
+          /></a>
+        </div>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link font-bold mr-2 career-bold-text" href="career.html"
+          >Career</a
+        >
+        <!-- <div class="dropdown mr-2">
+      <button
+        class="btn border-0 dropdown-toggle d-flex align-items-center"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"SSSSS
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <img src="./assets/images/en.png" class="img-fluid" />
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"
+          ><img src="./assets/images/en.png" class="img-fluid"
+        /></a>
+        <a class="dropdown-item" href="#"
+          ><img src="./assets/images/de.png" class="img-fluid"
+        /></a>
+      </div>
+    </div> -->
+        <div class="button mr-4">
+          <a href="login.html" id="login" class="nav-link">Login</a>
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sectors.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="about.html">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="our-team.html">Our Team</a>
+            </li>
+            <li>
+              <a href="blog-main.html">Blog</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-news">News</a>
+            </li>
+            <li>
+              <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership"
+                >Apply for partnership</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="investment.html">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="investment.html">Investors NDA Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-five">
+            <h6 class="">POLICIES</h6>
+            <svg
+              sidebar-toggle-item=""
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-five-content">
+            <li>
+              <a href="terms.html">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Protection</a>
+            </li>
+            <li>
+              <a href="#">Professional Practice</a>
+            </li>
+            <li>
+              <a href="#">Confidentiality</a>
+            </li>
+            <li>
+              <a href="#">Client Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Candidate Bill of Rights</a>
+            </li>
+            <li>
+              <a href="#">Imprint</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+
+    <!-- ownSidebar -->
+    <own-sidebar></own-sidebar>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <section class="office-main">
+      <div class="office-container">
+        <div class="office-subtitle">
+          <p>BACK OFFICE</p>
+        </div>
+        <div class="office-inner">
+          <div class="row justify-center">
+            <div class="col-lg-8">
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>BOOKKEEPING</h3>
+                  <p>
+                    Why running your company bookkeeping service in house and
+                    in-country? Instead, run your team in SGS. You specify the
+                    requirements of your team and select the right members. You
+                    manage the team and the operations like before. You save up
+                    to 60% of the operational costs while driving efficiency.
+                    Get a quote and find out more.
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-1.png"
+                    alt="office-back-1"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>CONTROLLING</h3>
+                  <p>
+                    We live in an online world now, why is your control not set
+                    up like it? Have your Controlling as a department with us.
+                    You have everything under control and manage it – but you
+                    save huge operational costs while increasing productivity!
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-2.png"
+                    alt="office-back-2"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>PERSONAL ASSISTANT</h3>
+                  <p>
+                    How often do you see your PA in Person? Have a top PA team
+                    with multi-language and geographic support with us. More PA
+                    support, higher quality, more coverage and less cost.
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-3.png"
+                    alt="office-back-3"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>VIRTUAL PHONE DESK</h3>
+                  <p>
+                    We have learned that people can work perfectly even from
+                    home in 2019 and 2020. Working as your virtual phone desk
+                    from Zagreb increases performance, language coverage and
+                    saves cost. Increase your customer support and presence with
+                    DaaS.
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-4.png"
+                    alt="office-back-4"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>PROJECT MANAGEMENT</h3>
+                  <p>
+                    Do project management and coordination require in-house
+                    presence? Build your PM team with SGS as a DaaS. High
+                    performance, increased productivity with the reduced overall
+                    cost is a win-win-win scenario!
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-5.png"
+                    alt="office-back-5"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>DATA ADMINISTRATION</h3>
+                  <p>
+                    Data Administration as a DaaS. Allowing you to give global
+                    support, top quality in various languages. Your team,
+                    defined, selected, trained and operated by you. Get more
+                    info and contact us.
+                  </p>
+                  <ul>
+                    <li>Software installation and management</li>
+                    <li>Data Extraction, Transformation and loading</li>
+                    <li>Specialized data handling</li>
+                    <li>Data Analysis</li>
+                    <li>Database backup and recovery</li>
+                    <li>Security, Authentication, Capacity planning</li>
+                    <li>Performance monitoring</li>
+                    <li>Database tuning</li>
+                    <li>
+                      Your team, your selection run and operated and controlled
+                      by you the client.
+                    </li>
+                  </ul>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-6.png"
+                    alt="office-back-6"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="booking-wrap">
+                <div class="booking-dec">
+                  <h3>PROCESS MANAGEMENT</h3>
+                  <p>
+                    Building your Process Management team as a department with
+                    SGS you gain. More efficiency, reducing the cost and running
+                    a more responsive Process Management. Ability to implement
+                    multi-language and geographic support for your organization.
+                  </p>
+                </div>
+                <div class="booking-img">
+                  <img
+                    src="assets/images/office/officeback-7.png"
+                    alt="office-back-7"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-part">
+      <div class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-xl-8 my-3">
+              <div class="follows-content">
+                <h5 class="text-white">FOLLOW US</h5>
+
+                <div class="right-part">
+                  <ul class="social-detail">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/ScalableGlobalSolutions/"
+                        ><img
+                          src="./assets/images/social-icons/facebook.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/sgsdaas/"
+                        ><img
+                          src="./assets/images/social-icons/instagram.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=QMIS3hJFZgc"
+                        ><img
+                          src="./assets/images/social-icons/youtube.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/scalable-global-solutions/"
+                        ><img
+                          src="./assets/images/social-icons/linkedin.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/jsc_sgs"
+                        ><img
+                          src="./assets/images/social-icons/twitter.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.slideshare.net/SGSgroup"
+                        ><img
+                          src="./assets/images/social-icons/tiktok.png"
+                          class="img-fluid"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="left-part">
+                  <ul class="contact-detail">
+                    <li>
+                      <a href="tel:+385 1 353 5930">+385 1 353 5930</a>
+                    </li>
+                    <li>
+                      <a href="tel:+385 91 557 36 24">+385 91 557 36 24</a>
+                    </li>
+                    <li>
+                      <a href="mailto:business@sgs-daas.com"
+                        >business@sgs-daas.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 my-3">
+              <div class="subscribe-content">
+                <h5 class="text-white">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="EMAIL*"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="assets//js/sidebar.js"></script>
+</html>

@@ -1,3 +1,137 @@
-.hiring-main-wrap {
-  margin-top: 70px;
+body {
+  background: linear-gradient(
+    90deg,
+    #e5e5e5 0%,
+    rgba(230, 230, 230, 0.28) 36.46%,
+    rgba(230, 230, 230, 0.28) 57.29%,
+    #e6e6e6 100%
+  );
+}
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
+.hiring-container {
+  width: 90%;
+  margin: auto;
+}
+.hiring-banner {
+  background-image: url(..//images/careers/table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-banner .hiring-title-section {
+  padding-top: 80px;
+}
+.hiring-banner .hiring-title-section h1 {
+  color: rgba(69, 65, 63, 0.41);
+  font-family: Inter;
+  font-size: 160px;
+  font-weight: 200;
+}
+.hiring-steps {
+  border-top: 35px solid #343434;
+}
+.hiring-steps .process_steps {
+  padding-top: 40px;
+}
+.hiring-steps .process_steps h2 {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hiring-steps .process_steps .step {
+  padding: 180px 0px;
+  text-align: center;
+  position: relative;
+}
+.hiring-steps .process_steps .step_one::before {
+  content: none !important;
+}
+.hiring-steps .process_steps .step_five::after {
+  content: none !important;
+}
+.hiring-steps .process_steps .step::before {
+  content: "";
+  position: absolute;
+  background-image: url(..//images/careers/bg-line.png);
+  background-position: center;
+  height: 130px;
+  width: 11px;
+  left: 50%;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hiring-steps .process_steps .step::after {
+  content: "";
+  position: absolute;
+  background-image: url(..//images/careers/bg-line.png);
+  background-position: center;
+  height: 130px;
+  width: 11px;
+  left: 50%;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.step_content .step_img_content img {
+  width: 400px;
+  margin: auto;
+}
+.step_content .step_title {
+  color: #5b6e7f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+@media screen and (max-width: 1350px) {
+  .hiring-banner .hiring-title-section h1 {
+    font-size: 100px;
+  }
+  .hiring-steps .process_steps .step::before,
+  .hiring-steps .process_steps .step::after {
+    content: "";
+    width: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hiring-banner {
+    height: 70vh;
+  }
+  .hiring-banner .hiring-title-section h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .hiring-banner .hiring-title-section h1 {
+    font-size: 50px;
+  }
+  .step_content .step_img_content img {
+    width: 250px;
+  }
+  .step_content .step_title {
+    font-size: 30px;
+  }
+  .hiring-steps .process_steps .step {
+    padding: 100px 0px;
+  }
+  .hiring-steps .process_steps .step::before,
+  .hiring-steps .process_steps .step::after {
+    content: "";
+    width: 7px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .hiring-banner {
+    background-position: 30%;
+  }
+  .step_content .step_title {
+    font-size: 25px;
+}
 }

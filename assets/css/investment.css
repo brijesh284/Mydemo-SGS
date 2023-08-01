@@ -2,30 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  transition: 0.5s;
-}
 body {
   margin: 0;
   padding: 0;
   color: #525252;
   background-color: #fff;
   font-family: sans-serif;
+  background-image: url(..//images/investment/investment-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all ease-in-out 0.3s;
 }
 .investment-container {
   width: 90%;
   margin: auto;
 }
-.bg-investment {
-  width: 100%;
-  border-bottom: 20px solid #222a35;
-  background-image: url(..//images/investment/bg-investment.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .investment-inner {
-  height: 120vh;
   padding-top: 28px;
 }
 
@@ -38,65 +32,49 @@ body {
 }
 .bg-investment .we-are-ready {
   margin-top: 13%;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 50px 15px;
 }
 .bg-investment .we-are-ready h2 {
   color: rgba(34, 42, 53, 0.9);
   font-family: Inter;
   font-size: 65px;
   font-weight: 700;
-  width: 55%;
-  line-height: 90px;
 }
 .bg-investment .we-are-ready h3 {
   color: #222a35;
   font-family: Inter;
   font-size: 30px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .solutions-main {
-  padding-top: 100px;
+  padding-top: 150px;
 }
-.solutions-main .solutions-main-inner {
-  overflow: hidden;
-}
-.solutions-main .solutions-main-inner .solutions-title {
-  width: 50%;
+.solutions-title h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 400;
   position: relative;
+  padding-left: 20px;
 }
-.solutions-main .solutions-main-inner .solutions-title::after {
+.solutions-title h2::after {
   content: "";
   position: absolute;
-  height: 1px;
-  width: 100%;
-  background: #222a35;
-  right: -100%;
-  top: 40px;
-}
-.solutions-main .solutions-main-inner .solutions-title h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #535353;
-  font-family: Inter;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px; /* 166.667% */
-  padding-right: 20px;
-}
-.solutions-main .solutions-main-inner .solutions-title h2 span {
-  color: #535353;
-  font-family: Inter;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
+  background-color: #cc1521;
+  height: 35px;
+  width: 5px;
+  left: 0;
+  top: 7px;
 }
 .solutions-main .solutions-content {
+  padding-top: 30px;
+  padding-bottom: 80px;
   width: 70%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 120px;
 }
 .solutions-main .solutions-content p {
   color: #000;
@@ -107,73 +85,86 @@ body {
   line-height: 40px;
 }
 .bg-pitchBook {
-  background-image: url("../images/investment/almeria-1\ 1.png");
-  background-size: cover;
   width: 100%;
   height: auto;
-  padding: 75px 30px 150px;
+  padding: 30px;
 }
 .card {
   position: relative;
-  width: 23%;
-  min-width: 280px;
-  min-height: 280px;
-  padding-top: 23%;
+  width: 15%;
+  min-width: auto;
+  padding-top: 0;
   margin: 10px !important;
-
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.card .card-wrap-new {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-wrap-new:hover {
+  background-color: #bb5050;
+  border: 2px solid transparent;
+}
+.card .card-wrap-new:hover .card-cont {
+  color: #fff;
 }
 .card img {
   width: 100%;
 }
 
-.card-cont {
-  position: absolute;
-  width: 90%;
-  top: 30%;
-  left: 5%;
-  color: white;
+.card .card-wrap-new .card-cont {
+  color: #cc1521;
   text-align: center;
 }
-.seeking .seeking-title {
-  width: 100%;
-  position: relative;
-  padding-bottom: 100px;
-  overflow: hidden;
+.card .card-wrap-new .card-cont .card-title {
+  font-size: 60px;
 }
-.seeking .seeking-title::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 60%;
-  background: #e0e0e0;
-  right: -33%;
-  top: 40px;
-}
-.seeking .seeking-title h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #d9d9d9;
-  font-family: Inter;
-  font-size: 42px;
-  font-style: normal;
+.card .card-wrap-new .card-cont .card-dec {
+  font-size: 20px;
   font-weight: 700;
-  line-height: 70px;
-  padding-right: 20px;
-  width: 71%;
+  line-height: 25px;
 }
-.seeking .seeking-title h2 span {
-  color: #d9d9d9;
-  font-family: Inter;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
+.seeking .card {
+  width: 23%;
+}
+.seeking .card .card-wrap-new {
+  border: 2px solid #cc1521;
+  min-height: 220px;
+}
+.seeking .card .card-cont {
+  color: #000000;
+  text-align: center;
+}
+.seeking .card .card-cont span {
+  font-size: 24px;
+}
+.seeking {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.seeking .solutions-title h2 {
+  font-size: 32px;
+  padding-bottom: 60px;
+}
+.seeking .solutions-title h2::after {
+  top: 3px;
 }
 .rectangle-card {
-  width: calc(46% + 20px);
+  width: calc(30% + 20px);
   margin: 10px;
-  min-width: 580px;
+  /* min-width: 580px; */
+}
+.rectangle-card .rectangle-inner-sec {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: flex-end;
 }
 .social-icons img:not(#language) {
   filter: invert(0.5);
@@ -189,41 +180,8 @@ body {
   width: 50%;
   margin: auto;
 }
-.map .map-title {
-  width: 90%;
-  position: relative;
-  overflow: hidden;
+.map {
   margin-top: 100px;
-  margin-left: 10%;
-}
-.map .map-title::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background: #e0e0e0;
-  right: -32%;
-  top: 40px;
-}
-.map .map-title h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #d9d9d9;
-  font-family: Inter;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
-  padding-right: 20px;
-  width: 30%;
-}
-.map .map-title h2 span {
-  color: #d9d9d9;
-  font-family: Inter;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
 }
 .map-content .map-img {
   width: 100%;
@@ -279,7 +237,7 @@ body {
   color: darkblue;
 }
 .main-chart {
-  padding: 70px 0px;
+  padding: 120px 0px;
 }
 .team-cont .subtitle-team {
   padding-bottom: 100px;
@@ -307,8 +265,44 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+.invest-team {
+  padding: 100px 0px;
+}
 .invest-team a:hover {
   text-decoration: none;
+}
+.book-button {
+  margin-top: 35px;
+}
+.book-button .btn-apply {
+  color: #cc1521;
+  text-align: center;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #cc1521;
+  padding: 14px 40px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  z-index: 99;
+  display: inline-block;
+}
+.book-button .btn-apply::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #cc1521;
+  left: 0;
+  top: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: -1;
+}
+.book-button .btn-apply:hover::after {
+  width: 100%;
+}
+.book-button .btn-apply:hover {
+  color: #fff;
 }
 /* Footer */
 .footer {
@@ -390,73 +384,74 @@ body {
 
 @media screen and (min-width: 3200px) {
   .card-cont span {
-    font-size: 40pt;
-    line-height: 50px;
+    font-size: 100px !important;
+    line-height: 120px !important;
   }
   .card-cont b {
-    font-size: 60pt;
+    font-size: 200px !important;
+  }
+  .bg-investment .we-are-ready h2 {
+    font-size: 105px;
+    margin-bottom: 40px;
+  }
+  .bg-investment .we-are-ready h3 {
+    font-size: 70px;
+  }
+  .bg-investment .we-are-ready {
+    padding: 200px 15px;
+  }
+  .solutions-title h2 {
+    font-size: 120px;
+    padding-left: 50px;
+  }
+  .seeking .solutions-title h2{
+    font-size: 120px;
+  }
+  .solutions-title h2::after {
+    content: "";
+    height: 116px;
+    width: 15px;
+  }
+  .solutions-main .solutions-content p {
+    font-size: 60px;
+    line-height: 100px;
   }
 }
 @media screen and (max-width: 1392px) {
   .bg-investment .we-are-ready h2 {
     font-size: 55px;
-    width: 70%;
-  }
-  .seeking .seeking-title h2 {
-    font-size: 35px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .solutions-main .solutions-main-inner .solutions-title h2 {
-    font-size: 38px;
-  }
-  .map .map-title h2 {
-    font-size: 38px;
-    width: 32%;
-  }
   .solutions-main .solutions-content {
-    width: 80%;
-    margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 100%;
   }
   .map-content .map-img {
     margin-left: -140px;
     margin-top: -140px;
   }
-  .seeking .seeking-title h2 {
-    width: 80%;
-    font-size: 30px;
+  .card .card-wrap-new .card-cont .card-title {
+    font-size: 50px;
   }
-  .seeking .seeking-title::after {
-    content: "";
-    width: 40%;
-    right: -22%;
+}
+@media screen and (max-width: 1060px) {
+  /* .rectangle-card {
+    width: calc(36% + 20px);
+  }
+  .seeking .card {
+    width: 30%;
+  } */
+  .card .card-wrap-new .card-cont .card-title {
+    font-size: 40px;
+  }
+  .card .card-wrap-new .card-cont .card-dec {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 991px) {
-  .investment-inner {
-    height: 100vh;
-  }
-  .bg-investment .we-are-ready h2 {
-    width: 100%;
-  }
-  .solutions-main .solutions-main-inner .solutions-title::after {
-    content: "";
-    top: 28px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title h2 {
-    font-size: 32px;
-    line-height: 50px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title h2 span {
-    font-size: 25px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title {
-    width: 60%;
-  }
   .solutions-main .solutions-content {
-    width: 90%;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -467,38 +462,25 @@ body {
   .bg-pitchBook {
     padding: 75px 15px 90px;
   }
-  .map .map-title h2 {
-    font-size: 32px;
-    width: 35%;
-    line-height: 50px;
-  }
-  .map .map-title h2 span,
-  .seeking .seeking-title h2 span {
-    font-size: 22px;
-  }
-  .map .map-title::after {
-    content: "";
-    width: 94%;
-    top: 30px;
-  }
   .map-content .map-img {
     margin-left: -80px;
     margin-top: -70px;
   }
-  .seeking .seeking-title {
-    padding-bottom: 40px;
-  }
-  .seeking .seeking-title h2 {
-    width: 100%;
-    font-size: 28px;
-    align-items: center;
-  }
-  .seeking .seeking-title::after {
-    content: none;
-  }
   .team-cont .subtitle-team {
     padding-bottom: 80px;
     font-size: 16px;
+  }
+  .card {
+    width: 30%;
+  }
+  .rectangle-card {
+    width: calc(60% + 20px);
+  }
+  .card .card-wrap-new .card-cont {
+    padding: 30px 0px;
+  }
+  .seeking .card {
+    width: 35%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -527,64 +509,52 @@ body {
   }
 }
 @media screen and (max-width: 695px) {
-  .solutions-main .solutions-main-inner .solutions-title {
-    width: 70%;
-  }
-  .solutions-main .solutions-main-inner .solutions-title h2 {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title h2 span {
-    font-size: 20px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title::after {
-    content: "";
-    top: 24px;
-  }
   .solutions-main .solutions-content {
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
   }
   .solutions-main .solutions-content p {
     font-size: 16px;
     line-height: 30px;
   }
   .card {
-    width: 100%;
+    width: 44%;
     padding: 0px;
     min-height: 230px !important;
     margin: 10px !important;
     overflow: hidden;
   }
-  .map .map-title h2 {
-    font-size: 30px;
-    width: 55%;
+  .card .card-wrap-new .card-cont .card-title {
+    font-size: 60px;
+  }
+  .card .card-wrap-new .card-cont .card-dec {
+    font-size: 25px;
     line-height: 40px;
   }
-  .map .map-title h2 span,
-  .seeking .seeking-title h2 span {
-    font-size: 20px;
+  .seeking .card {
+    width: 46%;
   }
-  .map .map-title::after {
-    content: "";
-    width: 73%;
-    top: 23px;
+  .rectangle-card .rectangle-inner-sec {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
   }
   .map-content .map-img {
     margin-left: -60px;
     margin-top: -40px;
   }
-  .seeking .seeking-title {
-    padding-bottom: 20px;
-  }
-  .seeking .seeking-title h2 {
-    font-size: 24px;
-    text-align: center;
-    line-height: 40px;
-    padding-top: 40px;
-  }
   .main-chart {
-    padding: 0px 0px 70px;
+    padding: 70px 0px 70px;
+  }
+  .main-chart .chart-img {
+    padding: 20px 0px;
+  }
+  .book-button .btn-apply {
+    font-size: 16px;
+    padding: 12px 30px;
   }
   .team-cont .subtitle-team {
     padding-bottom: 40px;
@@ -635,56 +605,44 @@ body {
     font-size: 32px;
     line-height: 50px;
   }
-  .solutions-main .solutions-main-inner .solutions-title h2 {
-    font-size: 24px;
-    line-height: 30px;
-    padding-right: 0px;
-    padding-left: 15px;
-    align-items: flex-start;
-  }
-  .solutions-main .solutions-main-inner .solutions-title {
-    width: 100%;
-  }
-  .solutions-main .solutions-main-inner .solutions-title::after {
-    content: "";
-    right: -80%;
-    top: 17px;
-  }
-  .solutions-main {
-    padding-top: 60px;
-  }
-  .solutions-main .solutions-main-inner .solutions-title h2 span {
-    font-size: 16px;
-  }
   .bg-pitchBook {
     padding: 50px 15px 80px;
+  }
+  .card,
+  .seeking .card {
+    width: 100%;
+  }
+  .bg-pitchBook {
+    padding: 0;
+  }
+  .seeking .solutions-title h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  body {
+    background-position: 60%;
+  }
+  .solutions-main {
+    padding-top: 100px;
+  }
+  .solutions-title h2 {
+    font-size: 26px;
+  }
+  .solutions-title h2::after {
+    content: "";
+    height: 25px;
+    top: 4px;
+  }
+  .solutions-main .solutions-content p {
+    font-size: 14px;
+    line-height: 28px;
   }
   .card-cont {
     top: 20%;
   }
-  .map .map-title {
-    margin-top: 60px;
-  }
-  .map .map-title h2 {
-    font-size: 28px;
-    width: 100%;
-    line-height: 35px;
-    padding-right: 0;
-    align-items: flex-start;
-  }
-  .map .map-title::after {
-    content: "";
-    width: 73%;
-    top: 20px;
-  }
   .map-content .map-img {
     margin-left: -40px;
     margin-top: -30px;
-  }
-  .seeking .seeking-title h2 {
-    font-size: 22px;
-    padding-top: 40px;
-    padding-right: 0;
   }
   .team-cont .team-card .rounded-full {
     width: 70%;
@@ -692,16 +650,35 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
-  .solutions-main .solutions-main-inner .solutions-title::after {
-    content: none;
-  }
   .solutions-main .solutions-content {
     padding-top: 20px;
   }
+  .map-content .map-img {
+    margin-left: -40px;
+    margin-top: -10px;
+  }
 }
 @media screen and (max-width: 375px) {
-  .map .map-title::after {
+  .bg-investment .we-are-ready h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bg-investment .we-are-ready h3 {
+    font-size: 20px;
+  }
+  .solutions-main {
+    padding-top: 80px;
+  }
+  .solutions-title h2 {
+    font-size: 22px;
+  }
+  .solutions-title h2::after {
     content: "";
-    width: 60%;
+    height: 22px;
+    top: 2px;
+    padding-left: 12px;
+  }
+  .card .card-wrap-new .card-cont .card-title {
+    font-size: 50px;
   }
 }

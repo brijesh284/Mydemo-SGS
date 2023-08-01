@@ -14,7 +14,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
 section {
   min-height: 100vh;
   width: 100%;
@@ -36,13 +38,8 @@ section {
 }
 
 .about_title {
-  font-size: 4vw;
-  /* position: relative;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%); */
-  font-weight: 400;
-  /* mix-blend-mode: difference; */
+  color: #383838;
+  font-weight: 300;
 }
 
 .zoom_out_font {
@@ -61,10 +58,12 @@ section {
   display: block;
   margin-top: 10%;
   /* float: right; */
-  text-align: right;
-  font-size: 1.5rem;
+  text-align: center;
   width: 100%;
-  /* margin-left: 5rem; */
+  color: #000;
+  font-family: Nunito;
+  font-size: 42px;
+  font-weight: 500;
 }
 
 .quality_section,
@@ -82,15 +81,20 @@ section {
 }
 
 .quality_section p {
-  font-size: 1.7vw;
+  color: #000;
+  font-family: Nunito;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @keyframes fontSize {
   0% {
-    font-size: 4vw;
+    font-size: 100px;
   }
   100% {
-    font-size: 2.5vw;
+    font-size: 70px;
   }
 }
 
@@ -111,9 +115,22 @@ section {
   width: 100px;
   height: 100px;
 }
-.global_info p,.focus_section p,.finance_section p {font-size: 1.3rem;}
-.global_info b,.focus_section b,.finance_section b,.quality_section p {font-size: 1.5rem;}
-
+.global_info p,
+.focus_section p,
+.finance_section p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 300;
+}
+.global_info b,
+.focus_section b,
+.finance_section b {
+  color: #000;
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 400;
+}
 .global_content img {
   width: 30%;
   text-align: center;
@@ -137,13 +154,15 @@ h3.about_title {
   width: 400px;
   margin: 0 auto;
 }
-.global_img,.finace-img img {
+.global_img,
+.finace-img img {
   transition: all 1s ease 0s;
 }
 
 .slide_img {
   transition: all 1s ease 0s;
-  transform: translateX(-27vw) scale(0.57);
+  /* transform: translateX(-27vw) scale(0.57); */
+  transform: translateX(-27vw) scale(1);
   /* position: fixed; */
   /* top: 12vh;
   z-index: 100; */
@@ -156,17 +175,28 @@ h3.about_title {
   width: 80%;
   margin: auto;
   padding: 2rem;*/
-  transform: translateY(-30vh);
+  transform: translateY(-34vh);
 }
-
+.focus_desc b {
+  color: #000;
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 500;
+}
 .opacity-0 {
   opacity: 0;
 }
-
+.offer-create p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 300;
+}
 .focus_desc {
   /* margin-top: 5vh !important;
   margin-bottom: 5vh !important; */
   min-height: 20vh;
+  margin-left: 32%;
 }
 
 /* our mission and vision */
@@ -192,7 +222,9 @@ h3.about_title {
 .our-section .our-content .tab-content {
   height: calc(100vh - 500px);
 }
-.our-section .our-content .main-content,.our-section .our-content .mission-content,.our-section .our-content .vision-content {
+.our-section .our-content .main-content,
+.our-section .our-content .mission-content,
+.our-section .our-content .vision-content {
   font-weight: 300;
   font-size: 25px;
   line-height: 110.7%;
@@ -204,22 +236,32 @@ h3.about_title {
 .our-section .our-content .mission-content ul p {
   margin-bottom: 10px;
 }
-.our-section .our-content .main-content,.our-section .our-content .mission-content ul {
+.our-section .our-content .main-content,
+.our-section .our-content .mission-content ul {
   list-style: disc;
 }
-.our-section .nav.nav-pills {justify-content: center;}
-.our-section .nav.nav-pills .nav-item:first-child,.our-section .nav.nav-pills .nav-item:last-child {opacity: 0;padding: 0;}
+.our-section .nav.nav-pills {
+  justify-content: center;
+}
+.our-section .nav.nav-pills .nav-item:first-child,
+.our-section .nav.nav-pills .nav-item:last-child {
+  opacity: 0;
+  padding: 0;
+}
 .our-section .nav-pills .nav-link {
   color: #323232;
   font-size: 28px;
   padding: 15px 30px;
 }
-.our-section .nav-pills .nav-link.active,.our-section .nav-pills .show > .nav-link {
+.our-section .nav-pills .nav-link.active,
+.our-section .nav-pills .show > .nav-link {
   background-color: transparent;
   color: #000;
 }
 @media screen and (min-width: 1700px) {
-  .our-section .our-content .main-content,.our-section .our-content .mission-content,.our-section .our-content .vision-content {
+  .our-section .our-content .main-content,
+  .our-section .our-content .mission-content,
+  .our-section .our-content .vision-content {
     font-size: 46px;
   }
 }
@@ -230,19 +272,40 @@ h3.about_title {
   .about_landing {
     width: 90%;
   }
-  .our-section .our-content .main-content,.our-section .our-content .mission-content,.our-section .our-content .vision-content {
+  .our-section .our-content .main-content,
+  .our-section .our-content .mission-content,
+  .our-section .our-content .vision-content {
     font-size: 18px;
   }
   .our-section .nav-pills .nav-link {
     padding: 10px 15px;
     font-size: 20px;
   }
-  .our-section .our-content .tab-content {height: 100%;}
-  .our-section .our-title h2 {font-size: 28px;}
-  .our-section .our-content .mission-content h3,.global_info b, .focus_section b, .finance_section b,.quality_section p {font-size: 1.3rem;}
-  .global_info p, .focus_section p, .finance_section p {font-size: 1rem;}
-  .finace-img {width: 100%;}
-  .finance_section .bpo-img {width: 60px;height: 60px;}
+  .our-section .our-content .tab-content {
+    height: 100%;
+  }
+  .our-section .our-title h2 {
+    font-size: 28px;
+  }
+  .our-section .our-content .mission-content h3,
+  .global_info b,
+  .focus_section b,
+  .finance_section b {
+    font-size: 1.3rem;
+  }
+  .global_info p,
+  .focus_section p,
+  .finance_section p {
+    font-size: 1rem;
+  }
+
+  .finace-img {
+    width: 100%;
+  }
+  .finance_section .bpo-img {
+    width: 60px;
+    height: 60px;
+  }
 
   .global_content img {
     width: 80%;

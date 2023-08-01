@@ -759,6 +759,29 @@
             $($(_this).attr("href")).css({ transition: "1s", opacity: "1" });
           }, 200);
         });
+
+        var contant_ids = ['#item14','#item13','#item12','#item11','#item10','#item9','#item8','#item7','#item6','#item5','#item4','#item3','#item2','#item1'];
+        var on_Scroll = true;
+        window.addEventListener('scroll',(event) => {
+          if(on_Scroll == true){
+            on_Scroll = false;
+            var current_top = $(document).scrollTop();
+            for (let i = 0; i < contant_ids.length; i++) {
+              let element = $(contant_ids[i]).position().top;
+              element = element - 400;
+              if(element <= current_top){
+                $('.all_item_list>li>a').removeClass('item-active');
+                $('[href="'+contant_ids[i]+'"]').addClass('item-active');
+                break;
+              }
+            }
+            setTimeout(function(){
+              on_Scroll = true;
+            },100);
+          }
+        });
+
+
       });
     </script>
   </body>

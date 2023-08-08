@@ -274,7 +274,7 @@
               <div class="booking-wrap">
                 <h3 class="sec-title">BOOKKEEPING</h3>
                 <div class="booking-wrap-inner">
-                  <div class="booking-dec hidden-dec" id="hiddenContent">
+                  <div class="booking-dec" id="hiddenContent">
                     <p>
                       Why running your company bookkeeping service in house and
                       in-country? Instead, run your team in SGS. You specify the
@@ -291,10 +291,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-1-absolute">
+                    <img src="assets/images/office/officeback-1.png" class="office-back-1-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>CONTROLLING</h3>
+                <h3 class="sec-title">CONTROLLING</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -312,10 +315,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-2-absolute">
+                    <img src="assets/images/office/officeback-2.png" class="office-back-2-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>PERSONAL ASSISTANT</h3>
+                <h3 class="sec-title">PERSONAL ASSISTANT</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -331,10 +337,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-3-absolute">
+                    <img src="assets/images/office/officeback-3.png" class="office-back-3-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>VIRTUAL PHONE DESK</h3>
+                <h3 class="sec-title">VIRTUAL PHONE DESK</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -352,10 +361,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-4-absolute">
+                    <img src="assets/images/office/officeback-4.png" class="office-back-4-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>PROJECT MANAGEMENT</h3>
+                <h3 class="sec-title">PROJECT MANAGEMENT</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -372,10 +384,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-5-absolute">
+                    <img src="assets/images/office/officeback-5.png" class="office-back-5-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>DATA ADMINISTRATION</h3>
+                <h3 class="sec-title">DATA ADMINISTRATION</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -406,10 +421,13 @@
                       class="img-fluid"
                     />
                   </div>
+                  <div class="booking-img-absolute" alt="office-back-6-absolute">
+                    <img src="assets/images/office/officeback-6.png" class="office-back-6-absolute">
+                  </div>
                 </div>
               </div>
               <div class="booking-wrap">
-                <h3>PROCESS MANAGEMENT</h3>
+                <h3 class="sec-title">PROCESS MANAGEMENT</h3>
                 <div class="booking-wrap-inner">
                   <div class="booking-dec">
                     <p>
@@ -426,6 +444,9 @@
                       alt="office-back-7"
                       class="img-fluid"
                     />
+                  </div>
+                  <div class="booking-img-absolute" alt="office-back-7-absolute">
+                    <img src="assets/images/office/officeback-7.png" class="office-back-7-absolute">
                   </div>
                 </div>
               </div>
@@ -526,14 +547,47 @@
   </body>
   <script src="assets//js/sidebar.js"></script>
   <script>
-    document
-      .getElementById("showButton")
-      .addEventListener("click", function () {
-        var hiddenContent = document.getElementById("hiddenContent");
-        var secTitle = document.querySelector(".sec-title");
+    // document
+    //   .getElementById("showButton")
+    //   .addEventListener("click", function () {
+    //     var hiddenContent = document.getElementById("hiddenContent");
+    //     var secTitle = document.querySelector(".sec-title");
 
-        hiddenContent.classList.toggle("visible-dec");
-        secTitle.classList.toggle("text-left");
-      });
+    //     hiddenContent.classList.toggle("visible-dec");
+    //     secTitle.classList.toggle("text-left");
+    //   });
+    var office_back_num = [
+      'office-back-1-absolute',
+      'office-back-2-absolute',
+      'office-back-3-absolute',
+      'office-back-4-absolute',
+      'office-back-5-absolute',
+      'office-back-6-absolute',
+      'office-back-7-absolute'
+    ];
+    
+    var transition = '0.5s';
+    
+    $(document).ready(function(){
+
+      $('.booking-img-absolute').on('click',function(){
+        var _this = this;
+        var element_alt = $(_this).attr('alt');
+        
+        $(_this).css({'transition':transition,'left':'90%'});
+
+        setTimeout(function() {        
+          $(_this).parent().find('.booking-dec').css({'transition':transition,'opacity':'1'});
+          $(_this).parent().parent().find('.sec-title').css({'transition':transition,'width':'0%'})
+        },10)
+
+
+        // for (let i = 0; i < office_back_num.length; i++) {
+          
+        // }
+
+      })
+
+    });  
   </script>
 </html>

@@ -111,6 +111,9 @@
               <a href="blog.html#tab-news">News</a>
             </li>
             <li>
+              <a href="office-back.html">Back Office</a>
+            </li>
+            <li>
               <a href="blog.html#tab-vlog">VLOG-SGS Video Wall</a>
             </li>
             <li>
@@ -291,8 +294,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-1-absolute">
-                    <img src="assets/images/office/officeback-1.png" class="office-back-1-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-1-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-1.png"
+                      class="office-back-1-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -315,8 +324,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-2-absolute">
-                    <img src="assets/images/office/officeback-2.png" class="office-back-2-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-2-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-2.png"
+                      class="office-back-2-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -337,8 +352,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-3-absolute">
-                    <img src="assets/images/office/officeback-3.png" class="office-back-3-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-3-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-3.png"
+                      class="office-back-3-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -361,8 +382,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-4-absolute">
-                    <img src="assets/images/office/officeback-4.png" class="office-back-4-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-4-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-4.png"
+                      class="office-back-4-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -384,8 +411,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-5-absolute">
-                    <img src="assets/images/office/officeback-5.png" class="office-back-5-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-5-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-5.png"
+                      class="office-back-5-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -421,8 +454,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-6-absolute">
-                    <img src="assets/images/office/officeback-6.png" class="office-back-6-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-6-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-6.png"
+                      class="office-back-6-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -445,8 +484,14 @@
                       class="img-fluid"
                     />
                   </div>
-                  <div class="booking-img-absolute" alt="office-back-7-absolute">
-                    <img src="assets/images/office/officeback-7.png" class="office-back-7-absolute">
+                  <div
+                    class="booking-img-absolute"
+                    alt="office-back-7-absolute"
+                  >
+                    <img
+                      src="assets/images/office/officeback-7.png"
+                      class="office-back-7-absolute"
+                    />
                   </div>
                 </div>
               </div>
@@ -557,37 +602,40 @@
     //     secTitle.classList.toggle("text-left");
     //   });
     var office_back_num = [
-      'office-back-1-absolute',
-      'office-back-2-absolute',
-      'office-back-3-absolute',
-      'office-back-4-absolute',
-      'office-back-5-absolute',
-      'office-back-6-absolute',
-      'office-back-7-absolute'
+      "office-back-1-absolute",
+      "office-back-2-absolute",
+      "office-back-3-absolute",
+      "office-back-4-absolute",
+      "office-back-5-absolute",
+      "office-back-6-absolute",
+      "office-back-7-absolute",
     ];
-    
-    var transition = '0.5s';
-    
-    $(document).ready(function(){
 
-      $('.booking-img-absolute').on('click',function(){
+    var transition = "0.5s";
+
+    $(document).ready(function () {
+      $(".booking-img-absolute").on("click", function () {
         var _this = this;
-        var element_alt = $(_this).attr('alt');
-        
-        $(_this).css({'transition':transition,'left':'90%'});
+        var element_alt = $(_this).attr("alt");
 
-        setTimeout(function() {        
-          $(_this).parent().find('.booking-dec').css({'transition':transition,'opacity':'1'});
-          $(_this).parent().parent().find('.sec-title').css({'transition':transition,'width':'0%'})
-        },10)
+        $(_this).css({ transition: transition, left: "90%" });
 
+        setTimeout(function () {
+          $(_this)
+            .parent()
+            .find(".booking-dec")
+            .css({ transition: transition, opacity: "1" });
+          $(_this)
+            .parent()
+            .parent()
+            .find(".sec-title")
+            .css({ transition: transition, width: "0%" });
+        }, 10);
 
         // for (let i = 0; i < office_back_num.length; i++) {
-          
+
         // }
-
-      })
-
-    });  
+      });
+    });
   </script>
 </html>

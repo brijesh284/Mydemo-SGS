@@ -1,6 +1,5 @@
-
-.booking-img-absolute{
-  
+.booking-img-absolute {
+  cursor: pointer;
   position: absolute;
   width: 10%;
   right: 0;
@@ -9,18 +8,17 @@
   transition: 1s;
 }
 .office-inner .booking-wrap .booking-dec {
-    opacity: 0;
-    transition: 1s;
+  opacity: 0;
+  transition: 1s;
 }
 h3.sec-title {
-    white-space: nowrap;
-    width: 100%;
-    transition: 1s;
+  white-space: nowrap;
+  width: 100%;
+  transition: 1s;
 }
-.booking-img{
+.booking-img {
   opacity: 0;
 }
-
 
 body {
   background-image: url(..//images/office/back-office.png);
@@ -70,16 +68,21 @@ body {
 }
 .office-inner .booking-wrap .booking-dec p {
   color: #000;
-  text-align: justify;
   font-family: Inter;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 300;
+  line-height: 26px;
 }
 .office-inner .booking-wrap .booking-dec ul {
   list-style: disc;
   padding-left: 20px;
+}
+.office-inner .booking-wrap .booking-dec ul li {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 .office-inner .booking-wrap .booking-img {
   width: 10%;

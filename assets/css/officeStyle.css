@@ -292,7 +292,9 @@ section {
     padding: 0.5rem;
   }
 }
-
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
 /* new css */
 .section-height {
   height: 100vh;

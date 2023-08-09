@@ -1,3 +1,6 @@
+.career-bold-text {
+  color: rgb(185 28 28) !important;
+}
 #main-footer {
   display: none;
 }
@@ -368,7 +371,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 }
 
 .base_link:not(.base_link-child_underline):not(.base_link-no_underline):before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -380,7 +383,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 }
 
 .base_link:not(.base_link-child_underline):not(.base_link-no_underline):after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 0;
@@ -555,7 +558,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  font-family: 'object-fit: cover';
+  font-family: "object-fit: cover";
 }
 
 .has-motion .band_home_hero--image_grid .grid_image {
@@ -576,8 +579,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 }
 
 @media (max-width: 639px) {
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='1'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='9'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="1"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="9"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) * 3
@@ -590,8 +593,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='2'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='8'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="2"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="8"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) *
@@ -606,8 +609,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='3'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='7'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="3"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="7"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) * 2
@@ -620,8 +623,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='4'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='6'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="4"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="6"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) *
@@ -636,7 +639,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='5'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="5"] {
     -webkit-transform: translateY(
       calc(var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB))
     );
@@ -647,8 +650,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 }
 
 @media (min-width: 640px) {
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='1'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='9'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="1"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="9"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) * 4
@@ -661,8 +664,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='2'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='8'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="2"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="8"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) *
@@ -677,8 +680,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='3'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='7'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="3"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="7"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) *
@@ -693,8 +696,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='4'],
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='6'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="4"],
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="6"] {
     -webkit-transform: translateY(
       calc(
         (var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB)) *
@@ -709,7 +712,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     );
   }
 
-  .has-motion .band_home_hero--image_grid .grid_image[data-column='5'] {
+  .has-motion .band_home_hero--image_grid .grid_image[data-column="5"] {
     -webkit-transform: translateY(
       calc(var(--imageGridTopPadProgressA) + var(--imageGridTopPadProgressB))
     );
@@ -780,7 +783,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  font-family: 'object-fit: cover';
+  font-family: "object-fit: cover";
   -o-object-position: top;
   object-position: top;
 }
@@ -826,7 +829,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 
 .band_home_hero--headline h1 .text_crop:after,
 .band_home_hero--headline h1 .text_crop:before {
-  content: '';
+  content: "";
   display: block;
   height: 0;
   width: 0;
@@ -915,7 +918,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   z-index: 2;
 }
 .title-divider::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 1px;
@@ -924,7 +927,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 }
 
 .our-team-sec .image-wrapper {
-  background-image: url('../images/our-team/bg.svg');
+  background-image: url("../images/our-team/bg.svg");
   background-repeat: no-repeat;
   /* background-size: contain !important; */
   background-size: 0;
@@ -941,7 +944,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   background-size: 0;
 } */
 
-[data-aos='image-wrapper'].aos-animate {
+[data-aos="image-wrapper"].aos-animate {
   background-size: 100%;
 }
 .our-team-sec .image-wrapper img {
@@ -973,7 +976,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 
 body {
   line-height: 133.02%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .person-hover:hover {

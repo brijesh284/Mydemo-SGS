@@ -1,11 +1,9 @@
 body {
-  background: linear-gradient(
-    90deg,
-    #e5e5e5 0%,
-    rgba(230, 230, 230, 0.28) 36.46%,
-    rgba(230, 230, 230, 0.28) 57.29%,
-    #e6e6e6 100%
-  );
+  background-image: url(..//images/careers/hiring-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 450px -420px;
+  background-color: #fff;
 }
 .career-bold-text {
   color: rgb(185 28 28) !important;
@@ -14,39 +12,39 @@ body {
   width: 90%;
   margin: auto;
 }
+.hiring-main-wrap .hiring-subtitle p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0px;
+  padding: 15px 0px;
+}
 .hiring-banner {
-  background-image: url(..//images/careers/table.jpg);
+  background-image: url(..//images/careers/table.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 .hiring-banner .hiring-title-section {
-  padding-top: 80px;
+  padding: 100px 0px;
 }
 .hiring-banner .hiring-title-section h1 {
-  color: rgba(69, 65, 63, 0.41);
-  font-family: Inter;
-  font-size: 160px;
-  font-weight: 200;
-}
-.hiring-steps {
-  border-top: 35px solid #343434;
-}
-.hiring-steps .process_steps {
-  padding-top: 40px;
-}
-.hiring-steps .process_steps h2 {
   color: #000;
-  text-align: center;
+  text-align: right;
   font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 80px;
+  font-weight: 200;
 }
 .hiring-steps .process_steps .step {
   padding: 180px 0px;
   text-align: center;
   position: relative;
+  width: 100%;
 }
+
 .hiring-steps .process_steps .step_one::before {
   content: none !important;
 }
@@ -60,7 +58,7 @@ body {
   background-position: center;
   height: 130px;
   width: 11px;
-  left: 50%;
+  left: 49%;
   top: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,23 +70,125 @@ body {
   background-position: center;
   height: 130px;
   width: 11px;
-  left: 50%;
+  left: 49%;
   bottom: 0;
   background-size: contain;
   background-repeat: no-repeat;
 }
+.process_steps .step_content {
+  position: relative;
+}
+.step_content .step_img_content {
+  width: 28%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 .step_content .step_img_content img {
-  width: 400px;
+  width: 100%;
+}
+.step_content .step-wraping {
+  width: 35%;
   margin: auto;
+  text-align: start;
 }
 .step_content .step_title {
-  color: #5b6e7f;
-  text-align: center;
+  color: #000;
   font-family: Inter;
-  font-size: 50px;
+  font-size: 52px;
   font-weight: 500;
-  padding: 20px 0px;
+  padding-bottom: 30px;
+  text-align: center;
 }
+.step_content .step-wraping ul {
+  list-style: disc;
+  cursor: pointer;
+}
+.step_content .step-wraping ul li {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* Footer */
+.footer {
+  background-color: #232323;
+  padding: 25px 0;
+  z-index: 1;
+  position: relative;
+}
+.footer-container {
+  width: 95%;
+  margin: auto;
+}
+.footer-container h5 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.footer-part .follows-content .left-part {
+  margin-top: 30px;
+}
+.footer-container ul li {
+  display: inline-flex;
+  margin: 7px 0;
+}
+.footer-container ul li a {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  color: #d2d2d2;
+  padding: 0 4px;
+  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  -ms-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+}
+.footer-container ul li a img {
+  width: 15px;
+}
+.footer-container ul.social-detail li a img {
+  width: 28px;
+}
+.subscribe-content .form-group {
+  margin-top: 20px;
+}
+.subscribe-content .form-control {
+  border-bottom: 1px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  padding-left: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  padding: 25px 0px;
+}
+.subscribe-content .form-control:focus {
+  box-shadow: none;
+}
+.subscribe-content .form-control::placeholder {
+  color: #fff;
+}
+.fixed {
+  top: 70px;
+}
+
+.fixed.blog-banner .blog-banner-title {
+  height: calc(100vh - 90px);
+  transition: height 0.5s;
+}
+
 @media screen and (max-width: 1350px) {
   .hiring-banner .hiring-title-section h1 {
     font-size: 100px;
@@ -99,12 +199,21 @@ body {
     width: 10px;
   }
 }
-@media screen and (max-width: 991px) {
-  .hiring-banner {
-    height: 70vh;
+@media screen and (max-width: 1200px) {
+  .step_content .step_title {
+    font-size: 42px;
   }
+}
+@media screen and (max-width: 991px) {
   .hiring-banner .hiring-title-section h1 {
     font-size: 70px;
+  }
+  .step_content .step-wraping {
+    width: auto;
+    margin-left: 33%;
+  }
+  .step_content .step_title {
+    text-align: start;
   }
 }
 @media screen and (max-width: 660px) {
@@ -127,11 +236,41 @@ body {
     height: 90px;
   }
 }
+@media screen and (max-width: 767.5px) {
+  .footer-container h5 {
+    font-size: 20px;
+  }
+  .footer-container ul li a {
+    font-size: 14px;
+  }
+  .hiring-main-wrap .hiring-subtitle p {
+    padding: 60px 0px 10px;
+  }
+  .step_content .step_img_content {
+    display: none;
+  }
+  .step_content .step-wraping {
+    width: 80%;
+    margin: auto;
+  }
+}
 @media screen and (max-width: 525px) {
   .hiring-banner {
     background-position: 30%;
   }
   .step_content .step_title {
     font-size: 25px;
-}
+    padding-bottom: 20px;
+  }
+  .step_content .step-wraping ul li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hiring-banner .hiring-title-section h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .hiring-banner .hiring-title-section {
+    padding: 70px 0px;
+  }
 }

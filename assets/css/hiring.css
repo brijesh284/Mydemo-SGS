@@ -26,7 +26,7 @@ body {
   padding: 15px 0px;
 }
 .hiring-banner {
-/*  background-image: url(..//images/careers/table.png);*/
+  background-image: url(..//images/careers/table.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -259,6 +259,9 @@ body {
 
 @media screen and (min-width: 767.5px) {
   /*-- new added start 09-08-2023--*/
+  .hiring-banner {
+      background-image: unset;
+  }
   .hiring-banner .hiring-title-section h1 {
       position: relative;
       text-align: unset;

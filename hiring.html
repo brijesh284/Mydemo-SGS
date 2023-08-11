@@ -534,8 +534,12 @@
             setTimeout(function(argument) {
               // body...
               var step_img_content_one_hide = document.querySelector('#step_img_content_one_hide').getBoundingClientRect();
+              var hiring_main_wrap = document.querySelector('.hiring-main-wrap').getBoundingClientRect();
+      
+              var hiring_main_wrap_top = Math.abs(hiring_main_wrap.top);
+
               console.log(step_img_content_one_hide);
-              $('.step_img_one_absolute').css({'top':step_img_content_one_hide.y,'left':step_img_content_one_hide.x,'width':step_img_content_one_hide.width,'height':step_img_content_one_hide.height})
+              $('.step_img_one_absolute').css({'top':step_img_content_one_hide.y + hiring_main_wrap_top,'left':step_img_content_one_hide.x,'width':step_img_content_one_hide.width,'height':step_img_content_one_hide.height})
             },200);
           }
     

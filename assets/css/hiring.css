@@ -1,38 +1,4 @@
 
-/*-- new added start 09-08-2023--*/
-.hiring-banner .hiring-title-section h1 {
-    position: relative;
-    transition: all 1s ease;
-}
-.step_img_one_absolute{
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-}
-.step_one .step_img_content{
-  display: none;
-}
-body .step_content .step_img_content_one_hide {
-    left: 0% !important;
-    transition: 0.5s;
-}
-.step_img_one{
-  position: absolute;
-  overflow: hidden;
-  left: 0px;
-  right: 0;
-  width: 100%;
-  top: 631;
-  height: 99;
-  width: 212px;  
-  transition: all 0.5s ease 0s;
-}
-body .step_content .step_img_content {
-    left: -30%;
-    transition: 0.5s;
-}
-/*-- new added end 09-08-2023--*/
-
 
 body {
   background-image: url(..//images/careers/hiring-bg.png);
@@ -60,7 +26,7 @@ body {
   padding: 15px 0px;
 }
 .hiring-banner {
-/*  background-image: url(..//images/careers/table.png);*/
+  background-image: url(..//images/careers/table.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -69,7 +35,7 @@ body {
 }
 .hiring-banner .hiring-title-section h1 {
   color: #000;
-/*  text-align: right;*/
+  text-align: right;
   font-family: Inter;
   font-size: 80px;
   font-weight: 200;
@@ -290,6 +256,47 @@ body {
     margin: auto;
   }
 }
+
+@media screen and (min-width: 767.5px) {
+  /*-- new added start 09-08-2023--*/
+  .hiring-banner {
+      background-image: unset;
+  }
+  .hiring-banner .hiring-title-section h1 {
+      position: relative;
+      text-align: unset;
+      transition: all 1s ease;
+  }
+  .step_img_one_absolute{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+  .step_one .step_img_content{
+    display: none;
+  }
+  body .step_content .step_img_content_one_hide {
+      left: 0% !important;
+      transition: 0.5s;
+  }
+  .step_img_one{
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    top: 631;
+    height: 99;
+    width: 212px;  
+    transition: all 0.5s ease 0s;
+  }
+  body .step_content .step_img_content {
+      left: -30%;
+      transition: 0.5s;
+  }
+  /*-- new added end 09-08-2023--*/
+}
+
 @media screen and (max-width: 525px) {
   .hiring-banner {
     background-position: 30%;

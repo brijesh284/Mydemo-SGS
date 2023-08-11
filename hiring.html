@@ -505,48 +505,54 @@
         document.querySelector(".preloader").style.display = "none";
       });
 
-      // -- please enter heading font size after click
-      var click_heading_f = '45px';
+      if(innerWidth  > 767){
 
-      var landing = document.querySelector('#landing').getBoundingClientRect();
-      
-      $('.step_img_one_absolute').css({'top':landing.y,'left':landing.x,'width':landing.width,'height':landing.height})
+        // -- please enter heading font size after click
+        var click_heading_f = '45px';
 
-      var $h1 = $('.hiring-banner .hiring-title-section h1');
-      var old_f_S = $h1.css('font-size')
-
-      $h1.css({'transition':'0s','width':'fit-content'});
-      var head_l = ($('.hiring-title-section').innerWidth() - $h1.innerWidth()) / 2;   
-      $h1.css({'transition':'0s','width':'100%','margin-left':head_l*2});
-      
-      $h1.css({'transition':'0s','width':'fit-content','font-size':click_heading_f});
-      var head_45 = ($('.hiring-title-section').innerWidth() - $h1.innerWidth()) / 2;   
-      $h1.css({'transition':'0s','width':'100%','font-size':old_f_S});
-
-      var all_main_class = ['.step_one','.step_two','.step_three','.step_four','.step_five']
-      $('.step-wraping>ul').on('click',function(argument) {
-        var _this = this;
-        var main_class;
+        var landing = document.querySelector('#landing').getBoundingClientRect();
         
-        if($(_this).closest('.step_one').length == 1) {
-          setTimeout(function(argument) {
-            // body...
-            var step_img_content_one_hide = document.querySelector('#step_img_content_one_hide').getBoundingClientRect();
-            console.log(step_img_content_one_hide);
-            $('.step_img_one_absolute').css({'top':step_img_content_one_hide.y,'left':step_img_content_one_hide.x,'width':step_img_content_one_hide.width,'height':step_img_content_one_hide.height})
-          },200);
-        }
-  
-        $('.hiring-banner .hiring-title-section h1').css({'transition':'0.2s','margin-left':head_45,'font-size':click_heading_f});
-        $('.hiring-banner .hiring-title-section').css({'transition':'0.2s','padding':'50px 0'});
-        for (let i = 0; i < all_main_class.length; i++) {
-          var x = $(_this).closest(all_main_class[i]);
-          if(x.length == 1){
-            main_class = x;
+        $('.step_img_one_absolute').css({'top':landing.y,'left':landing.x,'width':landing.width,'height':landing.height})
+
+        var $h1 = $('.hiring-banner .hiring-title-section h1');
+        var old_f_S = $h1.css('font-size')
+
+        $h1.css({'transition':'0s','width':'fit-content'});
+        var head_l = ($('.hiring-title-section').innerWidth() - $h1.innerWidth()) / 2;   
+        $h1.css({'transition':'0s','width':'100%','margin-left':head_l*2});
+        
+        $h1.css({'transition':'0s','width':'fit-content','font-size':click_heading_f});
+        var head_45 = ($('.hiring-title-section').innerWidth() - $h1.innerWidth()) / 2;   
+        $h1.css({'transition':'0s','width':'100%','font-size':old_f_S});
+
+        var all_main_class = ['.step_one','.step_two','.step_three','.step_four','.step_five']
+        $('.step-wraping>ul').on('click',function(argument) {
+          var _this = this;
+          var main_class;
+          
+          if($(_this).closest('.step_one').length == 1) {
+            setTimeout(function(argument) {
+              // body...
+              var step_img_content_one_hide = document.querySelector('#step_img_content_one_hide').getBoundingClientRect();
+              console.log(step_img_content_one_hide);
+              $('.step_img_one_absolute').css({'top':step_img_content_one_hide.y,'left':step_img_content_one_hide.x,'width':step_img_content_one_hide.width,'height':step_img_content_one_hide.height})
+            },200);
           }
-        }  
-        $(main_class).find('.step_img_content').css({'transition':'0.5s','left':'0'});
-      });
+    
+          $('.hiring-banner .hiring-title-section h1').css({'transition':'0.2s','margin-left':head_45,'font-size':click_heading_f});
+          $('.hiring-banner .hiring-title-section').css({'transition':'0.2s','padding':'50px 0'});
+          for (let i = 0; i < all_main_class.length; i++) {
+            var x = $(_this).closest(all_main_class[i]);
+            if(x.length == 1){
+              main_class = x;
+            }
+          }  
+          $(main_class).find('.step_img_content').css({'transition':'0.5s','left':'0'});
+        });
+      
+      }else{
+        $('.step_img_one_absolute').css({'display':'none'})
+      }
     </script>
   </body>
 </html>
